@@ -1,0 +1,11 @@
+Pocet bodu
+24
+Hodnocení
+- Slozka pro knihovny se standardne jmenuje “libs” nebo “lib”
+- Toto neni idealni nazev metody reservationStartAsIntXX
+- Lepsi pouzivat primitivni typy nez objektove - viz Boolean isWithinRange (mrkni do prednasky)
+- writer.writeStartElement("Reservation”);, asi jste to chtel pojmenovat s malym “r”
+- Obecne delit kod do vice metod
+- Pri pridavani se me nepta na jake datum; pri editaci nemuzu zmenit cas
+- Uri je v jsonu escapovana: "uri": "ues:UCL-BT:UCL.INF\/DEMO_REZERVACE:EBC.MCS.DEMO\/MR001\/SCHEDULE"
+- Jinak pekne!

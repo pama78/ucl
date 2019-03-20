@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:ucl="http://www.unicorcollege.cz/JEE/Library">
+<f:view>
+<h:head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><ui:insert name="pageTitle">Page Title</ui:insert></title>	
+</h:head>
+<ui:insert name="metadata"/>
+<h:body>
+  <rich:panel>
+  	<h:form>
+  	   <rich:toolbar>
+  	     <rich:dropDownMenu>
+  	     	<f:facet name="label">#{local.trip}</f:facet>
+  	     	<rich:menuItem submitMode="server" label="#{local.tripList}" action="mm_trip_list" />
+  	     	<rich:menuItem submitMode="server" label="#{local.newTrip}" action="mm_new_trip" />
+  	     	<rich:menuItem submitMode="server" label="#{local.buyTrip}" action="mm_buy_trip" />
+  	     </rich:dropDownMenu>
+  	     <rich:dropDownMenu>
+  	     	<f:facet name="label">#{local.clients}</f:facet>
+  	     	<rich:menuItem submitMode="server" label="#{local.clientList}" action="mm_client_list" />
+  	     </rich:dropDownMenu>
+  	     <rich:dropDownMenu>
+  	     	<f:facet name="label">#{local.links}</f:facet>
+  	     	<rich:menuItem submitMode="server" label="#{local.home}" action="mm_home"/>
+  	     </rich:dropDownMenu>
+  	   </rich:toolbar>
+  	</h:form>
+  	
+  	<h2><ui:insert name="pageTitle">Page Title</ui:insert></h2>  	
+  	<ui:insert name="primaryContent">Primary content</ui:insert>
+  	  	  	
+  </rich:panel>
+</h:body>
+</f:view>
+</html>

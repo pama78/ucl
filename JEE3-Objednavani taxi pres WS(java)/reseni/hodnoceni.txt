@@ -1,0 +1,4 @@
+Pocet bodu
+16
+Hodnocení
+Soucástí rešení mel být MVN projekt

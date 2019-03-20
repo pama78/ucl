@@ -1,0 +1,38 @@
+INSERT INTO `hotel` (id, description, location, name)
+VALUES (1,'A nice new hotel with free internet access','Heidelberg','Hotelo'),
+       (2,'montparnasse.concorde-hotels.com','Paris','Concorde Montparnasse'),
+(3,'soin-esthetique-du-corps.com','Paris','Four Seasons'),(4,'www.l-hotel.com','Paris','L\'Hôtel'),
+(5,'www.sanctuaryhousehotel.co.uk','London','Sanctuary House Hotel'),(6,'www.cityinn.com','London','City Inn Hotel Westminster'),
+(7,'www.brownshotel.com','London','Brown\'s Hotel'),(8,NULL,'Prague','Ambassador'),
+(9,NULL,'Prague','Grand Hotel Praha'),(10,NULL,'Prague','Corinthia Towers');
+
+INSERT INTO `service` (id, description, name, type, hotel_id) VALUES 
+ (1,'A nice, long massage','Heidelberg',1,1),
+ (2,'Express dry cleaning for business travellers available','Paris',2,2),
+ (3,'Express dry cleaning for business travellers available','Paris',2,4),
+ (4,'Express dry cleaning for business travellers available','London',2,5),
+ (5,'Express dry cleaning for business travellers available','London',2,7),
+ (6,'A one-day trip to Klatovy','Prague',0,NULL),
+ (7,'A two-day trip to the metropolis of the South Bohemia','Prague',0,NULL),
+ (8,NULL,'London',0,NULL),
+ (9,'Sightseeing around the City of London','London',0,NULL),
+ (10,'A one-day getaway to the amusement park','Paris',0,NULL),
+ (11,'No shoes stolen. Guarranteed','London',2,5);
+
+insert into room (id, beds, description, floor, number, hotel_id) values
+ (1, 3, 'see view 1', 1, 1, 1), (2, 3, 'garden view 1', 1, 2, 1), 
+ (3, 3, 'see view 1', 1, 1, 2), (4, 3, 'garden view 1', 1, 2, 2), 
+ (5, 3, 'see view 1', 1, 1, 3), (6, 3, 'garden view 1', 1, 2, 3), 
+ (7, 3, 'see view 1', 1, 1, 4), (8, 3, 'garden view 1', 1, 2, 4), 
+ (9, 3, 'see view 1', 1, 1, 5), (10, 3, 'garden view 1', 1, 2, 5), 
+ (11, 3, 'see view 1', 1, 1, 6), (12, 3, 'garden view 1', 1, 2, 6), 
+ (13, 3, 'see view 1', 1, 1, 7), (14, 3, 'garden view 1', 1, 2, 7), 
+ (15, 3, 'see view 1', 1, 1, 8), (16, 3, 'garden view 1', 1, 2, 8), 
+ (17, 3, 'see view 1', 1, 1, 9), (18, 3, 'garden view 1', 1, 2, 9), 
+ (19, 3, 'see view 1', 1, 1, 10), (20, 3, 'garden view 1', 1, 2, 10)
+ 
+
+INSERT INTO STAY (id, customerName, dayfrom,  dayto, reservationcode, room_id) VALUES 
+ (1,'Pavel Majer','2017-05-01', '2017-05-05', 'res123' ,1 ),
+ (2,'Pavel Majer','2017-05-04', '2017-05-05', 'res124' ,2 )
+ 

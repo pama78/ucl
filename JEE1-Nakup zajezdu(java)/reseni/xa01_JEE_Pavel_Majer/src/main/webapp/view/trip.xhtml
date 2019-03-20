@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"	>
+<body>
+<ui:composition template="/template/blue_travel.xhtml">
+	<ui:define name="pageTitle">#{local.tripDetail}</ui:define>
+	<ui:define name="metadata">
+		<f:metadata>
+			<f:viewParam name="tripId" value="#{holidayManager.currentHolidayId}" />
+		</f:metadata>
+	</ui:define>
+	<ui:define name="primaryContent">
+		<h:form>  
+		  <rich:collapsiblePanel header="#{local.details}">			
+			  <h:panelGrid columns="3">
+				<h:outputText value="#{local.name}: " />
+				<h:inputText id="holidayName" value="#{holidayManager.currentHoliday.name}" />
+				<rich:message for="holidayName" />
+				
+				<h:outputText value="#{local.starts}: " />
+				<rich:calendar id="holidayStarts"  datePattern="dd.M.yyyy" value="#{holidayManager.currentHoliday.starts}" />
+				<rich:message for="holidayStarts" />
+				
+				<h:outputText value="#{local.ends}: " />
+				<rich:calendar id="holidayEnds" datePattern="dd.M.yyyy" value="#{holidayManager.currentHoliday.ends}" />
+				<rich:message for="holidayEnds" />				
+				
+				<h:outputText value="#{local.price}: " />
+				<h:inputText id="holidayPrice" value="#{holidayManager.currentHoliday.price}" />
+				<rich:message for="holidayPrice" />
+			  </h:panelGrid>
+			  <h:commandButton value="#{local.save}" action="#{holidayManager.saveHoliday}" >
+			  	<f:ajax execute="@form" render="@form"/>
+			  </h:commandButton>			
+		  </rich:collapsiblePanel>
+		</h:form>
+		
+		<rich:panel>
+		  <f:facet name="header">#{local.transportation}</f:facet>
+		  <h3>#{local.existingTransportation}</h3>
+		  <h:form>		
+            <rich:dataTable id="transportTable" var="transport" value="#{ucl:asList(holidayManager.currentHoliday.transportation)}">
+        	  <rich:column>
+        		  <f:facet name="header">#{local.type}</f:facet>
+        		  #{transport.type}
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.dateLeaving}</f:facet>
+        		  <h:outputText value="#{transport.departure}">
+        			  <f:convertDateTime type="date" />
+        		  </h:outputText>
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.timeLeaving}</f:facet>
+        		  <h:outputText value="#{transport.departure}">
+        			  <f:convertDateTime type="time" />
+          	  	  </h:outputText>
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.fromLocation}</f:facet>
+        		  #{transport.from}
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.toLocation}</f:facet>
+        		  #{transport.to}
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.duration}</f:facet>
+        		  <h:outputText value="#{(transport.arrival.time - transport.departure.time)/3600000}">
+        			  <f:convertNumber maxFractionDigits="1"/>
+        		  </h:outputText>      			
+        	  </rich:column>
+        	  <rich:column>
+        		<h:commandLink value="#{local.remove}" action="#{holidayManager.removeTransport}">
+        		    <a4j:ajax render="transportTable" />
+        			<f:setPropertyActionListener target="#{holidayManager.transportId}" value="#{transport.id}"/>
+        		</h:commandLink>
+        	  </rich:column>
+            </rich:dataTable>          
+          </h:form>
+          <h3>#{local.findAddTransportation}</h3>
+          <h:form>
+          	<h:panelGrid columns="2">
+          		<h:outputText value="#{local.cityFrom}:" />
+          		<h:selectOneMenu value="#{holidayManager.transportExample.from}">
+          			<f:selectItems value="#{holidayManager.allFromCities}" />          			
+          		</h:selectOneMenu>
+          		
+          		<h:outputText value="#{local.cityTo}:" />
+          		<h:selectOneMenu value="#{holidayManager.transportExample.to}">
+          			<f:selectItems value="#{holidayManager.allToCities}" />
+          		</h:selectOneMenu>
+          		
+          		<h:outputText value="#{local.departureDate}:" />
+          		<rich:calendar datePattern="dd.M.yyyy" value="#{holidayManager.transportExample.departure}"/>
+          	</h:panelGrid>
+          	<h:commandLink value="#{local.findTransports}">
+          	  <a4j:ajax execute="@form" render="foundTransports" />
+          	</h:commandLink>
+          </h:form>
+          <h3>#{local.foundTransportation}</h3>
+          <h:form>
+            <rich:dataTable id="foundTransports" var="transport" value="#{holidayManager.foundTransports}">
+       		  <rich:column>
+        		  <f:facet name="header">#{local.type}</f:facet>
+        		  #{transport.type}
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.dateLeaving}</f:facet>
+        		  <h:outputText value="#{transport.departure}">
+        			  <f:convertDateTime type="date" />
+        		  </h:outputText>
+        	  </rich:column>
+        	  <rich:column>
+        		  <f:facet name="header">#{local.timeLeaving}</f:facet>
+        		  <h:outputText value="#{transport.departure}">
+        			  <f:convertDateTime type="time" />
+        		  </h:outputText>
+        	  </rich:column>
+        	  <rich:column>
+        	  	<a4j:commandLink value="#{local.addTransportation}" action="#{holidayManager.addTransport}" render="transportTable">
+        	  		<f:setPropertyActionListener target="#{holidayManager.transportId}" value="#{transport.id}"/>
+        	  	</a4j:commandLink>
+        	  </rich:column>
+            </rich:dataTable>
+          </h:form>
+        </rich:panel>
+        
+        <rich:panel>
+          <f:facet name="header">#{local.accommodation}</f:facet>
+        </rich:panel>
+	</ui:define>
+</ui:composition>
+</body>
+</html>

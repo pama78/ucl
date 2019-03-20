@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:ucl="http://www.unicorcollege.cz/JEE/Library">
+<h:body>
+<ui:component>	
+	<h:panelGrid columns="2">
+		<h:outputText value="#{local.name}: " style="font-weight: bold;"/>
+		<h:outputText value="#{value.name}" />
+		
+		<h:outputText value="#{local.starts}: " style="font-weight: bold;"/>
+		<h:outputText value="#{value.starts}" >
+			<f:convertDateTime pattern="dd.M.yyyy" />
+		</h:outputText>
+		
+		<h:outputText value="#{local.ends}: " style="font-weight: bold;"/>
+		<h:outputText value="#{value.ends}" >
+			<f:convertDateTime pattern="dd.M.yyyy" />
+		</h:outputText>
+		
+		<h:outputText value="#{local.price}: " style="font-weight: bold;"/>
+		<h:outputText value="#{value.price}" />
+	</h:panelGrid>
+	<br/>
+	<h:outputText value="#{local.travel}" />
+	<ul>
+		<ui:repeat value="#{ucl:asList(value.transportation)}" var="transport">
+			<li>#{transport}</li>
+		</ui:repeat>
+	</ul>	  
+	<h:outputText value="#{local.accommodation}" />
+	<ul>
+		<ui:repeat value="#{ucl:asList(value.accommodation)}" var="stay">
+			<li>#{stay}</li>
+		</ui:repeat>
+	</ul>
+	<h:outputText value="#{local.services}" />
+	<ul>
+		<ui:repeat value="#{ucl:asList(value.services)}" var="service">
+			<li>#{service}</li>
+		</ui:repeat>
+	</ul>
+</ui:component>
+</h:body>
+</html>

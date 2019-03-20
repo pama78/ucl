@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:ucl="http://www.unicorcollege.cz/JEE/Library">
+<body>
+
+
+	<ui:composition template="/template/blue_travel.xhtml">
+		<ui:define name="pageTitle">#{local.buyTrip}</ui:define>
+		<ui:define name="primaryContent">
+
+			<table style="width: 100%" cellpadding="10">
+				<tr>
+					<td width="50%" valign="bottom"><h:form id="basicForm"
+							prependid="false">
+							<rich:collapsiblePanel header="#{local.holiday}">
+
+								<h:selectOneMenu value="#{purchaseController.currentHolidayId}">
+									<f:selectItems value="#{purchaseController.allHolidays}"
+										var="holiday" itemValue="#{holiday.id}"
+										itemLabel="#{holiday.name}" />
+									<f:ajax listener="#{purchaseController.updateCurrentHoliday()}"
+										render="results" />
+								</h:selectOneMenu>
+
+								<h:panelGroup id="results">
+									<rich:panel>
+										<h:panelGrid columns="2">
+											<h:outputText value="#{local.name}:" style="font-weight:bold" />
+											<h:outputText
+												value="#{purchaseController.currentHoliday.name}" />
+											<h:outputText value="#{local.starts}:"
+												style="font-weight:bold" />
+											<h:outputText
+												value="#{purchaseController.currentHoliday.starts}" />
+											<h:outputText value="#{local.ends}:" style="font-weight:bold" />
+											<h:outputText
+												value="#{purchaseController.currentHoliday.ends} " />
+											<h:outputText value="#{local.price}:"
+												style="font-weight:bold" />
+											<h:outputText
+												value="#{purchaseController.currentHoliday.price} EUR" />
+											<h:outputText value="Travellers:" style="font-weight:bold" />
+											<h:outputText value="#{purchaseController.travellersCount}" />
+											<h:outputText value="Total Amount:" style="font-weight:bold" />
+											<h:outputText
+												value="#{purchaseController.travellersCount * purchaseController.currentHoliday.price} EUR"
+												style="font-size:20px; font-weight:bold" />
+										</h:panelGrid>
+									</rich:panel>
+								</h:panelGroup>
+
+								<br />
+								<h:commandButton id="recalc" value="#{local.recalculatePrice}">
+									<f:ajax render="results" />
+								</h:commandButton>
+							</rich:collapsiblePanel>
+							<br />
+
+							<rich:collapsiblePanel header="#{local.customer}">
+								<h:panelGrid columns="3">
+									<h:outputText value="*#{local.firstName}: " />
+									<h:inputText id="user_firstname"
+										value="#{purchaseController.customer.firstName}" />
+									<h:message for="user_firstname" style="color:red" />
+
+									<h:outputText value="*#{local.surname}: " />
+									<h:inputText id="user_surname"
+										value="#{purchaseController.customer.surname}" />
+									<h:message for="user_surname" style="color:red" />
+
+									<h:outputText value="*#{local.creditCardNo}: " />
+									<h:panelGrid columns="4">
+										<h:inputText id="user_creditcard0"
+											value="#{purchaseController.creditCardNo[0]}" size="4"
+											maxlength="4" validatorMessage="#{local.val_cc_1}"
+											onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;">
+											<f:validateLength minimum="4" maximum="4" />
+										</h:inputText>
+
+										<h:inputText id="user_creditcard1"
+											value="#{purchaseController.creditCardNo[1]}" size="4"
+											maxlength="4" validatorMessage="#{local.val_cc_2}"
+											onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;">
+											<f:validateLength minimum="4" maximum="4" />
+										</h:inputText>
+
+										<h:inputText id="user_creditcard2"
+											value="#{purchaseController.creditCardNo[2]}" size="4"
+											maxlength="4" validatorMessage="#{local.val_cc_3}"
+											onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;">
+											<f:validateLength minimum="4" maximum="4" />
+										</h:inputText>
+
+										<h:inputText id="user_creditcard3"
+											value="#{purchaseController.creditCardNo[3]}" size="4"
+											maxlength="4" validatorMessage="#{local.val_cc_4}"
+											onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;">
+											<f:validateLength minimum="4" maximum="4" />
+										</h:inputText>
+									</h:panelGrid>
+
+									<h:panelGrid columns="4">
+										<h:message for="user_creditcard0" style="color:red" />
+										<h:message for="user_creditcard1" style="color:red" />
+										<h:message for="user_creditcard2" style="color:red" />
+										<h:message for="user_creditcard3" style="color:red" />
+									</h:panelGrid>
+
+									<h:outputText value="*#{local.creditCardValidity}: " />
+									<h:panelGrid columns="2">
+										<h:inputText id="user_credit_exp1"
+											value="#{purchaseController.creditCardValidity[0]}" size="2"
+											maxlength="2" validatorMessage="#{local.val_cc_1}"
+											onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;">
+											<f:validateLength minimum="2" maximum="2" />
+										</h:inputText>
+										<h:inputText id="user_credit_exp2"
+											value="#{purchaseController.creditCardValidity[1]}" size="2"
+											maxlength="2" validatorMessage="#{local.val_cc_2}"
+											onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;">
+											<f:validateLength minimum="2" maximum="2" />
+										</h:inputText>
+									</h:panelGrid>
+									<h:panelGrid columns="2">
+										<h:message for="user_credit_exp1" style="color:red" />
+										<h:message for="user_credit_exp2" style="color:red" />
+									</h:panelGrid>
+								</h:panelGrid>
+							</rich:collapsiblePanel>
+							<br />
+							<br />
+
+
+							<h:commandButton id="cust" value="#{local.saveAndConfirm}"
+								action="#{purchaseController.saveContract}">
+								<f:ajax execute="@form" render="@all" />
+							</h:commandButton>
+
+							<h:commandButton id="clean" value="#{local.cleanPurchaseForm}"
+								action="#{purchaseController.clearAndRefreshPurchase}">
+								<f:ajax render="body" />
+							</h:commandButton>
+
+
+						</h:form></td>
+
+					<!-- right upper panel -->
+					<td width="50%"><h:form id="travellerslist" prependid="false"
+							bgcolor="silver">
+							<rich:collapsiblePanel header="#{local.travellers}">
+
+								<rich:dataTable id="formTravellers" var="traveller"
+									value="#{purchaseController.allTravellers}">
+
+									<rich:column>
+										<f:facet name="header">#{local.firstName}</f:facet>#{traveller.firstName}</rich:column>
+									<rich:column>
+										<f:facet name="header">#{local.surname}</f:facet>#{traveller.surname}</rich:column>
+
+									<rich:column>
+										<f:facet name="header">#{local.dateOfBirth}</f:facet>
+										<h:outputText value="#{traveller.dateOfBirth}">
+											<f:convertDateTime type="date" />
+										</h:outputText>
+									</rich:column>
+									<rich:column>
+										<f:facet name="header">#{local.idNumber}</f:facet>#{traveller.idNumber}</rich:column>
+
+									<rich:column>
+										<h:commandLink value="#{local.remove}"
+											action="#{purchaseController.removeTraveller(traveller)}">
+											<f:ajax execute="@form" update=":trav :results"
+												render="travellerslist :recalc" />
+										</h:commandLink>
+									</rich:column>
+								</rich:dataTable>
+							</rich:collapsiblePanel>
+
+
+						</h:form> <br /> <!-- right lower panel --> <h:form id="travellers"
+							prependid="false">
+							<rich:collapsiblePanel header="#{local.newTraveller}">
+
+								<h:panelGrid id="trav" columns="3">
+									<h:outputText value="#{local.firstName}: " />
+									<h:inputText id="traveller_name"
+										value="#{purchaseController.currentTraveller.firstName}" />
+									<h:message for="traveller_name" style="color:red" />
+
+									<h:outputText value="#{local.surname}: " />
+									<h:inputText id="traveller_surname"
+										value="#{purchaseController.currentTraveller.surname}" />
+									<h:message for="traveller_surname" style="color:red" />
+
+									<h:outputText value="#{local.idNumber}: " />
+									<h:inputText id="traveller_id"
+										value="#{purchaseController.currentTraveller.idNumber}" />
+									<h:message for="traveller_id" style="color:red" />
+
+									<h:outputText value="#{local.dateOfBirth}: " />
+									<rich:calendar id="dateOfBirth" datePattern="dd.M.yyyy"
+										value="#{purchaseController.currentTraveller.dateOfBirth}" />
+									<h:message for="dateOfBirth" style="color:red" />
+
+								</h:panelGrid>
+								<br />
+								<h:commandButton id="b2" value="#{local.addToList}"
+									action="#{purchaseController.addTraveller}">
+									<f:ajax execute="@form" update=":trav :results"
+										render="travellerslist trav :results" />
+								</h:commandButton>
+							</rich:collapsiblePanel>
+
+						</h:form> <br /> <br /> <br /></td>
+				</tr>
+			</table>
+			<br />
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

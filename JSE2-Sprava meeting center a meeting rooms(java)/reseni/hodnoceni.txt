@@ -1,0 +1,15 @@
+Pocet bodu
+15
+Hodnocení
+Musim rict, ze je videt, ze jste si s tim dal praci. Par doporuceni:
+
+- Pojmenovavejte veci srozumitelne - addMC neni dobry nazev. Melo by to byt bud addMeetingCenter a nebo add, protoze jsme ve tride MeetingCenter. Dalsi takove pripady jsou mcName atd.
+- Formatujte kod
+- Tohle neni moc hezke:
+REPOSITORY = new File(new File(...
+
+mrknete radsi do prednasky a cviceni na nacitani podle getResourceAsStream a nebo to delejte relativne ke zdrojakum…
+- Celkove to prosim nedelejte v tom statickem bloku… ziskejte si tu cestu k souboru, az kdyz potrebujete, proc by se mela drzet takto celou zivotnost programu?
+- Na ty validace si priste napiste nejake “utils” aka staticke metody v nejake tride a ty volejte. Bude to hezci.
+- To skakani k urcitym navestim mi prijde jako strasne “peklo” a ze to jde urcite napsat lepe :-) Zkuste to priste proste zaridit tak, at to nemusite pouzivat
+- Zkusit popremyslet, jak ten kod udelat kratsi a efektivnejsi… Min casti opakovat a tak

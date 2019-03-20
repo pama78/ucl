@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:ucl="http://www.unicorcollege.cz/JEE/Library">
+<body>
+<ui:composition template="/template/blue_travel.xhtml">
+	<ui:define name="pageTitle">#{local.customerDetail}</ui:define>
+	<ui:define name="metadata">
+		<f:metadata>
+			<f:viewParam name="clientId" value="#{customerController.selectedCustomerId}" required="true"/>
+		</f:metadata>
+	</ui:define>
+	<ui:define name="primaryContent">
+		
+		<h3>#{local.detailsFor} #{customerController.currentCustomer.name}</h3>
+		<rich:panel>
+		  <f:facet name="header">#{local.trips}</f:facet>
+		  <rich:dataGrid value="#{customerController.currentCustomer.contracts}" var="contract">
+		  	<rich:panel rendered="#{contract ne null}">
+		  		<ucl:trip value="#{contract.holiday}" />
+		  	</rich:panel>
+		  </rich:dataGrid>
+        </rich:panel>        
+	</ui:define>
+</ui:composition>
+</body>
+</html>

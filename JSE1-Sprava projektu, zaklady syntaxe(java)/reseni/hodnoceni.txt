@@ -1,0 +1,26 @@
+Pocet bodu 8 Hodnocení
+- Employee ma atributy privatni, ProjectManager a Programmer se k nim nedostane bez getteru/setteru. Asi to z hlediska navrhu neni to, co chcete…
+- Logger - konvence je psat private static a ne static private (at je to private prvni), stejne public static a ne static public
+- jmenne konvence: cur_capacity - tohle neni Javovske. Spravne ma byt curCapacity
+- toto ne:
+int cur_capacity = Company.this.getCapacity();
+
+muzete rovnou pristupovat ke capacity ve tride (pripadne this.capacity)
+
+- programmers.add(c, programmersAvailable.get(c));
+staci programmers.add(programmersAvailable.get(c)); nemusite rikat na jaky index
+
+- toto ne: Company.this.budget
+proste staci this.budget a nebo pouze budget
+
+atd. prosim opravte si to
+
+
+- projectsCurrent.size() == 0, muzete misto toho pouzit metodu isEmpty(), vypada to pak lepe :)
+
+revize 1 Pocet bodu 10
+Hodnocení
+- Zakomentovany kod smazat, nema smysl ho tam mit :)
+- Kdyz jste v dane tride, nemusite pristupovat k private atributum pomoci getteru a setteru, muzete naprimo. Takze ne getCapacity(), ale capacity, pripadne this.capacity (to se pouziva spis v konstruktorech a setterech)
+- projectsWaiting.isEmpty() == false muzete nahradit !projectsWaiting.isEmpty()
+- projectsCurrent.isEmpty() == true staci projectsCurrent.isEmpty()

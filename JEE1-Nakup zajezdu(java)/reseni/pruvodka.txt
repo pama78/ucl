@@ -1,0 +1,11 @@
+	
+Odevzdávám v príloze OBjednávkový systém BT Holiday
+DU1 z predmetu JEE
+
+Obsah dodávky:
+1. xa01_JEE_Pavel_Majer.zip - zdrojové kody
+2. xa01_JEE_InsertFADB.sql - skript na vkládání referencních dat do DB
+3. xa01_JEE_DeleteFADB.sql - skript na procištení dat v DB
+4. JEE DU1 installation gude.docx - instalacní manual
+5. JEE DU1 Test manual.docx - testovací manuál
+6. JEE DU1 release notes.txt - více informací k verzi

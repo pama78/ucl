@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:ucl="http://www.unicorcollege.cz/JEE/Library">
+<h:body>
+<ui:composition template="/template/blue_travel.xhtml">
+	<ui:define name="pageTitle">#{local.clientList}</ui:define>	
+	<ui:define name="primaryContent">
+		<h:form>
+			<h:panelGrid columns="3">
+				<h:outputText value="#{local.surname}: " />
+				<h:inputText value="#{customerController.searchSurname}" />
+				<h:commandButton value="#{local.search}" action="#{customerController.searchCustomers}" >
+					<a4j:ajax execute="@form" render="customers"/>
+				</h:commandButton>
+			</h:panelGrid>
+				
+			<br/>
+			<hr/>
+			<br/>
+			<br/>
+
+				<rich:dataTable id="customers" var="customer"
+					value="#{customerController.customersFound}">
+					<rich:column>
+						<f:facet name="header">#{local.firstName}</f:facet>
+        				#{customer.firstName}
+        			</rich:column>
+					<rich:column>
+						<f:facet name="header">#{local.surname}</f:facet>
+        				#{customer.surname}        	
+					</rich:column>
+					<rich:column>
+						<h:link value="#{local.select}" outcome="show_detail" includeViewParams="true">
+							<f:param name="clientId" value="#{customer.id}"/>
+						</h:link>
+					</rich:column>
+				</rich:dataTable>						
+		</h:form>
+	</ui:define>
+</ui:composition>
+</h:body>
+</html>
