@@ -1,0 +1,14 @@
+28
+Hodnocení
+Rešení vypadá pekne a poskytuje vhodné funkcnosti. Narazil jsem na nekolik nedostatlu, z nichž žádný nebyl výrazne problematický (možná až na nalezení nejbližšího souseda v souradnicích), ackoliv v nekterých prípadech zneefektivnují rešení ci poskytují nepekný kód, viz níže. Samozrejme by bylo vhodnejší trochu více doladit grafickou stránku (umožnit minimálne nekteré výpisy vypnout).
+
+Detailneji:
+- vaše testování nejbližších vrcholu je velmi svérázné - cyklus 1000-krát projet všechny vrcholy. Urcite šlo nahradit nalezením nejbližšího (Eukleidovsky ci ideálne vámi definované geograficky) vrcholu (pak by bylo možné klidne aplikovat práh)
+- neefektivita datových struktur je pri aplikaci Dijsktrova algoritmu znát - byt i hledání predecessora
+- obecne mícháte úkoly a jejich prezentacní logiku - napríklad nalezení cesty a její zobrazení
+- úlohu zobrazení obousmerných hran by mel rešit nejaký renderer na úrovni VisualGraph
+- Máte hodne tendenci slucovat kód a (velké množství) výpisu (to je strukturálne nevhodná technika). Navíc tím není kód vlastne vubec komentován, jelikož tam je množtsví výstupu - až byste je odstranovala (na backendu by mohla být jejich prítomnost nežádoucí), tak bude problém s komentováním.
+- Pozor, že pokud byste spouštela Dijsktru vícekrát, napríklad pro více cílu, potom by již nebyla platná inicializace path_length ve vrcholech (bylo by vhodné ji v metode provést), to samé platí pro status
+- Opet musím trochu nesouhlasit s využitím vizuálních vrcholu místo puvodne zamýšlené "backendové" verze.
+- Jak správne priznáváte, nechala jste kontrolní výpisy. Bylo by vhodné je moci nejak snadno vypnout (prepínac command line) - napríklad pri výpisu vrcholu to není príliš vhodné. Navíc byla v projektu k tomuto úcelu nabídnuta trída loggeru.
+- Z grafického výstupu bych umožnil odstranit množství redundantní informace (o hranách apod.)

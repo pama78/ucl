@@ -1,0 +1,16 @@
+Pocet bodu
+30
+Hodnocení
+Dobrý den,
+rešení splnuje zadání bez výhrad k funkcnosti. Pouze zmíním dva postrehy (nebodované):
+
+V metode pro prirazování projektu programátorum zbytecne "pro každého" programátora znovu trídíte @projects_current.sort! { |a,b| (a.man_days-a.man_days_done) <=> (b.man_days-b.man_days_done) }
+Trídení by stacilo provést jednou.
+
+Druhá vec je, že pokud používáte iteraci pomocí each_with_index tak vám do bloku vstupují dve promenné - prvek a index. Není tedy nutné pristupovat k prvku z kolekce pres index, ale mužete rovnou používat promennou obsahující prvek.
+
+Celkove hodnotím plným poctem bodu
+
+S pozdravem
+
+Pavel Bory

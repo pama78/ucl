@@ -1,0 +1,20 @@
+
+Pocet bodu
+20
+Hodnocení
+## Hodnoceni -- 03_majer_pavel_2 -- _2 ##
+==========================================
+
+- nedavejte pred Nazev odevzdaneho ukolu enter, pak se nazev nepropise do nazvu artefaktu
+
+- nevidim duvod, proc casy prujezdu ulicemi zaokrouhlovat, viz osm2graphviz.rb:188
+- pouziti fronty ve vasem pripade nema zadny benefit oproti prostemu projiti vsech vrcholu -- nikde jinde nez pred samotnym cyklem na utilities.rb:65 uz do fronty nepridavate
+- are_connected je spatne, namisto
+node2.neighbours.each do |neighbour|
+connected_times=connected_times=+1 if node1_neighbour_osms.include? neighbour.osm_id
+end
+musite testovat, jestli node1 je v sousedech node2 nebo naopak, v obojim pripade jsou propojeny hranou
+
+- programovat v Kruskalovi svuj spojovy seznam a potazmo mnozinu byla dost prace navic, ale budiz :), funguje to
+
+19 + 1 = 20
