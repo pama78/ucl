@@ -1,0 +1,26 @@
+Pocet bodu
+28
+Hodnocení
+sort
+- sekv. K1: OK
+- sekv. K2: OK
+- sekv. K3: OK
+- vlastni sort: OK, spravne, takto to melo byt
+
+benchmark
+- odsazujte spravne a konzistentne kod
+- generovani poli: OK
+- kvalita kodu: 
+- vystup do txt: temer dobre, jsou tam navic 2 radky
+
+grafy
+- uplnost: OK, jsou tam vsechny
+- spravnost: OK
+- citelnost a uprava: pekne, dobry napad s vyriznutim vysokych hodnot IS
+
+textove zhodnoceni
+- vyborne, takto jsem si to predstavoval: predpokladane chovani i zhodnoceni namerenych casu spolu koresponduje a vhodne se doplnuje.
+
+Celkem 28/28
+
+Vysledky testu: http://www.ms.mff.cuni.cz/~bajel3am/temp/ucl/alg2016_hw2pt/

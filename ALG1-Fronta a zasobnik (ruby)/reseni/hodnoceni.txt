@@ -1,0 +1,30 @@
+Pocet bodu
+19
+Hodnocení
+- dodrzujte spravne odsazeni kodu
+
+BA
+- proc nekde pouzivate syntaxi a[1] = xyz a pak jinde a.[]= 1, xyz ?
+- zrychlit bitove operace by slo kdyz byste udelala posun v insert/delete po celych bytech, ne po jednotlivych bitech
+- jinak v poradku, zadny problem, diky
+- 6/6
+
+SLL
+- insert_before() pri vkladani na zacatek nevraci vlozenou polozku, ale nil
+- insert_after() zase vraci vkladany object, ne cely LLItem
+- insert() a delete_at() prochazi seznam zbytecne 2x (skrz get_item)
+- jinak OK
+- 6/6
+
+queue
+- naucte se pouzivat operaci modulo -- je rychlejsi nez if
+- jinak OK
+- 4/4
+
+stack
+- spravne, strucne, jasne
+- 4/4
+
+Dekuji, snad vam to neco dalo.
+
+Celkem 19/19 (jeden bod je bonusovy, ale ne pres maximum)

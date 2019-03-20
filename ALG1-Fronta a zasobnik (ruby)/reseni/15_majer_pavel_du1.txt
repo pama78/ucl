@@ -1,0 +1,195 @@
+## Test results -- 15_majer_pavel_du1 -- du1 ##
+==========================================
+
+
+
+
+==========================================
+=  FILE:  /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/boolean_array_test_lb.rb
+==========================================
+Run options: --seed 39651
+
+# Running:
+
+.........
+++++++++++++++++++++++++++++++++++
++ BooleanArray.unshift/append: 0.27865722099977575
++ Array.unshift/append: 0.0008292950005852617
+++++++++++++++++++++++++++++++++++
+.
+++++++++++++++++++++++++++++++++++
++ BooleanArray.find: 0.0004426539999258239
++ Array.find: 2.207000034104567e-05
+++++++++++++++++++++++++++++++++++
+.
+++++++++++++++++++++++++++++++++++
++ BooleanArray.append: 0.0015933599997879355
++ Array.append: 0.00011866000022564549
+++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++
++ BooleanArray.delete_at: 0.2780057410000154
++ Array.delete_at: 0.00017746599951351527
+++++++++++++++++++++++++++++++++++
+.
+++++++++++++++++++++++++++++++++++
++ BooleanArray.insert: 0.28562256900022476
++ Array.insert: 0.00035011399995710235
+++++++++++++++++++++++++++++++++++
+.
+
+Finished in 0.859799s, 15.1198 runs/s, 1232.8458 assertions/s.
+
+13 runs, 1060 assertions, 0 failures, 0 errors, 0 skips
+
+
+
+
+
+
+
+==========================================
+=  FILE:  /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/queue_test_lb.rb
+==========================================
+Run options: --seed 58415
+
+# Running:
+
+
+++++++++++++++++++++++++++++++++++
++ BooleanArrayQueue (STUDENT): 0.007615284999701544
++ BooleanArrayQueue (reference): 0.007936553000035929
++
++ !!!! Woooooow !!!! Goood job! ... < 1.3 times worse :)
++
+++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++
++ SinglyListQueue (STUDENT): 0.006290469999839843
++ SinglyListQueue (reference): 0.004942595000102301
++
++ !!!! Woooooow !!!! Goood job! ... < 1.3 times worse :)
++
+++++++++++++++++++++++++++++++++++
+....
+
+Finished in 0.036929s, 108.3149 runs/s, 622.8109 assertions/s.
+
+4 runs, 23 assertions, 0 failures, 0 errors, 0 skips
+
+
+
+
+
+
+
+==========================================
+=  FILE:  /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb
+==========================================
+Run options: --seed 54274
+
+# Running:
+
+
+++++++++++++++++++++++++++++++++++
++ SSL.delete_at: 0.005251787999441149
++ Array.delete_at: 6.732699966960354e-05
+++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++
++ SSL.append: 0.0005908580005780095
++ Array.append: 6.844499966973672e-05
+++++++++++++++++++++++++++++++++++
+..
+++++++++++++++++++++++++++++++++++
++ SSL.insert/insert_before/insert_after: 0.014022592999936023
++ Array.insert/insert_before/insert_after: 0.003586068000004161
+++++++++++++++++++++++++++++++++++
+...
+Test remove_item() NIL:
+E
+Test insert_after() NIL:
+E...
+++++++++++++++++++++++++++++++++++
++ SSL.find: 0.019735889999537903
++ Array.find: 0.009380592000525212
+++++++++++++++++++++++++++++++++++
+......
+Test insert_before() NIL:
+E..
+++++++++++++++++++++++++++++++++++
++ SSL.append: 0.0003163109995512059
++ Array.append: 7.996800013643224e-05
+++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++
++ SSL.unshift: 0.0002778289999696426
++ Array.unshift: 9.260899969376624e-05
+++++++++++++++++++++++++++++++++++
+..
+
+Finished in 0.096801s, 216.9394 runs/s, 11094.9031 assertions/s.
+
+  1) Error:
+SinglyLinkedListTest#test_remove_item_nil:
+WrongListException: Item  not member of list #<SinglyLinkedList:0x0000000127e100>
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list.rb:131:in `remove_item'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:163:in `block in test_remove_item_nil'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:323:in `nil_call_test'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:162:in `test_remove_item_nil'
+
+
+  2) Error:
+SinglyLinkedListTest#test_insert_after_nil:
+WrongListException: Item  not member of list #<SinglyLinkedList:0x000000019ec2e8>
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list.rb:107:in `insert_after'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:138:in `block in test_insert_after_nil'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:323:in `nil_call_test'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:137:in `test_insert_after_nil'
+
+
+  3) Error:
+SinglyLinkedListTest#test_insert_before_nil:
+WrongListException: Item  not member of list #<SinglyLinkedList:0x0000000154b838>
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list.rb:88:in `insert_before'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:121:in `block in test_insert_before_nil'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:323:in `nil_call_test'
+    /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/singly_linked_list_test_lb.rb:120:in `test_insert_before_nil'
+
+21 runs, 1074 assertions, 0 failures, 3 errors, 0 skips
+
+
+
+
+
+
+
+==========================================
+=  FILE:  /mnt/win/new/doc/business/unicorn/alg/2016/hw1_pt/15_majer_pavel_du1/stack_test_lb.rb
+==========================================
+Run options: --seed 5102
+
+# Running:
+
+.
+++++++++++++++++++++++++++++++++++
++ BooleanArrayStack (STUDENT): 0.020705428999463038
++ BooleanArrayStack (reference): 0.02469483000004402
++
++ !!!! Woooooow !!!! Goood job! ... < 1.3 times worse :)
++
+++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++
++ SinglyListStack (STUDENT): 0.011724603999937244
++ SinglyListStack (reference): 0.009008482999888656
+++++++++++++++++++++++++++++++++++
+...
+
+Finished in 0.074922s, 53.3890 runs/s, 226.9034 assertions/s.
+
+4 runs, 17 assertions, 0 failures, 0 errors, 0 skips
+
+
+
+
