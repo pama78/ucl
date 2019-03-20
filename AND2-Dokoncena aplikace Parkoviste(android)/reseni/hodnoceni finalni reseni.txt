@@ -1,0 +1,27 @@
+CKPNT3 - ALFA VERZE
+Pocet bodu 10
+Hodnocení
+* U toho detailu by chtelo zobrazit šipku zpet - jako v hierarchii
+* Jak to funguje s tím Configure parking? Zkouším validate, ale nic to nedelá…
+Super za integraci s Firebase!
+
+Pocet bodu
+38+5
+Hodnocení
+* Prezentace vzhledem k casovým okolnostem není, máš tedy rovnou +5 bodu
+* Zbylo ti tam Settings v menu
+* Chtelo by uklidit v projektu
+
+
+* 5 obrazovek 10/10
+* Hlavni menu 4/4
+* Seznam 2/2
+* Lokalni uloziste 0/4
+* Stahnuti dat 4/4
+* Sdileni 2/2
+* Stahnuti obrazku 2/2
+* Stylovani 1/2 - Alespon neco by to chtelo, ale máš ikonu...
+* Neseka, nepada 4/4
+* Kvalita kodu 3/4
+* Neco specialniho 4/4
+* Dojem z aplikace 2/3 - Chtelo by to ješte doladit :-)

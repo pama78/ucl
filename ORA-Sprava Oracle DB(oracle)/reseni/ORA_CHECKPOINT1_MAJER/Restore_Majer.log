@@ -1,0 +1,151 @@
+ 8a) rman - pokus o restore souboru
+			C:\Users\pavelma\ora>rman
+			Recovery Manager: Release 12.2.0.1.0 - Production on Wed Jan 17 22:19:31 2018
+			Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+			RMAN> connect target /
+			connected to target database: PAMATEST (DBID=1916084427, not open)
+
+			RMAN> restore datafile 'C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF';
+
+			Starting restore at 17-JAN-18
+			using channel ORA_DISK_1
+
+			channel ORA_DISK_1: starting datafile backup set restore
+			channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+			channel ORA_DISK_1: restoring datafile 00013 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF
+			channel ORA_DISK_1: reading from backup piece C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BACKUP\05SOUBTL_1_1
+			channel ORA_DISK_1: piece handle=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BACKUP\05SOUBTL_1_1 tag=TAG20180117T215252
+			channel ORA_DISK_1: restored backup piece 1
+			channel ORA_DISK_1: restore complete, elapsed time: 00:00:02
+			Finished restore at 17-JAN-18
+
+			RMAN> recover datafile 'C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF';
+
+			Starting recover at 17-JAN-18
+			using channel ORA_DISK_1
+
+			starting media recovery
+			media recovery complete, elapsed time: 00:00:00
+
+			Finished recover at 17-JAN-18
+
+      >> soubor existuje: BAR_05.DBF
+
+   8b) start db
+   RMAN> alter database open;
+   Statement processed
+   RMAN>
+		
+	 8c) pripojeni do db -- recovery s posledni zmenou po backupu (takze neslo o cold recovery)
+				SQL>  select * from katalog;
+			 SQL> select * from katalog;
+
+        ID NAZEV                                CENA
+       --- ------------------------------ ----------
+         4 Sv!Yková                                0
+         5 Rajská                                  0
+         6 Frankfurtská                            0
+		
+		8d) start
+		SQL> shutdown immediate
+			Database closed.
+			Database dismounted.
+			ORACLE instance shut down.
+			SQL> startup nomount
+			ORACLE instance started.
+
+			Total System Global Area  964689920 bytes
+			Fixed Size                  8753816 bytes
+			Variable Size             369102184 bytes
+			Database Buffers          578813952 bytes
+			Redo Buffers                8019968 bytes
+			SQL>
+		
+		8e) restore z backupu
+		  C:\Users\pavelma\ora>rman target /
+			Recovery Manager: Release 12.2.0.1.0 - Production on Wed Jan 17 22:49:46 2018
+			Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+			connected to target database: PAMATEST (not mounted)
+			RMAN> restore controlfile from 'C:\ORACLE\BACKUP\FLASH_RECOVERY_AREA\PAMATEST\AUTOBACKUP\2018_01_17\O1_MF_S_965683646_F5ZG3NCO_.BKP';
+
+			Starting restore at 17-JAN-18
+			using target database control file instead of recovery catalog
+			allocated channel: ORA_DISK_1
+			channel ORA_DISK_1: SID=260 device type=DISK
+
+			channel ORA_DISK_1: restoring control file
+			channel ORA_DISK_1: restore complete, elapsed time: 00:00:01
+			output file name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\CONTROL01.CTL
+			output file name=C:\USERS\PAVELMA\DOCUMENTS\FAST_RECOVERY_AREA\PAMATEST\CONTROL02.CTL
+			Finished restore at 17-JAN-18
+
+			RMAN>
+		  RMAN> alter database mount;
+
+			Statement processed
+			released channel: ORA_DISK_1
+
+			RMAN> restore database;
+
+			Starting restore at 17-JAN-18
+			Starting implicit crosscheck backup at 17-JAN-18
+			allocated channel: ORA_DISK_1
+			channel ORA_DISK_1: SID=260 device type=DISK
+			Crosschecked 7 objects
+			Finished implicit crosscheck backup at 17-JAN-18
+
+			Starting implicit crosscheck copy at 17-JAN-18
+			using channel ORA_DISK_1
+			Finished implicit crosscheck copy at 17-JAN-18
+
+			searching for all files in the recovery area
+			cataloging files...
+			cataloging done
+
+			List of Cataloged Files
+			=======================
+			File Name: C:\ORACLE\BACKUP\FLASH_RECOVERY_AREA\PAMATEST\AUTOBACKUP\2018_01_17\O1_MF_S_965683646_F5ZG3NCO_.BKP
+
+			using channel ORA_DISK_1
+
+			channel ORA_DISK_1: starting datafile backup set restore
+			channel ORA_DISK_1: specifying datafile(s) to restore from backup set
+			channel ORA_DISK_1: restoring datafile 00001 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\SYSTEM01.DBF
+			channel ORA_DISK_1: restoring datafile 00003 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\SYSAUX01.DBF
+			channel ORA_DISK_1: restoring datafile 00005 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\UNDOTBS01.DBF
+			channel ORA_DISK_1: restoring datafile 00007 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\USERS01.DBF
+			channel ORA_DISK_1: restoring datafile 00008 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\WORKSHOP01.DBF
+			channel ORA_DISK_1: restoring datafile 00009 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\ZOO_01.DBF
+			channel ORA_DISK_1: restoring datafile 00010 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_01.DBF
+			channel ORA_DISK_1: restoring datafile 00011 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_02.DBF
+			channel ORA_DISK_1: restoring datafile 00012 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_03.DBF
+			channel ORA_DISK_1: restoring datafile 00013 to C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF
+			channel ORA_DISK_1: reading from backup piece C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BACKUP\05SOUBTL_1_1
+			channel ORA_DISK_1: piece handle=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BACKUP\05SOUBTL_1_1 tag=TAG20180117T215252
+			channel ORA_DISK_1: restored backup piece 1
+			channel ORA_DISK_1: restore complete, elapsed time: 00:00:25
+			Finished restore at 17-JAN-18
+
+			RMAN> alter database open;
+
+			RMAN-00571: ===========================================================
+			RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+			RMAN-00571: ===========================================================
+			RMAN-03002: failure of sql statement command at 01/17/2018 22:55:26
+			ORA-01589: must use RESETLOGS or NORESETLOGS option for database open
+
+			RMAN> alter database open resetlogs;
+
+			Statement processed
+
+			RMAN>
+		
+		SQL> select * from katalog;
+        ID NAZEV                                CENA
+    ------ ------------------------------ ----------
+         4 Sv!Yková                              130
+         5 Rajská                                120
+         6 Frankfurtská                          105
+    
+    >> uz nejsou videt ty puvodni nuly
+	

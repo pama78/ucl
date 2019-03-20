@@ -1,0 +1,168 @@
+USER is "PAVEL5"
+"drop tables" 
+drop table stul
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+drop table katalog
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+drop table objednavka
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+drop sequence objednavka_seq
+              *
+ERROR at line 1:
+ORA-02289: sequence does not exist 
+
+
+drop sequence stul_seq
+              *
+ERROR at line 1:
+ORA-02289: sequence does not exist 
+
+
+drop sequence katalog_seq
+              *
+ERROR at line 1:
+ORA-02289: sequence does not exist 
+
+
+drop synonym obj
+             *
+ERROR at line 1:
+ORA-01434: private synonym to be dropped does not exist 
+
+
+drop view aktualni_objednavky
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+"create tables"
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+"create seq"
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Commit complete.
+
+"create triggers"
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+"create synonym"
+
+Synonym created.
+
+"create view"
+
+View created.
+
+
+Commit complete.
+
+"insert data"
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+        ID NAZEV                                CENA                            
+---------- ------------------------------ ----------                            
+         1 Svíeková                              130                            
+         2 Rajská                                120                            
+         3 Frankfurtská                          105                            
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+        ID NAZEV                                                                
+---------- ------------------------------                                       
+         1 Salonek 1                                                            
+         2 Salonek 2                                                            
+         3 Salonek 3                                                            
+         4 Bar 1                                                                
+         5 Bar 2                                                                
+
+
+no rows selected
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+VYTVORENO             CEKA_MIN STUL                           POLOZKA                              CENA                                                                                                 
+------------------- ---------- ------------------------------ ------------------------------ ----------                                                                                                 
+17/01/2018 15:28:18          0 Salonek 1                      Svíeková                              130                                                                                                 
+17/01/2018 15:28:18          0 Salonek 1                      Rajská                                120                                                                                                 
+17/01/2018 15:28:18          0 Salonek 2                      Rajská                                120                                                                                                 
+17/01/2018 15:28:18          0 Salonek 3                      Frankfurtská                          105                                                                                                 
+17/01/2018 15:28:18          0 Salonek 3                      Rajská                                120                                                                                                 
+
+
+Commit complete.
+

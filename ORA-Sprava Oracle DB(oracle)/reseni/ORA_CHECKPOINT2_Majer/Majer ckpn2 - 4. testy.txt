@@ -1,0 +1,118 @@
+-
+- test se sklada z vice casti:
+-   1. test logovani
+-   2. test vkladani noveho actuatoru
+-   3. test rozpadu requestu (u hierarchickych requestu dojde k rozpadu a vlozeni zpatky do tabulky request
+-
+
+set feedback off
+set head off
+
+-- test logovani
+    BEGIN    
+      log_pkg.nastav_debug ('1'); 
+    END;
+    /
+    select CASE  WHEN hodnota =1 THEN 'test logovani1- debug=>1 [OK]'  ELSE 'test logovani1- debug=>1 [ERROR]'   END Status
+    from (SELECT hodnota from config_table);
+
+   
+    BEGIN 
+      log_pkg.nastav_debug ('0'); 
+    END;
+    /
+    select CASE  WHEN hodnota =0 THEN 'test logovani2- debug=>0 [OK]'  ELSE 'test logovani1- debug=>0 [ERROR]'   END Status
+    from (SELECT hodnota from config_table);
+
+    
+    delete from log_table;
+    BEGIN
+      log_pkg.nastav_debug ('0');
+      log_pkg.info('info log 1');
+      log_pkg.debug ('debug log 1');
+      log_pkg.error ('error log 1');
+    END;
+    /
+
+    select CASE  WHEN cnt = 1 THEN 'test logovani3- jedna chybova hlaska [OK]'  ELSE 'test logovani3- jedna chybova hlaska [ERROR]'   END Status
+    from (select count(*) cnt from log_table where typ='E' );
+
+    select CASE  WHEN cnt = 3 THEN 'test logovani4- tri informativni hlasky [OK]'  ELSE 'test logovani4- nejsou tri informativni hlasky [ERROR]'   END Status
+    from (select count(*) cnt from log_table where typ='I' );
+
+    select CASE  WHEN cnt = 0 THEN 'test logovani5- zadna debug hlaska [OK]'  ELSE 'test logovani4- zadna debug hlaska [ERROR]'   END Status
+    from (select count(*) cnt from log_table where typ='D' );
+
+    BEGIN
+      log_pkg.nastav_debug ('1');
+      log_pkg.info('infolog 2');
+      log_pkg.debug ('debug log 2');
+      log_pkg.error ('error log 1');
+    END;
+    /
+    select CASE  WHEN cnt = 2 THEN 'test logovani6- dve chybove hlasky [OK]'  ELSE 'test logovani6- nejsou dve chybove hlasky [ERROR]'   END Status
+    from (select count(*) cnt from log_table where typ='E' );
+
+    select CASE  WHEN cnt = 6 THEN 'test logovani7- sest informativnich hlasek [OK]'  ELSE 'test logovani7- neni sest informativnich hlasek [ERROR]'   END Status
+    from (select count(*) cnt from log_table where typ='I' );
+
+    select CASE  WHEN cnt = 1 THEN 'test logovani8- jedna debug hlaska [OK]'  ELSE 'test logovani8- neni jedna debug hlaska [ERROR]'   END Status
+    from (select count(*) cnt from log_table where typ='D' );
+
+------- 
+ 
+-- novy actuator, automaticky smazany
+  commit
+  
+    DECLARE
+      actuator_id NUMBER;
+    BEGIN
+      actuator_id := actuator_mgmt.new_actuator('jmeno','lokace2w', 'iotjmeno3w32','iotpwwath2');
+      DBMS_OUTPUT.PUT_LINE('inserted actuator: '|| actuator_id);
+      actuator_mgmt.delete_actuator(actuator_id);
+      DBMS_OUTPUT.PUT_LINE('deleted actuator: '|| actuator_id);
+    END;
+    /
+    
+    
+--handlovani requestu
+   delete from request;
+   delete from request_history;
+   Insert into REQUEST  (REQUEST_ID, USER_ID, REQUEST_DATE, REQUEST_STATUS, ACTION_ID)  Values  (5, 'Pavel', TO_DATE('01/29/2018 11:53:38', 'MM/DD/YYYY HH24:MI:SS'), 'NEW', 15);
+   COMMIT;
+
+   select CASE  WHEN cnt = 1 THEN 'test handlovani requestu - 1 kus [OK]'  ELSE 'test handlovani requestu - neni ocekavany 1 kus [ERROR]'   END Status
+   from (select count(*) cnt from request );
+
+-- rozpad pozadavku
+
+declare
+  returnvalue number;
+BEGIN
+       REQUEST_ROZPAD('System',returnvalue);
+       if returnvalue = 5 then
+        DBMS_OUTPUT.PUT_LINE( 'REQUEST_ROZPAD - vlozen ocekavany pocet radek: ' ||returnvalue);
+       else
+        DBMS_OUTPUT.PUT_LINE( 'REQUEST_ROZPAD - vlozen neocekavany pocet radek. ocekavano: 5, a pridano: ' ||returnvalue);
+       end if;
+END;
+/
+
+--rollback
+--select * from request;
+
+
+ select CASE  WHEN request_status  = 'TAKEN' THEN 'test handlovani requestu - stary request -> TAKEN [OK]'  ELSE 'test handlovani requestu - stary request -> TAKEN [ERROR]'   END Status
+   from (select request_status from request where request_id = 5);
+
+   select CASE  WHEN request_status   = 'NEW' THEN 'test handlovani requestu - stary request -> REQUEST_HISTORY [OK]'  ELSE 'test handlovani requestu - stary request -> REQUEST_HISTORY [ERROR]'   END Status
+   from (select request_status from request_history where request_id = 5);
+
+   select CASE  WHEN cnt  = 4 THEN 'test handlovani requestu - nove 4 requesty pro jednotlive aktuatory [OK]'  ELSE 'test handlovani requestu - nove 4 requesy pro jednotlive aktuatory  [ERROR]'   END Status
+   from (select count (*) cnt from request where request_group_id = 5);
+
+--SELECT child_id FROM actuator_group_hierarchy  START WITH father_id = 1 CONNECT BY prior child_id = father_id
+--select * from requesT
+--select * from action where action_id = 15
+     
+     commit;

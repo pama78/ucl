@@ -1,0 +1,26 @@
+Název
+Odevzdávám ucl_android_03_majer_pavel.zip
+Uvedte strucný název úkolu, ke kterému odesíláte rešení. Napr. domácí úkol 1, semestrální projekt apod.
+Rešení
+Odevzdávám ucl_android_03_majer_pavel.zip
+
+Puvodni pozadavky:
+1. Bude mít alespon 5 obrazovek - OK
+2. Bude obsahovat ekvivalent hlavního menu (taby, Navigation Drawer, menu v Actionbaru, atd.) - OK
+3. Bude obsahovat alespon jeden seznam (komponenta ListView) - zeznam parkovacich mist po kliknuti na parkoviste - ok
+4. Bude umet nejakým zpusobem lokálne uložit data (malá data = SharedPreferences, velká data = databáze) - zatim neobsahuje
+5. Bude umet stáhnout nejaká data z internetu z JSON souboru - stahuji obrazek a json z Firebase, pak z nej delam obekty - OK
+6. Bude umet neco sdílet (email, facebook, ..) - OK, email s feedbackem
+7. Bude umet zobrazit alespon jeden obrázek z internetu (treba uživatele z Gravataru?) - v okne - o projektu je pres picassa nactene logo skoly
+8. Bude nejakým zpusobem nastylovaná (vlastní barvy, atd.) - zadna hitparada, ale myslim ze menu je zelene a je tam ikonka auticka - urcite by to slo lepe
+8. Muže bežet na Android 4.1 a výše - OK
+
+planovane vylepseni
+1. zobrazit ze nejsem pripojeny do webu 
+2. na predni strance zobrazit aktualni stav volnych mist - na to mam vyhrazeny jiny atribut ve firebase
+3. ukladani dat (databaze, shared preferences)
+
+mel jsem zasek na propojeni firebase, ale nakonec jsem to zlomil
+
+diky za komentare a pekny vecer :-)
+Pavel

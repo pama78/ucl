@@ -1,0 +1,43 @@
+
+
+CKPNT1: 
+Pocet bodu 45
+Hodnocení
+Dobrý den,
+U exp jste exportoval pouze schéma PAVEL5 (zadání bylo celou DB). K exportu celé DB byste se mel prihlásit jako SYSTEM a zvolit parametr "FULL=Y". Toto je jediná vec, kterou jsem našel a nesplnuje zadání.
+
+Drobné pripomínky:
+COMMIT u DDL príkazu není potreba (viz soubor "system_Majer.sql") - není chybou samozrejme. 
+Koukal jsem, že jste si vytvoril i novou DIRECTORY pro EXPDP/IMPDP. 
+Použil jste restore pouze datafile nikoliv celé DB, což chválím, že je jiný zpusob než bylo na workshopu. 
+
+Velmi pekný popis jednotlivých kroku a velmi pekné scénáre. Zatím nejlepší práce, co jsem opravoval.
+
+Prihlédl jsem k Vašemu zpracování a prestože nebyl exp úplne dobre, tak hodnotím plným poctem bodu.
+
+Radost opravovat. Dekuji a preji mnoho dalších úspechu.
+S pozdravem
+
+
+CKPNT2:
+Pocet bodu
+42
+Hodnocení
+Dobrý den,
+
+oproti zadání semestrální práce Vám tam chybí použití funkce (mimo package), TYPE (ROWTYPE nebylo myšleno, chtelo se vytvorení vlastního typu) a TABLE OF.
+
+Co se týce napsaného kódu, tak bych mel pár menších nápadu:
+LOG_PKG - pro naplnení globální promenné g_isDebug musí uživatel spustit proceduru nastav_debug. Lepší by bylo nastavení hodnoty rovnou pri inicializaci PKG v sekce CREATE PACKAGE... BEGIN <nastaveni globalni promenne> END; Pak máte zaruceno, že máte hodnotu naplnenou podle konfigurace. Jinak dobre, že máte volání z konfiguracní tabulky. Soucástí procedury nastav_debug máte COMMIT. Nedoporucuji psát COMMIT uvnitr kódu (samozrejme mimo autonomní transsakci), nebot daný commit muže potvrdit i zmeny, které byly provedeny pred tímto voláním a volající je ješte nepotvrdil a treba je bude chtít odvolat. Rízení COMMIT/ROLLBACK je lepší delat na úrovni volajícího.
+
+Nejaké další rady moc nemám, protože nerozumím natolik problematice, abych si dovolil radit. Používáte zajímavé konstrukce. Není asi moc vhodné použití privátní promennouo tot_actuators v package actuator_mgmt, protože každá nová session zacíná na NULL a v prípade, že mažete záznam/y, tak nevíte kolik jste jich smazal a odecítáte -1 (je možné využít SQL%ROWCOUNT. Ale neberu to jako nejakou zásadní funkcnost.
+
+Ohledne logování se dá napsat také spoustu kódu. Dá se logovat kdo to udelal, kdy to udelal, z jakého místa kódu nastala chyba atd. Ale rekl bych, že je to základ, bez kterého se nedá psát, resp. ladit ci dohledávat chyby v kódu. Logování beru jako nezbytnou funkcnost pro programování, takže máte dobrý základ.
+
+Velmi pekná práce. Hodnotím 42b.
+
+Dekuji a preji hodne štestí u zkoušky prípadne s dalším DB programováním.
+
+S pozdravem
+
+Vojtech Kastner

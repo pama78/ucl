@@ -1,0 +1,120 @@
+--navic CONFIG_TABLE a LOG_TABLE
+--pole REQUEST.request_group_id
+
+--cistka
+    ALTER TABLE actuator_status drop CONSTRAINT actuator_status_pk ;
+    ALTER TABLE actuator_status_history drop CONSTRAINT ash_id_pk;
+    ALTER TABLE request drop CONSTRAINT request_action_fk;
+    ALTER TABLE request_history drop CONSTRAINT request_history_action_fk;
+    ALTER TABLE aga drop CONSTRAINT AGA_Actuator_Group_FK;
+    ALTER TABLE aga drop CONSTRAINT aga_actuator_fk;
+    ALTER TABLE actuator_status drop CONSTRAINT as_actuator_fk ;
+    ALTER TABLE action drop CONSTRAINT action_actuator_fk ;
+    ALTER TABLE action drop CONSTRAINT action_actuator_group_fk;
+    ALTER TABLE actuator_status_history drop CONSTRAINT actuator_fk;
+    ALTER TABLE actuator_group_hierarchy drop CONSTRAINT actuator_id_child_fk;
+    ALTER TABLE actuator_group_hierarchy drop CONSTRAINT actuator_id_father_id_fk;
+    ALTER TABLE rule drop CONSTRAINT rule_action_fk;
+    ALTER TABLE rule drop CONSTRAINT rule_sensor_fk;
+    ALTER TABLE sensor drop CONSTRAINT sensor_sensor_type_fk;
+    ALTER TABLE sensor_status_history drop CONSTRAINT SSH_sensor_fk;
+    ALTER TABLE sensor_status drop CONSTRAINT sensor_status_sensor_fk;
+
+    drop table action;
+    drop table actuator;
+    drop table actuator_group ;
+    drop table actuator_group_hierarchy ;
+    drop table actuator_status;
+    drop table actuator_status_history ; 
+    drop table aga ;
+    drop table rule ;
+    drop table sensor ;
+    drop table sensor_status  ;
+    drop table sensor_status_history ;
+    drop table sensor_type ;
+    drop table request ;
+    drop table request_history;
+    drop table log_table ;
+    drop table config_table ;
+
+    drop sequence SSH_ID_seq;
+    drop sequence ASH_ID_seq;
+    drop sequence AGH_ID_seq;
+    drop sequence Request_id_seq;
+    drop sequence sensor_status_sensor_status_id;
+    drop SEQUENCE actuator_id_seq ;
+    drop sequence log_table_seq;
+
+-- tvorba tabulek
+create table log_table ( id number, cas date, typ char(1), text varchar2(255));
+create table config_table ( parametr varchar2(60), hodnota varchar2(255));
+ALTER TABLE config_table ADD CONSTRAINT parametr_pk PRIMARY KEY ( parametr );
+
+CREATE TABLE action ( action_id NUMBER NOT NULL, action_name VARCHAR2(255), message VARCHAR2(255), actuator_actuator_id  NUMBER, actuator_group_ag_id NUMBER);
+ALTER TABLE action ADD CONSTRAINT action_pk PRIMARY KEY ( action_id );
+
+CREATE TABLE actuator (actuator_id NUMBER NOT NULL, name VARCHAR2(255) NOT NULL, iot_path VARCHAR2(255), iot_name VARCHAR2(255), location_path VARCHAR2(255));
+ALTER TABLE actuator ADD CONSTRAINT actuator_pk PRIMARY KEY ( actuator_id );
+ALTER TABLE actuator ADD CONSTRAINT actuator_name_un UNIQUE ( name );
+
+CREATE TABLE actuator_group ( ag_id     NUMBER NOT NULL, ag_name   VARCHAR2(255), ag_weigth NUMBER);
+ALTER TABLE actuator_group ADD CONSTRAINT actuator_group_pk PRIMARY KEY ( ag_id );
+ALTER TABLE actuator_group ADD CONSTRAINT check_ag_weigth   CHECK (ag_weigth BETWEEN 1 and 9999);
+   
+CREATE TABLE actuator_group_hierarchy (agh_id      NUMBER NOT NULL,father_id   NUMBER NOT NULL, child_id    NUMBER NOT NULL);
+ALTER TABLE actuator_group_hierarchy ADD CONSTRAINT agh_id_pk PRIMARY KEY ( agh_id );
+
+CREATE TABLE actuator_status ( actuator_id NUMBER NOT NULL, status VARCHAR2(30), status_reason VARCHAR2(30), status_date DATE);
+ALTER TABLE actuator_status ADD CONSTRAINT actuator_status_pk PRIMARY KEY ( actuator_id );
+
+CREATE TABLE actuator_status_history (ash_id NUMBER NOT NULL, actuator_id NUMBER, status VARCHAR2(30), status_reason VARCHAR2(30), status_date DATE);
+ALTER TABLE actuator_status_history ADD CONSTRAINT ash_id_pk PRIMARY KEY ( ash_id );
+
+CREATE TABLE aga ( ag_id   NUMBER NOT NULL, actuator_id    NUMBER NOT NULL);
+ALTER TABLE aga ADD CONSTRAINT aga_pk PRIMARY KEY ( ag_id,actuator_id );
+
+CREATE TABLE rule ( rule_id NUMBER NOT NULL, rule_name VARCHAR2(255) NOT NULL, sensor_id NUMBER NOT NULL, range_from NUMBER(2), range_to NUMBER(2), action_id NUMBER,  is_active CHAR(1));
+ALTER TABLE rule ADD CONSTRAINT rule_pk PRIMARY KEY ( rule_id,sensor_id );
+
+CREATE TABLE sensor ( sensor_id NUMBER NOT NULL, sensor_name VARCHAR2(255) NOT NULL, iot_path VARCHAR2(255), iot_name VARCHAR2(255), location_path   VARCHAR2(255), sensor_type_id NUMBER NOT NULL);
+ALTER TABLE sensor ADD CONSTRAINT sensor_id_pk PRIMARY KEY ( sensor_id );
+ALTER TABLE sensor ADD CONSTRAINT sensor_name_un UNIQUE ( sensor_name );
+CREATE TABLE sensor_status ( sensor_id NUMBER NOT NULL, sensor_value NUMBER(2), sensor_status VARCHAR2(30), update_date DATE);
+
+CREATE TABLE sensor_status_history ( ssh_id NUMBER NOT NULL,  sensor_id NUMBER, sensor_value  NUMBER(2), sensor_status  VARCHAR2(30), update_date    DATE);
+CREATE TABLE sensor_type ( sensor_type_id     NUMBER NOT NULL, sensor_type_name   VARCHAR2(30));
+CREATE TABLE request (request_id NUMBER NOT NULL, user_id VARCHAR2(30),  request_date DATE, request_status   VARCHAR2(15), action_id  NUMBER NOT NULL);
+CREATE TABLE request_history ( request_id  NUMBER NOT NULL, user_id VARCHAR2(30), request_date DATE,  request_status   VARCHAR2(15),   action_id        NUMBER);
+ALTER TABLE REQUEST ADD request_group_id number;
+ALTER TABLE REQUEST_HISTORY ADD request_group_id number;
+
+ALTER TABLE sensor_status_history ADD CONSTRAINT sensor_status_history_pk PRIMARY KEY ( ssh_id );
+ALTER TABLE request ADD CONSTRAINT request_pk PRIMARY KEY ( request_id );
+ALTER TABLE request ADD CONSTRAINT request_action_fk FOREIGN KEY ( action_id )    REFERENCES action ( action_id );
+alter table log_table add constraint log_table_pk primary key (id);
+ALTER TABLE request_history ADD CONSTRAINT request_history_action_fk FOREIGN KEY ( action_id )    REFERENCES action ( action_id );
+ALTER TABLE request ADD CONSTRAINT Reqiest_status_CK  CHECK (request_status IN ('NEW', 'TAKEN', 'PROCESSED','FAILED' ));
+ALTER TABLE request_history ADD CONSTRAINT Reqiest_history_status_CK  CHECK (request_status IN ('NEW', 'TAKEN', 'PROCESSED','FAILED' ));
+ALTER TABLE sensor_type ADD CONSTRAINT sensor_type_pk PRIMARY KEY ( sensor_type_id );
+ALTER TABLE aga ADD CONSTRAINT AGA_Actuator_Group_FK FOREIGN KEY ( ag_id )   REFERENCES actuator_group ( ag_id );
+ALTER TABLE aga ADD CONSTRAINT aga_actuator_fk FOREIGN KEY ( actuator_id )     REFERENCES actuator ( actuator_id );
+ALTER TABLE actuator_status ADD CONSTRAINT as_actuator_fk FOREIGN KEY ( actuator_id )     REFERENCES actuator ( actuator_id );
+ALTER TABLE action ADD CONSTRAINT action_actuator_fk FOREIGN KEY ( actuator_actuator_id )     REFERENCES actuator ( actuator_id );
+ALTER TABLE action ADD CONSTRAINT action_actuator_group_fk FOREIGN KEY ( actuator_group_ag_id )     REFERENCES actuator_group ( ag_id );
+ALTER TABLE actuator_status_history ADD CONSTRAINT actuator_fk FOREIGN KEY ( actuator_id )     REFERENCES actuator ( actuator_id );
+ALTER TABLE actuator_group_hierarchy ADD CONSTRAINT actuator_id_child_fk FOREIGN KEY ( child_id )     REFERENCES actuator_group ( ag_id );
+ALTER TABLE actuator_group_hierarchy ADD CONSTRAINT actuator_id_father_id_fk FOREIGN KEY ( father_id )     REFERENCES actuator_group ( ag_id );
+ALTER TABLE rule ADD CONSTRAINT rule_action_fk FOREIGN KEY ( action_id )     REFERENCES action ( action_id );
+ALTER TABLE rule ADD CONSTRAINT rule_sensor_fk FOREIGN KEY ( sensor_id )     REFERENCES sensor ( sensor_id );
+ALTER TABLE sensor ADD CONSTRAINT sensor_sensor_type_fk FOREIGN KEY ( sensor_type_id )    REFERENCES sensor_type ( sensor_type_id );
+ALTER TABLE sensor_status_history ADD CONSTRAINT SSH_sensor_fk FOREIGN KEY ( sensor_id )    REFERENCES sensor ( sensor_id );
+ALTER TABLE sensor_status ADD CONSTRAINT sensor_status_sensor_fk FOREIGN KEY ( sensor_id )    REFERENCES sensor ( sensor_id );
+CREATE SEQUENCE sensor_status_sensor_status_id START WITH 1 NOCACHE ORDER; 
+CREATE SEQUENCE actuator_id_seq START WITH 100 NOCACHE ORDER ;
+
+create sequence log_table_seq START WITH     1 INCREMENT BY   1 NOCACHE NOCYCLE; 
+CREATE SEQUENCE SSH_ID_seq START WITH     1 INCREMENT BY   1 NOCACHE NOCYCLE;
+CREATE SEQUENCE ASH_ID_seq START WITH     1 INCREMENT BY   1 NOCACHE NOCYCLE;
+CREATE SEQUENCE AGH_ID_seq START WITH     1 INCREMENT BY   1 NOCACHE NOCYCLE;
+CREATE SEQUENCE Request_id_seq START WITH     1 INCREMENT BY   1 NOCACHE NOCYCLE;
+

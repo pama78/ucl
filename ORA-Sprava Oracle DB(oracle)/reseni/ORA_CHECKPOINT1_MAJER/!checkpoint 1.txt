@@ -1,0 +1,29 @@
+Odevzdávám
+1. system_<prijmeni>.sql - script obsahující body 1-3
+  >>  system_Majer.sql, system_Majer.log
+2. <user>_<prijmeni>.sql - script obsahující bod 4
+  >> pavel5_Majer.sql,  pavel5_Majer.log
+3. dba_<prijmeni>.txt - textový soubor obsahující pøíkazy, které byly provedeny v rámci bodù 5-8 (vèetnì bonusu)
+  >> dba_Majer.txt
+4. Expdp_<user>_<prijmeni>.log - log soubor exportu - bod 5
+  >> Expdp_pavel5_Majer.log
+5. Expdp_<user>_<prijmeni>.dmp - dump soubor exportu - bod 5
+  >> Expdp_pavel5_Majer.dmp
+6. Impdp_<user>_<prijmeni>.log - log soubor importu - bod 6
+  >> Impdp_pavel5_Majer.log
+
+Backup_<prijmeni>.log - výpis z backup souboru (je možné dodat screen .jpg) - bod 7
+Restore_<prijmeni>.log - výpis z restore souboru (je možné dodat screen .jpg) - bod 8
+
+Bonus
+9a. Exp_DB_<ORACLE_SID>.log - log soubor exportu celé DB
+  >> Exp_pavel5_Majer.dmp, Exp_pavel5_Majer.log
+9b. Imp_DB_<ORACLE_SID>.log  - log soubor importu celé DB
+  >> Imp_pavel5_Majer.log
+
+Všechny výše zmínìné výstupy budou zabaleny do .zip souboru 
+s názvem ORA_CHECKPOINT1_MAJER.zip a odevzdány.
+
+<prijmeni> - prijmeni studenta, ktery odevzdava úkol - Majer
+<user> - název novì vytvoøeného uživatele/schématu   - Pavel5
+<ORACLE_SID> - název databáze                        -

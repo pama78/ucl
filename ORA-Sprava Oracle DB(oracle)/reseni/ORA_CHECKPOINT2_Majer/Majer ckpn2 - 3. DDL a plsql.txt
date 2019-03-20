@@ -1,0 +1,219 @@
+--------------------------------------------------------
+--1. Použití dml pøíkazu 5x (select/insert/update/delete - každý pøíkaz musí být obsažen alespoò jednou) v rámci funkcí/procedur - v actuator_mgmt a log_pkg
+--2. Použití sequence pøi vkládání dat do tabulky - log_table_seq v triggeru log_table_trg 
+--3. Vytvoøení triggeru - log_table_trg 
+--4. Vytvoøení procedury (musí mít IN i OUT parametry)   -- REQUEST_ROZPAD (samostatnì)
+--5. Vytvoøení funkce -- napr ziskej_DB_debug
+--6. Vytvoøení package (souèástí package musí být):  
+--  1. minimálnì 2 funkce      napr. actuator_mgmt.new_actuator, delete_actuator
+--  2. minimálnì 2 procedury   napr. log_pkg.debug, error, info
+--  3. využití globálních promìnných
+--7. Použití IF, CASE, FOR, LOOP, WHILE (všechny musí být použity)
+--8. Vytvoøení TYPE / použití record (rowtype) – TABLE OF -- v REQUEST_ROZPAD
+--9. Ošetøení výjimek napr. log_pkg no_data_found, invalid_number a dalsi
+--10. Použití autonomní transakce  v log_pkg
+--11. Pøíklady spuštìní jednotlivých procedur formou scriptù (i v pøípadì bonusù viz níže) - v samostatnem souboru
+--TBD Rozpad nerozpada, zustavaji tam radky TAKEN
+--out parametry pro rozpad
+--------------------------------------------------------
+
+   --niceni
+    set define off
+    drop package LOG_PKG;
+    drop package ACTUATOR_MGMT;
+    drop procedure REQUEST_ROZPAD;
+   
+    drop table log_table ;
+    drop table config_table ;
+    drop sequence log_table_seq;
+   -- drop trigger log_table_trg;
+   
+    --tvorba   
+    create table log_table ( id number, cas date, typ char(1), text varchar2(255));
+    alter table log_table add constraint log_table_pk primary key (id);
+    create sequence log_table_seq START WITH     1 INCREMENT BY   1 NOCACHE NOCYCLE; 
+        
+    create table config_table ( parametr varchar2(60), hodnota varchar2(255));
+    ALTER TABLE config_table ADD CONSTRAINT parametr_pk PRIMARY KEY ( parametr );
+    insert into config_table values ('debug',1);   --default
+
+--------------------------------------------------------
+--  DDL for Package LOG_PKG
+--------------------------------------------------------
+CREATE OR REPLACE TRIGGER log_table_trg 
+BEFORE INSERT ON log_table 
+FOR EACH ROW
+BEGIN
+  :NEW.ID := log_table_seq.nextval;
+  :NEW.CAS := sysdate;
+END;
+/
+
+  CREATE OR REPLACE PACKAGE LOG_PKG IS
+ g_isDebug integer;
+ g_DBDebug varchar2(60);  
+ PROCEDURE debug (i_msg varchar2);
+ PROCEDURE error (i_msg varchar2);
+ PROCEDURE info (i_msg varchar2);
+  FUNCTION ziskej_DB_debug RETURN NUMBER; 
+ PROCEDURE nastav_debug (i_debug varchar2);
+END log_pkg;
+/
+
+CREATE OR REPLACE PACKAGE BODY log_pkg IS  -- AI10
+  PROCEDURE debug (i_msg varchar2) IS
+  pragma autonomous_transaction;
+  BEGIN
+    DBMS_OUTPUT.PUT_LINE('debug: '||i_msg);
+    IF g_isDebug = 1 THEN
+      DBMS_OUTPUT.PUT_LINE('debug: insert to table');
+      insert into log_table (typ, text) values ('D',i_msg);
+      commit;
+    END IF;
+  END; 
+  PROCEDURE error (i_msg varchar2) IS
+  pragma autonomous_transaction;
+  BEGIN
+      DBMS_OUTPUT.PUT_LINE('error: insert to table: ' || i_msg);
+       insert into log_table (typ, text) values ('E',i_msg);
+      commit;
+  END;
+  PROCEDURE info (i_msg varchar2) IS
+  pragma autonomous_transaction;
+  BEGIN
+      DBMS_OUTPUT.PUT_LINE('info: insert to table: ' || i_msg);
+      insert into log_table (typ, text) values ('I',i_msg);
+      commit;
+  END;
+FUNCTION ziskej_DB_debug
+   RETURN NUMBER IS g_DBDebug number;
+   BEGIN
+    SELECT hodnota into g_DBDebug from config_table where parametr = 'debug';
+    DBMS_OUTPUT.PUT_LINE('ziskej_DB_debug - CONFIG_TABLE.debug: ' ||g_DBDebug );
+    if g_DBDebug not in (0,1) 
+      then
+         raise no_data_found;
+    end if;
+    RETURN(g_DBDebug);
+ exception
+ WHEN no_data_found THEN  raise_application_error( -20002, 'Chyba: Neplatne nastaveni v tabulce LOG_TABLE pro parametr debug. Musi byt definovan a musi mit hodnotu 1 nebo 0' );
+END;
+PROCEDURE nastav_debug (i_debug varchar2) is
+  pragma autonomous_transaction;
+  BEGIN
+    g_isDebug := log_pkg.ziskej_DB_debug() ;
+    DBMS_OUTPUT.PUT_LINE('nastav_debug - nastaveni TABLE_CONFIG.Debug nastaven do g_isDebug:'  ||g_isDebug  );
+    case i_debug 
+     when  '1' then 
+        log_pkg.info('nastav_debug 1 - pozadavek na spusteni logovani do tabulky CONFIG_TABLE.debug');
+        update CONFIG_TABLE set hodnota = '1' where parametr = 'debug';
+     when  '0'  then 
+        log_pkg.info('nastav_debug 0 - pozadavek na vypnuti logovani do tabulky CONFIG_TABLE.debug');
+        update CONFIG_TABLE set hodnota = '0' where parametr = 'debug';
+     else  log_pkg.info('nastav_debug '|| i_debug ||' - hodnota neni v povolenem rozmezi [0/1]'  );
+           raise INVALID_NUMBER;
+     end case;
+   -- kontrola
+        g_isDebug := log_pkg.ziskej_DB_debug() ;
+        if g_isDebug = i_Debug 
+          then          
+            log_pkg.info ('nastav_debug '|| i_debug ||' - hodnota uspesne nastavena do tabulky CONFIG_TABLE.debug');
+         else
+            log_pkg.error  ('nastav_debug '|| i_debug ||' - neocekavana hodnota v tabulce CONFIG_TABLE.debug po skonceni volani' || g_isDebug);
+        end if;      
+        commit;
+  EXCEPTION
+    WHEN no_data_found        THEN raise_application_error( -20001, 'Chyba: Nelze nalezt hodnotu Debug v tabulce CONFIG_TABLE.' );
+    WHEN invalid_number       THEN raise_application_error( -20003, 'Chyba: Nelze pozadovat nastaveni hodnoty debug na jinou hodnotu nez 1 nebo 0.' );
+  END;
+END log_pkg;
+/
+
+--------------------------------------------------------
+--  DDL for Procedure REQUEST_ROZPAD
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE REQUEST_ROZPAD (uzivatel IN varchar2, pocet_pridanych OUT number)
+IS
+  CURSOR reqcur  IS SELECT * FROM request WHERE request_status = 'NEW' AND user_id != 'System' AND action_id IN  (SELECT action_id FROM action WHERE actuator_group_ag_id IS NOT NULL );
+  myvar request%ROWTYPE;
+BEGIN
+  pocet_pridanych := 0;
+  OPEN reqcur;
+  FETCH reqcur INTO myvar;
+  log_pkg.debug ( 'request_rozpad - open reqcur');
+  WHILE reqcur%FOUND
+  LOOP
+    -- history NEW
+    INSERT INTO REQUEST_HISTORY  SELECT * FROM REQUEST WHERE request_id = myvar.request_id;
+    -- status NEW->TAKEN
+    UPDATE request     SET request_status='TAKEN'    WHERE request_id  = myvar.request_id;
+    -- insert new rows from group
+    DBMS_OUTPUT.PUT_LINE('myvar.request_id: '||myvar.action_id);
+    FOR i IN  (  SELECT child_id FROM actuator_group_hierarchy  
+                 START WITH father_id in (select actuator_group_ag_id from action where action_id=myvar.action_id ) CONNECT BY prior child_id = father_id
+              )
+    LOOP
+      pocet_pridanych := pocet_pridanych + 1; 
+      log_pkg.debug( ' rozpad - vytvarim novy request: ' ||i.child_id );
+      INSERT INTO REQUEST (request_id,               action_id, user_id, request_date, request_status, request_group_id)
+                   VALUES ( request_id_seq.nextval, i.child_id, 'System', sysdate,     'NEW',          myvar.request_id );
+    END LOOP;
+    -- status TAKEN->PROCESSED
+    UPDATE request  SET request_status='TAKEN'  WHERE request_id  = myvar.request_id;
+    FETCH reqcur INTO myvar;
+  END LOOP;
+  CLOSE reqcur;
+END;
+/
+
+--------------------------------------------------------
+--  DDL for Package ACTUATOR_MGMT
+--------------------------------------------------------
+  CREATE OR REPLACE PACKAGE ACTUATOR_MGMT AS 
+   function new_actuator (jmeno VARCHAR2,   location_path VARCHAR2, iot_name varchar2, iot_path  VARCHAR2 )
+      RETURN NUMBER; 
+--   FUNCTION add_actuator_to_group (department_id NUMBER, location_id NUMBER) 
+--      RETURN NUMBER; 
+--   PROCEDURE remove_from_group(employee_id NUMBER); 
+   PROCEDURE delete_actuator  (in_actuator_id number ) ;
+  END actuator_mgmt;
+/
+
+
+
+CREATE OR REPLACE PACKAGE BODY actuator_mgmt AS
+   tot_actuators NUMBER;
+   --tot_depts NUMBER;
+FUNCTION new_actuator
+   (jmeno VARCHAR2, location_path VARCHAR2, iot_name varchar2, iot_path  VARCHAR2 )
+   RETURN NUMBER IS new_id NUMBER;
+BEGIN
+   SELECT actuator_id_seq.NEXTVAL
+    INTO new_id
+    FROM DUAL;
+  INSERT INTO actuator (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH)
+                    VALUES (new_id, jmeno, iot_path, iot_name, location_path);    --(AI1b)
+     tot_actuators := tot_actuators + 1;
+     -- DBMS_OUTPUT.PUT_LINE('tot_actuators:' ||tot_actuators );
+     RETURN(new_id);
+END;
+PROCEDURE delete_actuator  (in_actuator_id number ) is
+   rows_for_del number;
+   BEGIN 
+      select count (*) into rows_for_del from actuator where actuator_id = in_actuator_id;  --(AI1a) 
+      DBMS_OUTPUT.PUT_LINE('delete_actuator rows:' ||rows_for_del );
+      if rows_for_del = 0 
+        then
+          DBMS_OUTPUT.PUT_LINE('delete_actuator no rows to delete!!'  );  
+        else
+          DBMS_OUTPUT.PUT_LINE('to delete existing row'  );
+          DELETE FROM actuator  WHERE actuator_id = in_actuator_id;   --(AI1d) 
+          tot_actuators := tot_actuators - 1;
+       end if;
+         --actuator_found number;
+        -- SELECT into actuator_found count (*) from actuator where actuator_id = in_actuator_id;       
+   END; 
+END actuator_mgmt;
+/

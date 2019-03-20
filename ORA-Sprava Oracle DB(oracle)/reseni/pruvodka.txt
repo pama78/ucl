@@ -1,0 +1,30 @@
+CKPNT1
+Název Checkpoint 1
+Rešení: rešení prikládám do prílohy tohoto artefaktu
+souboru je více,
+centrální soubor dba_Majer.txt v první cásti má uložené odeslané príkazy,
+a na konci je pak u príkazu vypsaná odpoved systému.
+U recovery jsem zkusil oba základní prípady. recovery po zrušení souboru a pak také recovery po nechteném prepsání ceníku.
+Snad je vše OK, 
+v prípade, že by bych byl býval nepochopil správne nejaký bod zadání,
+dejte prosím vedet a já rešení doplním.
+
+Dekuji,
+S pozdravem
+Pavel M
+dekuji
+s pozdravem
+Pavel M
+
+CKPNT2
+Název
+semestrální projekt, ckpnt2 - plsql
+Rešení
+Dobrý den,
+v príloze je vypracování ckpntu2 z predmetu ORA.
+je založený na datovém modelu z RDB, kde jsem se pokoušel namodelovat logiku IOT aktuátoru a pravidel do relacní DB
+v rešení jsou logovací funkce a funkce na správu aktuátoru a rozpad hierarchických požadavku na základní sub-požadavky
+Vše jsem nasadil do vzdálené databáze pod uživatelem majer.
+Dekuji za Váš cas a prípadné rady na vylepšení
+s pozdravem,
+Pavel M.

@@ -1,0 +1,173 @@
+  7a)soucet v polozek v objednavkach - pro kontrolu
+      C:\Users\pavelma\ora>sqlplus pavel5/pavel5@pamatest
+      SQL> select * from objednavka;
+        ID VYTVORENO       STUL    POLOZKA
+       --- --------- ---------- ----------
+         6 17-JAN-18          1          1
+         7 17-JAN-18          1          2
+         8 17-JAN-18          2          2
+         9 17-JAN-18          3          3
+        10 17-JAN-18          3          2
+       
+    7b)priprava na cold backup  
+    C:\Users\pavelma\ora> sqlplus sys/Lenovo123@pamatest as sysdba
+		SQL> select name from v$datafile;	
+		NAME
+		--------------------------------------------------------------------------------
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\SYSTEM01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\SYSAUX01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\UNDOTBS01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\USERS01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\WORKSHOP01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\ZOO_01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_01.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_02.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_03.DBF
+		C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF
+		
+  7c) zastaveni db
+	 SQL> shutdown immediate
+		Database closed.
+		Database dismounted.
+		ORACLE instance shut down.
+		ERROR:
+		ORA-12514: TNS:listener does not currently know of service requested in connect
+		descriptor
+
+		Warning: You are no longer connected to ORACLE.
+		SQL> startup mount;
+		SP2-0640: Not connected
+		SQL> exit
+
+		
+	7d) start
+		C:\Users\pavelma\ora>sqlplus / as sysdba
+		SQL*Plus: Release 12.2.0.1.0 Production on Wed Jan 17 21:29:32 2018
+		Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+		Connected to an idle instance.
+
+		SQL> startup mount;
+		ORACLE instance started.
+
+		Total System Global Area  964689920 bytes
+		Fixed Size                  8753816 bytes
+		Variable Size             369102184 bytes
+		Database Buffers          578813952 bytes
+		Redo Buffers                8019968 bytes
+		Database mounted.
+		SQL> exit
+	
+	 7e) rman	
+    set ORACLE_SID=pamatest
+   	C:\Users\pavelma\ora>rman target /
+		Recovery Manager: Release 12.2.0.1.0 - Production on Wed Jan 17 21:52:15 2018
+		Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+		connected to target database: PAMATEST (DBID=1916084427, not open)
+
+  7f) zavolat backup
+     backup database;
+				Starting backup at 17-JAN-18
+				using target database control file instead of recovery catalog
+				allocated channel: ORA_DISK_1
+				channel ORA_DISK_1: SID=11 device type=DISK
+				channel ORA_DISK_1: starting full datafile backup set
+				channel ORA_DISK_1: specifying datafile(s) in backup set
+				input datafile file number=00001 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\SYSTEM01.DBF
+				input datafile file number=00003 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\SYSAUX01.DBF
+				input datafile file number=00005 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\UNDOTBS01.DBF
+				input datafile file number=00008 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\WORKSHOP01.DBF
+				input datafile file number=00009 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\ZOO_01.DBF
+				input datafile file number=00010 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_01.DBF
+				input datafile file number=00011 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_02.DBF
+				input datafile file number=00012 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_03.DBF
+				input datafile file number=00013 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF
+				input datafile file number=00007 name=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\USERS01.DBF
+				channel ORA_DISK_1: starting piece 1 at 17-JAN-18
+				channel ORA_DISK_1: finished piece 1 at 17-JAN-18
+				piece handle=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BACKUP\05SOUBTL_1_1 tag=TAG20180117T215252 comment=NONE
+				channel ORA_DISK_1: backup set complete, elapsed time: 00:00:15
+				Finished backup at 17-JAN-18
+
+				Starting Control File and SPFILE Autobackup at 17-JAN-18
+				piece handle=C:\ORACLE\BACKUP\FLASH_RECOVERY_AREA\PAMATEST\AUTOBACKUP\2018_01_17\O1_MF_S_965683646_F5ZFXOYJ_.BKP comment=NONE
+				Finished Control File and SPFILE Autobackup at 17-JAN-18
+
+     backup current controlfile;
+				Starting backup at 17-JAN-18
+				using channel ORA_DISK_1
+				channel ORA_DISK_1: starting full datafile backup set
+				channel ORA_DISK_1: specifying datafile(s) in backup set
+				including current control file in backup set
+				channel ORA_DISK_1: starting piece 1 at 17-JAN-18
+				channel ORA_DISK_1: finished piece 1 at 17-JAN-18
+				piece handle=C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BACKUP\07SOUC41_1_1 tag=TAG20180117T215617 comment=NONE
+				channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+				Finished backup at 17-JAN-18
+
+				Starting Control File and SPFILE Autobackup at 17-JAN-18
+				piece handle=C:\ORACLE\BACKUP\FLASH_RECOVERY_AREA\PAMATEST\AUTOBACKUP\2018_01_17\O1_MF_S_965683646_F5ZG3NCO_.BKP comment=NONE
+				Finished Control File and SPFILE Autobackup at 17-JAN-18
+
+	7g) soubor existuje
+   	C:\Users\pavelma\Documents\oradata\pamatest\backup\05SOUBTL_1_1 
+ 
+  7h) open db
+			  C:\Users\pavelma\ora>sqlplus / as sysdba
+				SQL> alter database open;
+				Database altered.
+
+				SQL>  select group#, sequence#, status from v$log;
+				    GROUP#  SEQUENCE# STATUS
+				---------- ---------- ----------------
+				         1         37 INACTIVE
+				         2         38 CURRENT
+				         3         36 INACTIVE
+
+  7i) znicit data
+     C:\Users\pavelma\ora>sqlplus pavel5/pavel5@pamatest
+				 SQL> select * from katalog;
+
+				        ID NAZEV                                CENA
+				---------- ------------------------------ ----------
+				         4 Sv!Yková                              130
+				         5 Rajská                                120
+				         6 Frankfurtská                          105
+
+				SQL> update katalog set cena = 0;
+				3 rows updated.
+				SQL> commit
+				Commit complete.
+
+				SQL>  select * from katalog;
+
+				        ID NAZEV                                CENA
+				---------- ------------------------------ ----------
+				         4 Sv!Yková                                0
+				         5 Rajská                                  0
+				         6 Frankfurtská                            0
+
+				SQL> exit
+
+  7j) zastavit DB, a zamaskovat BAR_05.DBF (prejmenovat na BAR_05XXXXX.DBFXXX)
+		C:\Users\pavelma\ora>sqlplus / as sysdba
+    shutdown immediate
+    C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF
+
+  7k) pokus o start db
+     C:\Users\pavelma\ora>sqlplus / as sysdba
+     SQL> startup mount;
+			ORACLE instance started.
+
+			Total System Global Area  964689920 bytes
+			Fixed Size                  8753816 bytes
+			Variable Size             369102184 bytes
+			Database Buffers          578813952 bytes
+			Redo Buffers                8019968 bytes
+			Database mounted.
+			SQL>  alter database open;
+			 alter database open
+			*
+			ERROR at line 1:
+			ORA-01157: cannot identify/lock data file 13 - see DBWR trace file
+			ORA-01110: data file 13:
+			'C:\USERS\PAVELMA\DOCUMENTS\ORADATA\PAMATEST\BAR_05.DBF'

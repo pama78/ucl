@@ -1,0 +1,73 @@
+Omlouvám se za nedodání všech funkcionalit do AND-DU v termínu. 
+Snažíl jsem se to nìjak vybalancovat, ale úkol ze statistiky mi zabral daleko víc èasu, než jsem èekal. :-(
+
+z tìch povinných funkcionalit tam myslím nemám ukládání do property souborù a výmìnu fontù. 
+Nakonec jsem poslal aspoò to, co mám. Je to prakticky stejná, nebo hodnì podobná verze, co byla minule.
+
+Tu aplikaci musím/chci dodìlat tak jako tak, 
+Myslíš že by bylo možné, že bych ti jí  poslal pak ještì jednou ke zkouknutí až bude volnìji? (pravdìpodobnì o prázdninách)
+
+ještì jednou moc dìkuji za vše :-)
+Pavel
+
+
+
+
+Dne 15. kvìtna 2017 9:39 Pavel Majer <pavel.majer78@gmail.com> napsal(a):
+ahoj,
+moc díky za hodnocení
+
+v hodnocení byly otázky. posílám odpovìdi.
+* U toho detailu by chtìlo zobrazit šipku zpìt - jako v hierarchii
+[PAMA] šipku zkusím dodat. plánoval jsem ji, ale mìl jsem trochu zásek s tím firebasem. 
+
+* Jak to funguje s tím Configure parking? Zkouším validate, ale nic to nedìlá…
+Super za integraci s Firebase!
+[PAMA] to je hodnì dobrá otázka. tohle by mìlo být konfiguraèní okno, odkud se budou ukládat nastavení a v ideálním svìtì se to nastavení bude i používat.
+Teï to funguje tak, že když je nìco vyplnìné, a stiskne se validuj, objeví se fajfka (state of art:-)) . 
+to jsem si jenom tak hrál. Okno budu pøedìlávat na konfiguraèní (jak jsi nám ukazovala na poslední hodinì)
+
+Do budoucna bych rád, aby se podle údajù pøipojil ke správnému parkovišti a vylepšil systém autorizace (ten asi taky pøes firebase)
+Nevím, jestli to stihnu do odevzdání zapracovat. zatím se pøipojuje hardcodovanì. 
+
+Priority jsem nastavil takhle - snad všechno stihnu vèas :-) :
+1. zapracovat na welcome screen celkový stav parkovištì
+2. hlídat odpojování od internetu, a nìjak zobrazit
+3. konfiguraèní okno s ukládáním dat (podle minulé hodiny)
+4. zmìnit písmo pøes knihovnu (podle minulé hodiny)
+5. dodání šipek "back"
+6. schovám ikonu nastavení (do doby než bude nìkdy v budoucnu potøeba nìjaké nastavení)
+7. autorizace a pøipojování na rùzná parkovištì. 
+
+moc díky za tvùj èas a podporu.
+pøeji pìkný a krátký let
+
+Pavel 
+
+ahoj,
+moc díky za hodnocení
+
+v hodnocení byly otázky. posílám odpovìdi.
+* U toho detailu by chtìlo zobrazit šipku zpìt - jako v hierarchii
+[PAMA] šipku zkusím dodat. plánoval jsem ji, ale mìl jsem trochu zásek s tím firebasem. 
+
+* Jak to funguje s tím Configure parking? Zkouším validate, ale nic to nedìlá…
+Super za integraci s Firebase!
+[PAMA] to je hodnì dobrá otázka. tohle by mìlo být konfiguraèní okno, odkud se budou ukládat nastavení a v ideálním svìtì se to nastavení bude i používat.
+Teï to funguje tak, že když je nìco vyplnìné, a stiskne se validuj, objeví se fajfka (state of art:-)) . 
+to jsem si jenom tak hrál. Okno budu pøedìlávat na konfiguraèní (jak jsi nám ukazovala na poslední hodinì)
+
+Do budoucna bych rád, aby se podle údajù pøipojil ke správnému parkovišti a vylepšil systém autorizace (ten asi taky pøes firebase)
+Nevím, jestli to stihnu do odevzdání zapracovat. zatím se pøipojuje hardcodovanì. 
+
+Priority jsem nastavil takhle - snad všechno stihnu vèas :-) :
+1. zapracovat na welcome screen celkový stav parkovištì
+2. hlídat odpojování od internetu, a nìjak zobrazit
+3. konfiguraèní okno s ukládáním dat (podle minulé hodiny)
+4. zmìnit písmo pøes knihovnu (podle minulé hodiny)
+5. dodání šipek "back"
+6. schovám ikonu nastavení (do doby než bude nìkdy v budoucnu potøeba nìjaké nastavení)
+7. autorizace a pøipojování na rùzná parkovištì. 
+
+moc díky za tvùj èas a podporu.
+pøeji pìkný a krátký let

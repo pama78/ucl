@@ -1,0 +1,7 @@
+Pocet bodu
+10
+Hodnocení
+* Settings nezobrazilo žádnou obrazovku, to tam asi zustalo ješte omylem
+* Send feedback bych asi prejmenovala na “Share”. U feedbacku clovek ocekává formulár
+* Sdílení se spíše dává do actionbaru a ne jako položka v navigation draweru
+* Jinak pekné!

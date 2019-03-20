@@ -1,0 +1,11 @@
+
+Connected to: Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+Export file created by EXPORT:V12.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses EE8MSWIN1250 character set (possible charset conversion)
+. importing PAVEL5's objects into PAVEL5
+. . importing table                      "KATALOG"          3 rows imported
+. . importing table                   "OBJEDNAVKA"          5 rows imported
+. . importing table                         "STUL"          5 rows imported
+Import terminated successfully without warnings.

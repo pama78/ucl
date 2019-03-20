@@ -1,0 +1,25 @@
+AND1 - 1. kontrolní bod
+
+pøedstavení:
+aplikace bude pøehlednì zobrazovat stav parkovacích míst.
+na hlavní obrazovce zobrazí parkovištì a jeho celkový stav,
+po rozkliknutí parkovištì zobrazí seznam a stav jednotlivých parkovacích míst.
+
+v sekci nastavení bude možno navázat aplikaci na vzdálený server, 
+odtud získá seznam míst a jejich stavy (obsazeno, volno)
+seznam si uloží do lokální databáze/nebo souboru, 
+a v pøípadì refreshe se tyto informace obnoví.
+
+
+ve fázi dvì (vybarveno žlutì) budou pøidány následující funkcionality:
+ - bude možno pøidávat další parkovištì (ty se pak zobrazí na hlavní stránce)
+ - bude možno navigovat na tato parkovištì (provázání do navigaèního SW, pomocí odkazu GPS)
+ - bude podpora login pøes google account (pak bude aplikace univerzálnìjší)
+ - bude možnost zarezervovat nìjaké místo z aplikace - pak se u ostatních uživatelù zobrazí jinou barvou)
+
+fáze dvì pravdìpodobnì nebude dodaná do konce tohoto semestru.
+Pøípadnì, když to vyjde èasovì, pokusím se dodat alespoò nìkteré její èásti.
+
+
+
+

@@ -1,0 +1,17 @@
+;;; 
+Import: Release 12.2.0.1.0 - Production on Wed Jan 17 18:21:24 2018
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+Master table "PAVEL5"."SYS_IMPORT_FULL_01" successfully loaded/unloaded
+Starting "PAVEL5"."SYS_IMPORT_FULL_01":  pavel5/********@pamatest directory=dp_exp_dir dumpfile=Expdp_pavel5_Majer.dmp logfile=Impdp_pavel5_Majer.log 
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SYNONYM/SYNONYM
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/STATISTICS/MARKER
+Job "PAVEL5"."SYS_IMPORT_FULL_01" successfully completed at Wed Jan 17 18:21:46 2018 elapsed 0 00:00:17
