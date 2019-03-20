@@ -1,0 +1,25 @@
+	
+Odevzdávám ucl_web_02_majer_pavel.zip
++zapracoval jsem vcerejší postrehy a opravdu to vypadá lépe.
++menícka, barvy a jsem trochu vylepšil, ale hitparáda to moc není, aspon jsem zapojil tretí barvu (videl jsem to tak treba na w3s stránkách :-) )
++podarilo se mi dát defaultní hodnotu do poctu bodu. bežne se zacíná na 10, dal jsem tedy 10
++testoval jsem to na chrome a na opere, layout drží
++až bude chvilku volneji (a budu mít splneno aspon minimum z ostatních predmetu), 
+ chtel bych do toho zapracovat filtr na prošlé události, sloupec na skutecné body, 
+ nacítání techto bodu k jednotlivým predmetum. nakonec by to mohl být solidní pomocník :-), absolutní pecka by bylo tam pridat vykrádacku dat z UCL webu. pak by data nemusela do webovek pretukávat.
+-nepodarilo se mi dostat dvojtecku do editacního okna k výberu predmetu. zkoušel jsem snad všechno, ale na ten trik jsem zatím neprišel.
+-validátorem html mi to prošlo, jediný problémy vykazovalo editacní okno. 
+ to je celé vygenerované. není mi moc jasné co validátoru vadí.
+ píše treba:
+ Error: The for attribute of the label element must refer to a non-hidden form control.
+ From line 233, column 7; to line 233, column 69
+  <label class="string optional" for="enterprise_bodu max false">Bodu m
+ ve výsledném html toho editacního okna je z railsu vygenerovaný tag: <form novalidate="novalidate" 
+ je poblíž té chyby, tak me napadá, jestli ten validátor nemá podobné veci preskocit a jestli to náhodou není ok.
+
+ v tuhle chvíli to je vec nad rámec du 3, tak to posílám i s tím,  
+ rád bych te ale poprosil o radu, co s tím a s tou dvojteckou by šlo výhledove udelat?
+ 
+díky moc za tvoje rady a prípadné pripomínky.
+Pavel M.
+ 

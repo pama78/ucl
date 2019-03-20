@@ -1,0 +1,7 @@
+Pocet bodu 10
+Hodnocení
+To novalidate nijak nesouvisí s validátorem - to se týká html5 validace formuláru.
+Je to OK.
+
+Porád ti vzhledove vypadá jako databáze víc než web, ale ted je to alespon použitelné.
+Rešení má všechny potrebné náležitosti.

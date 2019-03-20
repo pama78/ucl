@@ -1,0 +1,7 @@
+Pocet bodu
+48
+Hodnocení
+- velmi ocenuji detail komentár u úkolu
+- validacní chyby te vrací protože máš špatne udelaný redirect v kontroléru
+- 1) a 2) spolu souvisí, rešení 2) je nesdílet parciální šablony (ani formy) mezi namespaces (a ani kontroléry) - 
+vždy to mít v rámci jednoho kontroléru

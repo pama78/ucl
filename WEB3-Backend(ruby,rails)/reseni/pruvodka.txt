@@ -1,0 +1,25 @@
+	
+DU3, Semestralni prace revize1
+Uvedte strucný název úkolu, ke kterému odesíláte rešení. Napr. domácí úkol 1, semestrální projekt apod.
+Rešení
+v príloze posílám upravenou verzi. 
+heslo admin/admin
+varianta zelena louka:
+
+informace k verzi:
+v teto verzi jsou opravene nektere veci, 
+ale mam tam nejakou komplikaci s mazanim. 
+prvni se mi vymaze, dalsi uz pak misto mazani ukazou detail. 
+
+bohuzel to neslo moc hladce, rozbil jsem si to znovu, pak jsem recoveroval zmeny,
+vim o par vecech, ktere bych mel do budoucna (az bude volneji) vyresit:
+
+1.) z neadmin sekce odstranit vsechno okolo updatu a delete
+2.) v _form.html.erb by misto (@enterprise) mela podle stackoverflow byt namespacova varianta [:admin, @enterprise]
+bohuzel ale pri pokusech vec nasadit se mi reseni rozhodilo tak, ze je z pohledu deadliny lepsi to odeslat tak jak to je
+3.) validacni chyby me vraci zpatky do neadmin sekce - pocitam ale, ze by to melo byt vyreseno po vyreseni #2
+
+budu moc rad, kdyz mi posles par komentaru, abych to mohl pozdeji nejak rozbehat, abych z toho pak mohl do budoucna cerpat.
+
+diky za tvuj cas, a rady
+Pavel
