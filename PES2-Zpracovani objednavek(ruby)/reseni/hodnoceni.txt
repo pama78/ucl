@@ -1,0 +1,6 @@
+Pocet bodu
+25
+Hodnocení
+Rešení splnuje zadání pricemž chybí práce s výjimkami, ale jinak je rešení pekné. Nicméne stejne dosáhnete na maximum 100b z prubežného hodnocení, takže se ani ona "bodová ztráta" nemá kde projevit.
+S pozdravem
+Pavel Bory

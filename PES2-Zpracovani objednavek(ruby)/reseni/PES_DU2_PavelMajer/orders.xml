@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<orders>
+    <order number="99503" date="2012-10-18T15:29:37">
+        <address type="shipping">
+            <name>Ellen Adams</name>
+            <street>123 Maple street</street>
+            <city>Mill Valley</city>
+            <state>CA</state>
+            <zip>10999</zip>
+            <country>USA</country>
+        </address>
+        <address type="billing">
+            <name>Tai Yee</name>
+            <street>8 Oak Avenue</street>
+            <city>Old Town</city>
+            <state>PA</state>
+            <zip>95819</zip>
+            <country>USA</country>
+        </address>
+        <notes>Please leave packages in shed by driveway.</notes>
+        <items>
+            <item code="PE316">
+                <name>Zvukotesna vlozka SPIRE pro redukci hluku</name>
+                <quantity>1</quantity>
+                <price>104</price>
+            </item>
+            <item code="RI080">
+                <name>FAN COOLER PASIVNI</name>
+                <quantity>2</quantity>
+                <price>491</price>
+            </item>
+        </items>
+    </order>
+    <order number="99504" date="2012-10-19T08:30:53">
+        <address type="shipping">
+            <name>Jessica Arnold</name>
+            <street>4055 Madison Ave</street>
+            <city>Seattle</city>
+            <state>WA</state>
+            <zip>98112</zip>
+            <country>USA</country>
+        </address>
+        <address type="billing">
+            <name>Jessica Arnold</name>
+            <street>4055 Madison Ave</street>
+            <city>Buffalo</city>
+            <state>NY</state>
+            <zip>98112</zip>
+            <country>USA</country>
+        </address>
+        <items>
+            <item code="QE091">
+                <name>Nabijecka PENTAGRAM Pocket USB</name>
+                <quantity>20</quantity>
+                <price>608</price>
+            </item>
+            <item code="PE316">
+                <name>Zvukotesna vlozka SPIRE pro redukci hluku</name>
+                <quantity>50</quantity>
+                <price>104</price>
+            </item>
+            <item code="RI080">
+                <name>FAN COOLER PASIVNI</name>
+                <quantity>80</quantity>
+                <price>491</price>
+            </item>
+        </items>
+    </order>
+    <order number="99505" date="2012-10-18T16:12:25">
+        <address type="shipping">
+            <name>Cristian Osorio</name>
+            <street>456 Main street</street>
+            <city>Buffalo</city>
+            <state>NY</state>
+            <zip>98112</zip>
+            <country>USA</country>
+        </address>
+        <address type="billing">
+            <name>Cristian Osorio</name>
+            <street>456 Main street</street>
+            <city>Buffalo</city>
+            <state>NY</state>
+            <zip>98112</zip>
+            <country>USA</country>
+        </address>
+        <notes>Please notify me before shipping.</notes>
+        <items>
+            <item code="PE315">
+                <name>Zvukotesna vlozka SPIRE pro redukci hluku</name>
+                <quantity>1</quantity>
+                <price>104</price>
+            </item>
+            <item code="PE316">
+                <name>Vodotesna vlozka SPIRE pro redukci hluku</name>
+                <quantity>1</quantity>
+                <price>104</price>
+            </item>
+            <item code="PE316">
+                <name>Zvukotesna vlozka SPIRE pro redukci hluku</name>
+                <quantity>1</quantity>
+                <price>103</price>
+            </item>
+            <item code="RI080">
+                <name>FAN COOLER PASIVNI</name>
+                <quantity>100</quantity>
+                <price>491</price>
+            </item>
+            <item code="QE091">
+                <name>Nabijecka PENTAGRAM Pocket USB</name>
+                <quantity>20</quantity>
+                <price>608</price>
+            </item>
+        </items>
+    </order>
+</orders>

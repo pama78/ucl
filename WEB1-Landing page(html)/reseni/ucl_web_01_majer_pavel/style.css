@@ -1,0 +1,120 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background-color: lightblue;
+}
+
+#container {
+	background-color: pink;
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	float: right;
+	width: 90%;
+	/*height: 800px;*/
+	margin-bottom: -999px;
+	padding-bottom: 999px;
+	background-color: white;
+}
+
+aside {
+	width: 10%;
+	float: left;
+	margin-bottom: -99px;
+	padding-bottom: 99px;
+	
+	/*
+  background-color: lightgrey;
+   min-height: 100%;*/
+}
+
+header {
+	background-color: darkblue;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+header #title {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+
+nav {
+	width: 95%;
+	background-color: lightblue;
+	padding: 1px 1px 1px 1px;
+	text-align: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+}
+
+nav ul li a.active {
+	color: blue;
+	height: 100%;
+}
+
+nav ul li a:hover {
+	color: #000000;
+	text-decoration: underline;
+	height: 100%;
+	/*font-size: 1.4em;*/
+	color: blue;
+}
+
+article ol li {
+	text-align: left;
+}
+
+article ol {
+	margin: 0 auto;
+	width: auto;
+}
+
+.seznam {
+	margin: 0 auto;
+	display: inline-block; /*neni block natazeny na celou sirku*/
+}
+
+article {
+	border-top: 1em;
+	/*color:  #fff;*/
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+	/*width: 100%;*/
+	margin: 0 auto;
+	width: auto;
+	/*border-style: solid;
+	border-width: 20px;*/
+	background-color: white;
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<customers>
+  <customer name="Tai Yee">
+    <address>
+      <street>8 Oak Avenue</street>
+      <city>Old Town</city>
+      <state>PA</state>
+      <zip>95819</zip>
+      <country>USA</country>
+    </address>
+  </customer>
+  <customer name="Cristian Osorio">
+    <address>
+      <street>456 Main street</street>
+      <city>Buffalo</city>
+      <state>NY</state>
+      <zip>98112</zip>
+      <country>USA</country>
+    </address>
+  </customer>
+  <customer name="Jessica Arnold">
+    <address>
+      <street>4055 Madison Ave</street>
+      <city>Buffalo</city>
+      <state>NY</state>
+      <zip>98112</zip>
+      <country>USA</country>
+    </address>
+  </customer>
+</customers>

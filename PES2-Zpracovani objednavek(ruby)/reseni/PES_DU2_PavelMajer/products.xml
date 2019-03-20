@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<products>
+    <product code="PE316">
+        <name>Zvukotesna vlozka SPIRE pro redukci hluku</name>
+        <price>104</price>
+    </product>
+    <product code="RI080">
+        <name>FAN COOLER PASIVNI</name>
+        <price>491</price>
+    </product>
+    <product code="QE091">
+        <name>Nabijecka PENTAGRAM Pocket USB</name>
+        <price>608</price>
+    </product>
+    <product code="QU286">
+        <name>RAMECEK ViPower VYMENNY PLAST ATA</name>
+        <price>572</price>
+    </product>
+    <product code="PU441">
+        <name>RAZER LYCOSA Gaming Keyboard</name>
+        <price>160</price>
+    </product>
+    <product code="QE170">
+        <name>ICON</name>
+        <price>136</price>
+    </product>
+    <product code="SE125">
+        <name>UTP OCHRANA KONEKTORU</name>
+        <price>310</price>
+    </product>
+    <product code="TI390">
+        <name>PCI Express</name>
+        <price>415</price>
+    </product>
+    <product code="TO120">
+        <name>PRINTSERVER Digitus Fast Ethernet USB</name>
+        <price>674</price>
+    </product>
+    <product code="QO071">
+        <name>230V Belkin Powerline Turbo Networking adapter</name>
+        <price>796</price>
+    </product>
+    <product code="QO350">
+        <name>WIFI ANTENA smerova parabolicka</name>
+        <price>585</price>
+    </product>
+    <product code="QE042">
+        <name>WIFI ANTENA smerova</name>
+        <price>398</price>
+    </product>
+    <product code="RU090">
+        <name>TP-LINK router TL-R</name>
+        <price>646</price>
+    </product>
+    <product code="SE447">
+        <name>ADSL WELL PC</name>
+        <price>155</price>
+    </product>
+    <product code="PI287"> <!-- CHYBNA CENA -->
+        <name>VoIP Perfect GW</name>
+        <price>-999</price>
+    </product>
+    <product code="QA255">
+        <name>STOJANEK POD MONITOR cerny se zasuvkou</name>
+        <price>277</price>
+    </product>
+    <product code="SE433">
+        <name>Brasna ultracase pro Notebook 15</name>
+        <price>425</price>
+    </product>
+    <product code="SA309">
+        <name>BATOH pro Notebook BacPac Easy DICOTA</name>
+        <price>511</price>
+    </product>
+    <product code="XX449"> <!-- CHYBNY KOD -->
+        <name>LOGO SAFE obal na Notebook neopren pro</name>
+        <price>328</price>
+    </product>
+    <product code="TI185">
+        <name>PORTE Blue Laser samolepici folie pro NTB</name>
+        <price>383</price>
+    </product>
+    <product code="TO280">
+        <name>PORTE Yellow Cosmo samolepici folie pro NTB</name>
+        <price>506</price>
+    </product>
+    <product code="RI443">
+        <name>Evolve sportovni hodinky SPORT</name>
+        <price>682</price>
+    </product>
+    <product code="PO040">
+        <name>PCMCIA SERIOVY PORT STLabs</name>
+        <price>584</price>
+    </product>
+    <product code="TU116">
+        <name>Notebook HP EliteBook 8730w</name>
+        <price>142</price>
+    </product>
+    <product code="QO408">
+        <name>Notebook ASUS Lamborghini VX5-6X002J</name>
+        <price>23441</price>
+    </product>
+    <product code="RA222">
+        <name>Notebook LENOVO THINKPAD W700</name>
+        <price>34587</price>
+    </product>
+    <product code="RI407">
+        <name>Notebook TOSHIBA Qosmio X300-15G</name>
+        <price>35890</price>
+    </product>
+    <product code="PI422">
+        <name>Notebook SONY VAIO Z41XD/B/ C2D P9700</name>
+        <price>45691</price>
+    </product>
+    <product code="PE217">
+        <name>Notebook APPLE MacBook Pro</name>
+        <price>55165</price>
+    </product>
+    <product code="QI168">
+        <name>Notebook UMAX VisionBook</name>
+        <price>18230</price>
+    </product>
+    <product code="SO999">
+        <name>Notebook HP EliteBook 8730w</name>
+        <price>20741</price>
+    </product>
+</products>

@@ -1,0 +1,13 @@
+Pocet bodu
+9
+Hodnocení
+Odevzdaná práce splnuje všechny povinné náležitosti, príšte by bylo vhodné i uvedení tématu a varianty (napríklad v popisu úkolu).
+
+Vzhled není žádný zázrak, stránky dashboard a admin vypadají vyložene chudobne.
+
+Ocekával bych lepší nastylování odkazu v menu. Aktuálne to jednak nevypadá jako menu a mohla by být použita jiná barva než-li výchozí modrá. (-1b)
+
+Jinak prosím pozor, nevím zda správne chápete, co je to landing page. Vy nebudete totiž do landing page pridávat nic co se vygeneruje pomocí rails, 
+jak píšete v tom textu co tam máte uveden. To co vytvoríte pomocí rails bude jiná vec - to bude ten produkt, kter vaše landing page vychvaluje. 
+Bude mít i jiný vzhled.
+

@@ -1,0 +1,102 @@
+
+
+Následující ukázka zachycuje jak má vypadat prubeh programu. Váš program MUSÍ mít PRESNE takovýto výstup pokud je mu zadán vstup níže. VCETNE všech odrádkování apod.
+Vitej v programu Chata 1526! Stal jsi se chatarem v roce 1526, zkus prezit!
+
+------------------------------------------------------------
+Je 1. den. V kulne mas 0 klad a 3 polen.
+
+Co udelas?
+1) Pokacet strom
+2) Narezat kladu na polena
+3) Jit spat
+4) Vzdat zivot (a ukoncit simulaci)
+
+Tva volba:
+2
+
+V kulne nejsou zadne klady k rezani.
+
+Uplynul den a spalil si jedno poleno.
+
+------------------------------------------------------------
+Je 2. den. V kulne mas 0 klad a 2 polen.
+
+Co udelas?
+1) Pokacet strom
+2) Narezat kladu na polena
+3) Jit spat
+4) Vzdat zivot (a ukoncit simulaci)
+
+Tva volba: 
+1
+
+Sel si do lesa na drevo, pokacel si 3 stromy, mas z nich tri klady.
+
+Uplynul den a spalil si jedno poleno.
+
+------------------------------------------------------------
+Je 3. den. V kulne mas 3 klad a 1 polen.
+
+Co udelas?
+1) Pokacet strom
+2) Narezat kladu na polena
+3) Jit spat
+4) Vzdat zivot (a ukoncit simulaci)
+
+Tva volba:
+2
+
+Narezal si 2 klad na 4 polen.
+
+Uplynul den a spalil si jedno poleno.
+
+------------------------------------------------------------
+Je 4. den. V kulne mas 1 klad a 4 polen.
+
+Co udelas?
+1) Pokacet strom
+2) Narezat kladu na polena
+3) Jit spat
+4) Vzdat zivot (a ukoncit simulaci)
+
+Tva volba:
+3
+
+Sel jsi spat.
+
+Uplynul den a spalil si jedno poleno.
+
+------------------------------------------------------------
+Je 5. den. V kulne mas 1 klad a 3 polen.
+
+Co udelas?
+1) Pokacet strom
+2) Narezat kladu na polena
+3) Jit spat
+4) Vzdat zivot (a ukoncit simulaci)
+
+Tva volba:
+5
+
+Neplatny vstup
+
+Uplynul den a spalil si jedno poleno.
+
+------------------------------------------------------------
+Je 6. den. V kulne mas 1 klad a 2 polen.
+
+Co udelas?
+1) Pokacet strom
+2) Narezat kladu na polena
+3) Jit spat
+4) Vzdat zivot (a ukoncit simulaci)
+
+Tva volba:
+4
+
+Vzdal si svuj zivot a sve usili. Tvuj pomnik bude u chaty stat jeste tisic let!
+
+
+Povšimente si, že pri ukoncení programu je NEZOBRAZÍ hláška: 
+Uplynul den a spalil si jedno poleno.
