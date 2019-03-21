@@ -1,0 +1,108 @@
+SET DEFINE OFF;
+Insert into SENSOR_TYPE  (SENSOR_TYPE_ID, SENSOR_TYPE_NAME) Values   (3, 'Humidity');
+Insert into SENSOR_TYPE  (SENSOR_TYPE_ID, SENSOR_TYPE_NAME) Values   (2, 'Distancemeter');
+Insert into SENSOR_TYPE  (SENSOR_TYPE_ID, SENSOR_TYPE_NAME) Values   (1, 'Thermometer');
+COMMIT;
+
+Insert into SENSOR  (SENSOR_ID, SENSOR_NAME, IOT_PATH, IOT_NAME, LOCATION_PATH, SENSOR_TYPE_ID) Values  (1, 'Vodarna T1', '/MQTT/SKENKA/Vodarna', 'T101', '/Sklenka/Vodarna', 1);
+Insert into SENSOR  (SENSOR_ID, SENSOR_NAME, IOT_PATH, IOT_NAME, LOCATION_PATH, SENSOR_TYPE_ID) Values  (2, 'Vodarna T2', '/MQTT/SKENKA/Vodarna', 'T102', '/Sklenka/Vodarna', 1);
+Insert into SENSOR  (SENSOR_ID, SENSOR_NAME, IOT_PATH, IOT_NAME, LOCATION_PATH, SENSOR_TYPE_ID) Values  (3, 'Studna', '/MQTT/SKENKA/Studna', 'T103', '/Sklenka/Studna', 2);
+
+Insert into SENSOR_STATUS (SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (1, 22, 'UP', TO_DATE('04/14/2017 10:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS (SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (2, 21, 'UP', TO_DATE('04/14/2017 10:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS (SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (3, 4, 'UP', TO_DATE('04/14/2017 10:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval, 1, 20, 'UP', TO_DATE('04/14/2017 7:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,2,  21, 'UP', TO_DATE('04/14/2017 7:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval, 3, 4, 'UP', TO_DATE('04/14/2017  7:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,1, 20.5, 'UP', TO_DATE('04/14/2017 8:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,2, 21.5, 'UP', TO_DATE('04/14/2017 8:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,3, 4.2, 'UP', TO_DATE('04/14/2017  8:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,1, 21, 'UP', TO_DATE('04/14/2017 9:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,2, 22, 'UP', TO_DATE('04/14/2017 9:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into SENSOR_STATUS_HISTORY (SSH_ID, SENSOR_ID, SENSOR_VALUE, SENSOR_STATUS, UPDATE_DATE) Values  (SSH_ID_seq.nextval,3, 4.3, 'UP', TO_DATE('04/14/2017  9:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+
+
+
+Insert into ACTUATOR (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH) Values  (1, 'Kontrolka1', '/MQTT/SKENKA/Vodarna', 'Light1', '/Sklenka/Vodarna');
+Insert into ACTUATOR (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH) Values  (2, 'Kontrolka2', '/MQTT/SKENKA/Vodarna', 'Light2', '/Sklenka/Vodarna');
+Insert into ACTUATOR (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH) Values  (3, 'Kontrolka3', '/MQTT/SKENKA/Studna', 'Light3', '/Sklenka/Studna');
+
+Insert into ACTUATOR_STATUS_HISTORY (ash_id, ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (SSH_ID_seq.nextval, 1, 'RED', 'INITIAL', TO_DATE('04/14/2017 06:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into ACTUATOR_STATUS_HISTORY (ash_id, ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (SSH_ID_seq.nextval,2,  'RED', 'INITIAL', TO_DATE('04/14/2017 06:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into ACTUATOR_STATUS_HISTORY (ash_id, ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (SSH_ID_seq.nextval, 3, 'RED', 'INITIAL', TO_DATE('04/14/2017 06:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+Insert into ACTUATOR_STATUS (ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (1, 'GREEN', 'RULE', TO_DATE('04/14/2017 07:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into ACTUATOR_STATUS (ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (2, 'GREEN', 'RULE', TO_DATE('04/14/2017 07:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into ACTUATOR_STATUS (ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (3, 'GREEN', 'RULE', TO_DATE('04/14/2017 07:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values   (1, 'VODARNA_TEMP1_OK', 'COLOR=GREEN', 1);
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values   (2, 'VODARNA_TEMP1_LOW', 'COLOR=RED', 1);
+Insert into ACTION  (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values   (3, 'VODARNA_TEMP2_OK', 'COLOR=GREEN', 2);
+Insert into ACTION  (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values   (4, 'VODARNA_TEMP2_LOW', 'COLOR=RED', 2);
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID)  Values   (5, 'STUDNA_OK', 'COLOR=GREEN', 3);
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (6, 'STUDNA_LOW', 'COLOR=RED', 3);
+
+-- svetla a hierarchie
+Insert into ACTUATOR (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH) Values  (4, 'Svetlo Z1',    '/MQTT/SKENKA/Svetla/Zahrada/Predni', 'LightZP1', '/Sklenka/Svetla/Zahrada/Predni');
+Insert into ACTUATOR (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH) Values  (5, 'Svetlo Z2',    '/MQTT/SKENKA/Svetla/Zahrada/Zadni',  'LightZZ1', '/Sklenka/Svetla/Zahrada/Zadni');
+Insert into ACTUATOR (ACTUATOR_ID, NAME, IOT_PATH, IOT_NAME, LOCATION_PATH) Values  (6, 'Svetlo Bazen', '/MQTT/SKENKA/Svetla/Bazen',        'LightBazen', '/Sklenka/Svetla/Bazen');
+
+Insert into ACTUATOR_STATUS (ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (4, 'ON', 'MAN', TO_DATE('04/15/2017 07:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into ACTUATOR_STATUS (ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (5, 'ON', 'MAN', TO_DATE('04/15/2017 07:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+Insert into ACTUATOR_STATUS (ACTUATOR_ID, STATUS, STATUS_REASON, STATUS_DATE) Values  (6, 'ON', 'MAN', TO_DATE('04/15/2017 07:30:00', 'MM/DD/YYYY HH24:MI:SS'));
+
+Insert into ACTUATOR_GROUP  (AG_ID, AG_NAME, AG_WEIGTH) Values   (1, 'ALL', 3);          
+Insert into ACTUATOR_GROUP  (AG_ID, AG_NAME, AG_WEIGTH) Values   (2, 'Svetla Zahrada', 2);        
+Insert into ACTUATOR_GROUP  (AG_ID, AG_NAME, AG_WEIGTH) Values   (3, 'Svetla Predni Zahrada', 1); 
+Insert into ACTUATOR_GROUP  (AG_ID, AG_NAME, AG_WEIGTH) Values   (4, 'Svetla Zadni Zahrada', 1);  
+Insert into ACTUATOR_GROUP  (AG_ID, AG_NAME, AG_WEIGTH) Values   (5, 'Svetla Bazen', 1);          
+
+Insert into actuator_group_hierarchy (agh_id, Father_ID, Child_id) Values  (AGH_ID_seq.nextval, null, 1); 
+Insert into actuator_group_hierarchy (agh_id, Father_ID, Child_id) Values  (AGH_ID_seq.nextval, 1, 2);  
+Insert into actuator_group_hierarchy (agh_id, Father_ID, Child_id) Values  (AGH_ID_seq.nextval, 2, 3);  
+Insert into actuator_group_hierarchy (agh_id, Father_ID, Child_id) Values  (AGH_ID_seq.nextval, 2, 4);  
+Insert into actuator_group_hierarchy (agh_id, Father_ID, Child_id) Values  (AGH_ID_seq.nextval, 1, 5);  
+
+Insert into AGA  (AG_ID, ACTUATOR_ID) Values   (5, 6);
+Insert into AGA  (AG_ID, ACTUATOR_ID) Values   (4, 5);
+Insert into AGA   (AG_ID, ACTUATOR_ID) Values   (3, 4);
+
+-- jednotlive aktuatory - svetla
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (7, 'Rozsvit Predni Zahradu', 'STATE=ON', 4 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (8, 'Zhasni Predni Zahradu', 'STATE=OFF', 4 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (9, 'Rozsvit Zadni Zahradu', 'STATE=ON', 5 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (10, 'Zhasni Zadni Zahradu', 'STATE=OFF', 5 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (11, 'Rozsvit Bazen', 'STATE=ON',  6 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_ACTUATOR_ID) Values    (12, 'Zhasni Bazen',  'STATE=OFF', 6 );
+
+--  skupiny aktuatoru - svetla 
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_GROUP_AG_ID) Values    (13, 'Rozsvit Celou Zahradu', 'STATE=ON', 2 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_GROUP_AG_ID) Values    (14, 'Zhasni Celou Zahradu', 'STATE=OFF', 2 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_GROUP_AG_ID) Values    (15, 'Rozsvit Vse', 'STATE=ON', 1 );
+Insert into ACTION (ACTION_ID, ACTION_NAME, MESSAGE, ACTUATOR_GROUP_AG_ID) Values    (16, 'Zhasni Vse', 'STATE=OFF', 1 );
+
+
+--Prace s manualnimi pozadavky
+--vlozeni pozadavku na rozsviceni vseho
+ Insert into request (request_id, user_id, request_date, request_status, action_id)  Values  (request_id_seq.nextval, 'Pavel', sysdate, 'NEW', 15);
+
+--nalezeni novych pozadavku (System)
+ select * from request where request_status = 'NEW';
+
+--request 1 vzaty (System)
+ insert into request_history select * from request where request_id = 2;
+ update request set request_status = 'TAKEN' , request_date=sysdate where request_id =2;
+
+--request 1 zprocesovany (System)
+ insert into request_history select * from request where request_id = 2;
+ update request set request_status = 'PROCESSED'  , request_date=sysdate  where request_id =2;
+ insert into request_history select * from request where request_id = 2;
+ delete from request where request_id =2;
+
+

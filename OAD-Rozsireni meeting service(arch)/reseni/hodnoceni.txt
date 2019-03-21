@@ -1,0 +1,5 @@
+Pocet bodu
+39
+Hodnocení
+Prípady užití nejsou popsány z jednouživatelské úrovne, víceuživatelská úroven není refletována v prípadech užití. Doménový diagram by potreboval 
+revizi elementu auditní log a Uživatel. Chyby v sekvencním PSM na úrovni jednotlivých messege.

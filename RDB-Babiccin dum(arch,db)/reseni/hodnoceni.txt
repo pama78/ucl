@@ -1,0 +1,31 @@
+CKPNT1: Pocet bodu 4
+Hodnocení: zadání možné, pozor na min. pocet tabulek a císelníkovou tabulku, ale uvidíte prevodem do logického modelu.
+
+CKPNT2: Pocet bodu 19
+Hodnocení:
+"Vazba Sensor-Sensor Type bude 1:1? Nebude N:1?
+V konceptuálním modelu je vhodné mít i základní atributy entit, ale v tomto prípade by to schéma docela zneprehlednilo. Správné je pak využití textového popisu v dokumentu s doplnením rozšíreného významu a vhodné uvést základní atributy entit."
+
+"Vazba Sensor-Sensor_type se mi zdá spíše N:1 než 1:1.
+Tabulka Actuator_group_hierarchy tvorí záznamy stromové struktury, kde child má vždy pouze 1 parent skupinu? Pokud ano, tak není nutné mít další tabulku a stací, aby Actuator Group mela FK sama na sebe.
+Atributy v entite Sensor_Status, Actuator_Status budou nepovinné a podobne v historii? 
+Asi více atributu by mela být Not Null."
+
+"Tabulka Sensor_status nemá PK? Vazba Sensor-Sensor_Status je 1:N?
+Pokud Sensor_status má sloupec Sensor_status jako NN, je duvod, aby NN nebyl i sloupec v tabulce Sensor_status_history?
+Vazba Sensor-Sensor_type bude N:1.
+Sloupec Action_ID v Rule je nepovinný?
+Tabulka Request_History nemá vazbu na Request? Nemá PK?
+Nekteré sloupce by asi mely být Not Null."
+
+CKPNT3: Pocet bodu 41
+Hodnocení
+"Dokument - vecne OK, Log/Fyz model obsahuje drobné chyby.
+
+DDL - vhodné více NN, PK u Rule je složený?, vhodné doplnit default hodnoty (napr. datumy)
+
+Testdata - chyba check ""CHECK_AG_WEIGTH"", chyba ""ACTUATOR_GROUP_HIERARCHY"".""FATHER_ID"", žádná data do RULE
+
+SQL - hezký hierarchický dotaz, málo typu subquery, where podmínky s málo typy, málo typu join tabulek
+
+Optimalizace - OK "

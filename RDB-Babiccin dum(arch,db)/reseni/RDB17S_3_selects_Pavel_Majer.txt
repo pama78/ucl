@@ -1,0 +1,62 @@
+
+--Query: seznam skupin cidel
+  select location_path, count (*) cnt
+  from sensor 
+  group by location_path;
+  
+--Query: seznam cidel a stavu
+  select s.sensor_name, s.location_path, st.sensor_type_name, ss.sensor_value, ss.sensor_status, to_char (update_date,'YYYY/MM/DD HH24:MI:SS') dt from sensor s, sensor_type st, sensor_status ss
+  where s.sensor_id=ss.sensor_id
+  and s.sensor_type_id=st.sensor_type_id;
+
+--Query: seznam cidel a stavu pro zovlenou lokaci
+  select s.sensor_name, s.location_path, st.sensor_type_name, ss.sensor_value, ss.sensor_status, to_char (update_date,'YYYY/MM/DD HH24:MI:SS') dt from sensor s, sensor_type st, sensor_status ss
+  where s.sensor_id=ss.sensor_id
+  and s.sensor_type_id=st.sensor_type_id
+  and location_path='/Sklenka/Vodarna';
+
+--Query: historie stavu cidel, prumery
+  select s.sensor_name, s.location_path, st.sensor_type_name, round (avg (ss.sensor_value),2) avg_val, round (min (ss.sensor_value),2) min_val, round (max (ss.sensor_value),2) max_val
+  from sensor s, sensor_type st, sensor_status_history ss 
+  where s.sensor_id=ss.sensor_id
+  and s.sensor_type_id=st.sensor_type_id
+  group by s.sensor_name, s.location_path, st.sensor_type_name;
+
+--Query: pravidla, ktera jsou aktivni
+  select * from rule
+  where is_active='Y'
+  order by rule_name, rule_id;
+
+--Query: seznam aktuatoru a stavu
+   select name, location_path, status, status_reason, to_char (status_date,'YYYY/MM/DD HH24:MI:SS') dt from actuator a, actuator_status ast
+   where a.actuator_id=ast.actuator_id
+   order by location_path;
+   
+-- query: status aktuatoru podle hierarchie - podle zvoleneho otce
+    select agf.ag_name father_name, agc.ag_name child_name, ast.status , ast.status_date
+    from actuator_group agf, actuator_group agc, aga, actuator_status ast, 
+      (
+        select father_id, child_id, level 
+      from actuator_group_hierarchy 
+      start with Father_ID = 1   --- tady se vlozi otec, ktery ovlada skupinu 1 pro vsechny, 2 pro svetla 
+      connect by prior  child_id = Father_ID
+       ) agh
+    where agf.AG_ID=agh.father_id
+    and agc.AG_ID=agh.child_id
+    and agc.AG_ID=AGA.AG_ID
+    and aga.actuator_id=ast.actuator_id;
+    
+ -- status vsech podle hierarchie
+     select agf.ag_name father_name, agc.ag_name child_name, a.actuator_id from actuator_group agf, actuator_group agc, aga, actuator a, 
+      (
+        select father_id, child_id, level 
+      from ACTUATOR_GROUP_HIERARCHY 
+      start with Father_ID = 1   --- tady se vlozi otec, ktery ovlada skupinu 1 pro vsechny, 2 pro svetla 
+      connect by prior  child_id = Father_ID
+       ) agh
+    where AGf.AG_ID=agh.father_id
+    and AGc.AG_ID=agh.child_id
+    and AGC.AG_ID=AGA.AG_ID
+    and AGA.ACTUATOR_ID=a.actuator_id;
+
+
