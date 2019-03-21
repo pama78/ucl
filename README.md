@@ -10,4 +10,4 @@ there are six sets of projects
 6) Bachelor thesis project - about monitoring of the parking places with help of IoT technologies
 
 the project type is identified on each folder in brackets, such as (arch) for architecture related.
-
+All is in Czech language. 
