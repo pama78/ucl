@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-20T22:47:09.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="qP3Cv2MjR5dV9cotbeb0" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-20T22:48:01.471Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="eLx60n83j78RsMpXsbfx" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="1851" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="480" y="150" width="360" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-2" value="analyza hlavnich komponent" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="190" y="180" width="120" height="60" as="geometry"/>
+          <mxGeometry x="190" y="181" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-4" value="&lt;b&gt;&amp;nbsp;co to je:&lt;/b&gt; někdy samostatná metoda, někdy součást F.A&lt;br&gt;dobrá na identifikaci odlehlých pozorování&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="50" width="380" height="90" as="geometry"/>
@@ -29,7 +29,10 @@
           <mxGeometry x="140" y="280" width="240" height="50" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-12" value="&lt;b&gt;R: &lt;/b&gt;prcomp(AHK, center=TRUE, scale =TRUE&lt;br&gt;#proposition of variance - vysvetleni komp pc1,pc2.&lt;br&gt;$scale #komponentní zátěže, někdy znaménka obr.&lt;br&gt;$x #komponentové skóre&lt;br&gt;vlastni&amp;lt;-cov(AHK); vlastni$values ; eigen(cov(AHK)) #vlastní čísla&lt;br&gt;&lt;div&gt;&lt;span&gt;scree plot-biplot - kolik% variability vysvětleno. např. váha negativně korelovaná s 1.komp,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;autoplot(pca) #graf&lt;/span&gt;&lt;/div&gt;&lt;div&gt;$rotation - jaké jsou kovariance meyi komponentou a novou proměnnou&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="40" y="390" width="390" height="160" as="geometry"/>
+          <mxGeometry x="-30" y="380" width="390" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="F72YbmFoQMziK-xgi5LF-13" value="Faktorová analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="240" y="810" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
