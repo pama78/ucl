@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-20T22:38:26.288Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="hhZYSQdTX9V94l2AunOG" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-20T22:47:09.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="qP3Cv2MjR5dV9cotbeb0" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="1851" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,20 +16,20 @@
         <mxCell id="F72YbmFoQMziK-xgi5LF-5" value="&lt;b&gt;k čemu slouží:&lt;/b&gt; říká co je v pozadí kovar. matice PxP - jak proměnné závisí&lt;br&gt;nahrazuje proměnné novými - prostřednictvím latentních proměnných&lt;br&gt;vysvětluje variabilitu, dobré k poznání dat. Vyhodne pro regresi&lt;br&gt;Cil: zkonstruovat novou promennou - komponentu&lt;br&gt;(nalezení komponent a seřazení podle důležitosti)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="420" y="250" width="440" height="100" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-6" value="predpoklady: nekorelovanost -&amp;nbsp; (linearni nezavislost)&lt;br&gt;vícerozměrná normalita doporučená" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="F72YbmFoQMziK-xgi5LF-6" value="&lt;b&gt;predpoklady&lt;/b&gt;: nekorelovanost -&amp;nbsp; (linearni nezavislost)&lt;br&gt;vícerozměrná normalita doporučená" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="450" y="400" width="320" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-7" value="Postup: máme datovou matici x1..Xp, máme kov. matici mí - vlastní čísla+vlastní vektory. pak máme hlavní komponenty 1., 2.. (podle důl)&lt;br&gt;zvolím kolik použiju komponent (a co vynecháme)&lt;br&gt;např že 2 komponenty vysvětlí 97% variability" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="F72YbmFoQMziK-xgi5LF-7" value="&lt;b&gt;Postup&lt;/b&gt;: máme datovou matici x1..Xp, máme kov. matici mí - vlastní čísla+vlastní vektory. pak máme hlavní komponenty 1., 2.. (podle důl)&lt;br&gt;zvolím kolik použiju komponent (a co vynecháme)&lt;br&gt;např že 2 komponenty vysvětlí 97% variability" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="450" y="480" width="390" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-9" value="komponentové skóre = náhrada dané hodnotz v nových proměnných&lt;br&gt;komponentová zátěž = míra korelace (loading) mezi původními a a novými proměnnými" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="F72YbmFoQMziK-xgi5LF-9" value="&lt;b&gt;komponentové skóre =&lt;/b&gt; náhrada dané hodnotz v nových proměnných&lt;br&gt;&lt;b&gt;komponentová zátěž =&lt;/b&gt; míra korelace (loading) mezi původními a a novými proměnnými" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-9" y="47" width="389" height="96" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-10" value="normovanost: aby šlo porovnávat mezi sebou data s jinými rozptyly, nebo jednotakami. z korel. matice lze normovat" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="F72YbmFoQMziK-xgi5LF-10" value="&lt;b&gt;normovanost&lt;/b&gt;: aby šlo porovnávat mezi sebou data s jinými rozptyly, nebo jednotakami. z korel. matice lze normovat" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="140" y="280" width="240" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-12" value="prcomp(AHK, center=TRUE, scale =TRUE&lt;br&gt;$scale #komponentní zátěže, někdy znaménka obr.&lt;br&gt;$x #komponentové skóre&lt;br&gt;vlastni&amp;lt;-cov(AHK); eigen(cov(AHK)) #vlastní čísla&lt;br&gt;&lt;div&gt;&lt;span&gt;vlastni$values #vlastni cisla&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="100" y="390" width="280" height="120" as="geometry"/>
+        <mxCell id="F72YbmFoQMziK-xgi5LF-12" value="&lt;b&gt;R: &lt;/b&gt;prcomp(AHK, center=TRUE, scale =TRUE&lt;br&gt;#proposition of variance - vysvetleni komp pc1,pc2.&lt;br&gt;$scale #komponentní zátěže, někdy znaménka obr.&lt;br&gt;$x #komponentové skóre&lt;br&gt;vlastni&amp;lt;-cov(AHK); vlastni$values ; eigen(cov(AHK)) #vlastní čísla&lt;br&gt;&lt;div&gt;&lt;span&gt;scree plot-biplot - kolik% variability vysvětleno. např. váha negativně korelovaná s 1.komp,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;autoplot(pca) #graf&lt;/span&gt;&lt;/div&gt;&lt;div&gt;$rotation - jaké jsou kovariance meyi komponentou a novou proměnnou&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="390" height="160" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
