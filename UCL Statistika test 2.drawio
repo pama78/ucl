@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-25T22:57:58.924Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="9JL4N4jfc_b0l4dTFqoK" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-25T23:16:29.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="wg0pnw2HD9k1cawWpb7Z" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -132,6 +132,12 @@
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-35" value="&lt;b&gt;apriorní informace - &lt;/b&gt;víme, že nejsou jednotky rozděleny proporcionáalně. můžeme informaci využít a získat lepší výsledky.&lt;br&gt;&lt;b&gt;ztrátová funkce &lt;/b&gt;- jaké ztráty se dopustíme když mylně zařadíme jednotku do sk2? může to být nestejný problém jako mylné zařazení do sk1.&amp;nbsp;&lt;br&gt;&lt;b&gt;AI a ZF lze zapojit do vzorce &lt;/b&gt;. v R to není, muselo by se doprogramovat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1195" y="540" width="405" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-36" value="&lt;b&gt;kvalita modelu DA -&lt;/b&gt;&amp;nbsp;1) lze skoumat diskriminační skóre a zátěže. Ne u všech příslušností to vzjde, můžeme testovat v R (vrací pravděpodobnosti) &lt;br&gt;v regresi máme index determinance hodnotící podíl námi vysvětlené variability.&amp;nbsp;&lt;br&gt;2) lze zkoumat vliv zařazení proměnné na změnu&lt;br&gt;3) MAHA vzdálenosti - časté kritérium = Wilkovo lambda&lt;br&gt;4) Hit poměr a konfuzní matice (použijeme v UCL). podíl správně a špatně zatříděných. náhodně 75% na tvorbu modelu a 25% na test -&amp;gt;konfuzní matice.&lt;br&gt;dobré rozdělit data na trénovací a testovací&lt;br&gt;odlehlá pozorování mimořádně vadí (neprojdou testy normality)&lt;br&gt;MANOVA - analýza rozptylu - pro kategorie chudý, středně, bohatý (z nespojitých čísel). pro auta usa/eu. na uu kitu je skript" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="640" width="470" height="161" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-37" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Rattle vína . kategorie 1,2,3 - vysvětlovaná kategoriální podle chemického rozboru.&amp;nbsp;&lt;br&gt;1) EAD zamyslet se nad odlehl. pozorováním. &lt;br&gt;2) scatter plot matrix - rychlá sada grafů, rozdělení veličin. na mimodiagonálních jsou závislosti mezi proměnnými. alkohol-magnezium...&lt;br&gt;3) test shody kovar. matic . BoxM - napříč skupinami (manova by se na vína nehodila)&lt;br&gt;4) call lda - zavolám diskr. funkci lin disrk.&amp;nbsp;&lt;br&gt;- apriorní pravděpodobnosti - odhadnuté z výběru prior probabilities&lt;br&gt;-group means - podmíněné průmery pro sk1,2,3 pro každou proměnou&lt;br&gt;-máme 2 diskriminační funkce LD1 a LD2 pro 3 skupiny&lt;br&gt;-coeficients of linear discriminants - dílčí koef. - závislost mezi proměnnou a LD1, LD2&lt;br&gt;- proportion of trace sum 1 - odhadnutý podíl vysvětlovaného rozptylu&lt;br&gt;4) lidahist - rozložení ve skup 1, hodnoty diskr. funkce a rozložení diskr. skore. ideal pro supinu 1,2,3 mít každý kopec jinde v rámci sloupců&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="640" width="570" height="192" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
