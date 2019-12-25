@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-25T20:40:21.538Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="72Rx0pYeeYaMTg7h_OKW" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-25T20:48:17.907Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="zCuIL9I4bkfDFbscxuXF" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -66,6 +66,18 @@
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-11" value="&lt;b&gt;příklad FA -&amp;nbsp; &lt;/b&gt;call -&amp;gt;factalnal (x=car_data_kv, factors=3, rotation=&quot;varimax) #ortogon&lt;br&gt;-&amp;gt;loadings #faktorove zateze, cena silne korelovana s fak1 (0.9) fak2 negati se spotř.&lt;br&gt;-&amp;gt; cummulative (suma proportion var)&lt;br&gt;-&amp;gt; test hypo jestli 3 faktory sufficient -&amp;gt; zamitl bych (=0), ale je to subj. věc, chceme 90%&lt;br&gt;#( +scores=&quot;Bartlett&quot;) #nebo regression=thomson&lt;br&gt;$scores #ziskam nove hodnoty pro faktory, ktere muzu pouzit v regr. analyze&amp;nbsp;&lt;br&gt;$loadings #interpretace faktorů, zamylset se, rotace, pak formulace (úspornost, luxus..)&lt;br&gt;$rotmat #rotovaná matice faktorů&lt;br&gt;load &amp;lt;- fanal$loadings[,1;2]; plot(load) #graf, 2 faktory zobrazitelné" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="347" y="1029" width="480" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-13" value="9 28/11&amp;nbsp;&lt;br&gt;Shluková analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="659" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-15" value="&lt;b&gt;&amp;nbsp;cíl SA: &lt;/b&gt;klasifikace objektů, vztahy, zjednodušení (maximalizace rozdílů mezi shluky)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="640" width="320" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-16" value="&lt;b&gt;důležité otázky: &lt;/b&gt;kolik shluků chceme, hiearch/nehiearchické?&lt;br&gt;a jaké testy použijeme?&amp;nbsp;&lt;br&gt;siluety, gap statistiky, elbow (loketní) graf, 30 indexů" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="690" width="340" height="61" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-17" value="&lt;b&gt;předpoklady: &lt;/b&gt;není předpoklad o statistickém rozdělení, o nekorelovanosti (ale korelovanost může data ovlivnit a výsledky mohou vycházet jinak)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="759" width="320" height="51" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
