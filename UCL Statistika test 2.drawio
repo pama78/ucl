@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-25T20:48:17.907Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="zCuIL9I4bkfDFbscxuXF" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-25T22:57:58.924Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="9JL4N4jfc_b0l4dTFqoK" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="F72YbmFoQMziK-xgi5LF-1" value="varianty -&amp;nbsp;&lt;br&gt;na kovariační matici - bezrozměrnost&lt;br&gt;založeno na korelační matici - výhodnější. od -1 až 1&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="160" width="360" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-2" value="analyza hlavnich komponent" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="F72YbmFoQMziK-xgi5LF-2" value="6. &lt;br&gt;analyza hlavnich komponent" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="320" y="170" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-4" value="&lt;b&gt;&amp;nbsp;co to je:&lt;/b&gt; někdy samostatná metoda, někdy součást F.A&lt;br&gt;dobrá na identifikaci odlehlých pozorování&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -68,16 +68,70 @@
           <mxGeometry x="347" y="1029" width="480" height="140" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-13" value="9 28/11&amp;nbsp;&lt;br&gt;Shluková analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="659" width="120" height="60" as="geometry"/>
+          <mxGeometry x="1130" y="965" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-15" value="&lt;b&gt;&amp;nbsp;cíl SA: &lt;/b&gt;klasifikace objektů, vztahy, zjednodušení (maximalizace rozdílů mezi shluky)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="640" width="320" height="40" as="geometry"/>
+          <mxGeometry x="1280" y="946" width="320" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-16" value="&lt;b&gt;důležité otázky: &lt;/b&gt;kolik shluků chceme, hiearch/nehiearchické?&lt;br&gt;a jaké testy použijeme?&amp;nbsp;&lt;br&gt;siluety, gap statistiky, elbow (loketní) graf, 30 indexů" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="690" width="340" height="61" as="geometry"/>
+          <mxGeometry x="1290" y="996" width="340" height="61" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-17" value="&lt;b&gt;předpoklady: &lt;/b&gt;není předpoklad o statistickém rozdělení, o nekorelovanosti (ale korelovanost může data ovlivnit a výsledky mohou vycházet jinak)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="759" width="320" height="51" as="geometry"/>
+          <mxGeometry x="1280" y="1065" width="320" height="51" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-18" value="&lt;b&gt;EAD - &lt;/b&gt;matice maha vzdáleností, odstranění odlehlých pozorování.&amp;nbsp;&lt;br&gt;reprezentativnost výběru" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1049.5" width="320" height="51" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-19" value="&lt;b&gt;normalizace dat - &lt;/b&gt;dobrá pro stejný rozměr dat (kg,cm), důležitá pro fuzzy nutná, ale přijdeme o interpretaci proměnných" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1105" width="320" height="51" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-20" value="&lt;b&gt;multikolinearita - &lt;/b&gt;není vyžadována nekorelovanost, ale ovlivní výsledky (korelovaná data se zdají významnější).&amp;nbsp;&lt;br&gt;jde řešit s AHK, pak ale másíme počítat komponentní skóre)&amp;nbsp;&lt;br&gt;nebo vyloučíme některé proměnné a prohlásíme že jsme vynechali takové a takové" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1166" width="320" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-21" value="&lt;b&gt;asociační koeficienty?&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1126" width="320" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-22" value="7 (1. po testu) Diskriminační analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="930" y="50" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-23" value="&lt;b&gt;k čemu slouží:&lt;/b&gt;&amp;nbsp;klasifikační nástroj. metody pro klasifikaci/roztřídění do 2 nebo více skupin (pomáhá s predikcí a zaklasifikováním). Závislost kategoriálního typu na kvantitativních proměnných (nebo faktory)&lt;br&gt;obvykle vysvětlovaná prom. Y je kategoriální typ (kvalitativní udává třídu 0/1, ano/ne).&amp;nbsp;&lt;br&gt;aplikačně snadné, využívané v lékařství(dopady léků na pacienty)&lt;br&gt;ideálně - sestavíme úlohu do podoby diskriminačního pravidla. když dosadíme hodnoty, tak jsme schopni rozhodnout třídu/skupinu&lt;br&gt;&lt;b&gt;V regresi by se předpokládala kvalitativní spojitá&amp;nbsp;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" width="570" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-24" value="&lt;b&gt;principy - &lt;/b&gt;vnitroskupinová variabilita co nejmenší a meziskupinová co největší&lt;br&gt;zjišťujeme které proměnné mají vliv na zatřídění do skupin přes lin. diskr. funkci&lt;br&gt;&lt;b&gt;Diskriminanty -&amp;nbsp;&lt;/b&gt;snažíme se najít takové kriterium, které dovede skupiny rozdělit &lt;b&gt;hledáme nejlepší celkovou variabilitu&lt;/b&gt; (=jako rozptyl ve vícerozměrné analýze) na matici vnitro a meziskupinové variability. optimum má minimální vntro a maximální meziskupinovou variabilitu (homogenní skupiny)&lt;br&gt;&lt;b&gt;&amp;nbsp;výhoda &lt;/b&gt;- jednoznačnost" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="127.5" width="460" height="102.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-25" value="&lt;b&gt;lineární DA/kvadratická DA - LDA jednodušší (na UCL),&lt;/b&gt; 1 vysvětlovaná a P vysvětlujících (diskriminátorů). 1 objekt do 1 třídy (fuzzy varianta je pak pravděpodobnostní zařazení do tříd&lt;br&gt;&lt;b&gt;kvadratická DA - &lt;/b&gt;pokud nejsou shodné kovarianční matice ve skupinách. test shodny na boxové statistice M (ale tam je cilivost na normalitu), nebo bartletův a Levenemův test" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="120" width="310" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-26" value="&lt;b&gt;striktní předpoklady - &lt;/b&gt;1) vícerozměrná normalita dat (málokdy splněno), s úspěchem používáno i bez. prof. Hebák OK pro skoro normáln í rozdělení, alespoň jednotlivých proměnných&lt;br&gt;2) lineární DA v případě shodných kovariančních matic ve skupinách, jinak kvadratická" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="250" width="340" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-27" value="&lt;b&gt;když není normalita dat,&lt;/b&gt; pak logistická regrese, můžeme použít i obě metody a porovnat výsledky. L.R má také nevýhody, např nejednoznačnost (zatímco v DA je buď patří nebo nepatří)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="330" width="360" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-28" value="příklad: lze roztřídit auta podle původu asijska-usa-evropská?&lt;br&gt;víno podle měřených proměnných (vysvětlujících)?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="390" width="340" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-29" value="centroidy,&amp;nbsp;&lt;br&gt;maha vzdálenosti&lt;br&gt;apriorní info&lt;br&gt;ztráty při misklasifikaci" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="490" width="130" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-30" value="Fisherovo diskriminační kriterium - založeno na... , lze interpretovat jako v regresi. dílčí koeficienty regr. funkcekteré nám udávají míru vlivu Xp na D.F.&amp;nbsp;&amp;nbsp;&lt;b&gt;maximalizujeme F.D.K pomocí vlastních čísel&lt;/b&gt;. &lt;br&gt;1. Diskriminant (první kanonická proměnná)&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="250" width="380" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-31" value="&lt;b&gt;počet diskriminantů.&lt;/b&gt; jestli jsou dvě skupiny, stačí 1 diskriminant, jestli víc skupin, musíme určit kolik diskriminantů třeba (min(počet proměnných, skupin -1)). např v car data jsou 3 skupiny -&amp;gt; 2 funkce&lt;br&gt;1. a 2. funkce vysvětluje dohromady 100% variability" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="350" width="380" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-32" value="&lt;b&gt;diskriminační skóre&lt;/b&gt; - když dosadíme hodnoty do diskriminační rovnice -&amp;gt; skóre (připomíná regresní analýzu)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="440" width="350" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-33" value="&lt;b&gt;postup / &lt;/b&gt;máme matici,&amp;nbsp;&lt;br&gt;určíme vnitro a meziskup. variabilitu&lt;br&gt;určím 1 diskriminant pomocí vlastních čísel&lt;br&gt;zjistím kolik vysvětluje variability a určím další diskriminant" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="460" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-34" value="&lt;b&gt;postup jak zaklasifikovat -&lt;/b&gt; jen do 1 třídy.&amp;nbsp;&lt;br&gt;1. predikční model, máme diskriminační skóre, máme diskriminantz, počítáme vzdáleností bodů od centroidů (střed sk. 1 a sk. 2). pomocí Maha/Euklidovské). Pro každou jednotku určím kam má nejblíž a tam zařadíme" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="540" width="300" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-35" value="&lt;b&gt;apriorní informace - &lt;/b&gt;víme, že nejsou jednotky rozděleny proporcionáalně. můžeme informaci využít a získat lepší výsledky.&lt;br&gt;&lt;b&gt;ztrátová funkce &lt;/b&gt;- jaké ztráty se dopustíme když mylně zařadíme jednotku do sk2? může to být nestejný problém jako mylné zařazení do sk1.&amp;nbsp;&lt;br&gt;&lt;b&gt;AI a ZF lze zapojit do vzorce &lt;/b&gt;. v R to není, muselo by se doprogramovat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="540" width="405" height="70" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
