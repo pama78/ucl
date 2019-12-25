@@ -1,56 +1,71 @@
-<mxfile host="www.draw.io" modified="2019-12-25T20:01:44.699Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="2glAUkSPnHZszXLFanN6" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-25T20:40:21.538Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="72Rx0pYeeYaMTg7h_OKW" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
-    <mxGraphModel dx="1851" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="F72YbmFoQMziK-xgi5LF-1" value="varianty -&amp;nbsp;&lt;br&gt;na kovariační matici - bezrozměrnost&lt;br&gt;založeno na korelační matici - výhodnější. od -1 až 1&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="150" width="360" height="60" as="geometry"/>
+          <mxGeometry x="460" y="160" width="360" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-2" value="analyza hlavnich komponent" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="190" y="181" width="120" height="60" as="geometry"/>
+          <mxGeometry x="320" y="170" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-4" value="&lt;b&gt;&amp;nbsp;co to je:&lt;/b&gt; někdy samostatná metoda, někdy součást F.A&lt;br&gt;dobrá na identifikaci odlehlých pozorování&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="50" width="380" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-5" value="&lt;b&gt;k čemu slouží:&lt;/b&gt; říká co je v pozadí kovar. matice PxP - jak proměnné závisí&lt;br&gt;nahrazuje proměnné novými - prostřednictvím latentních proměnných&lt;br&gt;vysvětluje variabilitu, dobré k poznání dat. Vyhodne pro regresi&lt;br&gt;Cil: zkonstruovat novou promennou - komponentu&lt;br&gt;(nalezení komponent a seřazení podle důležitosti)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="420" y="250" width="440" height="100" as="geometry"/>
+          <mxGeometry x="360" y="250" width="440" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-6" value="&lt;b&gt;predpoklady&lt;/b&gt;: nekorelovanost -&amp;nbsp; (linearni nezavislost)&lt;br&gt;vícerozměrná normalita doporučená" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="400" width="320" height="50" as="geometry"/>
+          <mxGeometry x="420" y="370" width="320" height="50" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-7" value="&lt;b&gt;Postup&lt;/b&gt;: máme datovou matici x1..Xp, máme kov. matici mí - vlastní čísla+vlastní vektory. pak máme hlavní komponenty 1., 2.. (podle důl)&lt;br&gt;zvolím kolik použiju komponent (a co vynecháme)&lt;br&gt;např že 2 komponenty vysvětlí 97% variability" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="480" width="390" height="60" as="geometry"/>
+          <mxGeometry x="420" y="440" width="390" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-9" value="&lt;b&gt;komponentové skóre =&lt;/b&gt; náhrada dané hodnotz v nových proměnných&lt;br&gt;&lt;b&gt;komponentová zátěž =&lt;/b&gt; míra korelace (loading) mezi původními a a novými proměnnými" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-9" y="47" width="389" height="96" as="geometry"/>
+          <mxGeometry x="4" y="54" width="389" height="96" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-10" value="&lt;b&gt;normovanost&lt;/b&gt;: aby šlo porovnávat mezi sebou data s jinými rozptyly, nebo jednotakami. z korel. matice lze normovat" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="280" width="240" height="50" as="geometry"/>
+          <mxGeometry x="76" y="290" width="240" height="50" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-12" value="&lt;b&gt;R: &lt;/b&gt;prcomp(AHK, center=TRUE, scale =TRUE&lt;br&gt;#proposition of variance - vysvetleni komp pc1,pc2.&lt;br&gt;$scale #komponentní zátěže, někdy znaménka obr.&lt;br&gt;$x #komponentové skóre&lt;br&gt;vlastni&amp;lt;-cov(AHK); vlastni$values ; eigen(cov(AHK)) #vlastní čísla&lt;br&gt;&lt;div&gt;&lt;span&gt;scree plot-biplot - kolik% variability vysvětleno. např. váha negativně korelovaná s 1.komp,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;autoplot(pca) #graf&lt;/span&gt;&lt;/div&gt;&lt;div&gt;$rotation - jaké jsou kovariance meyi komponentou a novou proměnnou&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="-30" y="380" width="390" height="160" as="geometry"/>
+          <mxGeometry x="10" y="380" width="390" height="160" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-13" value="6. Faktorová analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="240" y="810" width="120" height="60" as="geometry"/>
+          <mxGeometry x="357" y="759" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-14" value="&lt;b&gt;problémy FA&lt;/b&gt;: nejednoznačnost modelu, je víc postupů, uděláme rozklad a interpretujeme (faktor rychlost, luxus..)&lt;br&gt;&lt;b&gt;Výhody FA:&lt;/b&gt; rozhodnost, jednoznačnost výsledku, ale rotace zaručí jakýkoliv výsledek&lt;br&gt;&lt;b&gt;Faktory jsou nekorelované&lt;/b&gt;&amp;nbsp;- můžeme použít v regresi místo hřebenové regrese (rdige regression)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="436" y="900" width="320" height="90" as="geometry"/>
+        <mxCell id="F72YbmFoQMziK-xgi5LF-14" value="&lt;b&gt;problémy FA&lt;/b&gt;: nejednoznačnost modelu, je víc postupů, uděláme rozklad a interpretujeme (faktor rychlost, luxus..)&lt;br&gt;&lt;b&gt;Výhody FA:&lt;/b&gt; rozhodnost, jednoznačnost výsledku, ale rotace zaručí jakýkoliv výsledek. výhoda když hodně proměnných koreluje, faktor zastoupí víc proměnných)&lt;br&gt;&lt;b&gt;Faktory jsou nekorelované&lt;/b&gt;&amp;nbsp;- můžeme použít v regresi místo hřebenové regrese (rdige regression)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="504" y="719" width="320" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-15" value="&lt;b&gt;dobré pro&lt;/b&gt; zjednodušení. Víc proměnných-&amp;gt;1 Faktor (nedoporučují se triviální faktory spojené s 1 proměnnou)&amp;nbsp;&lt;br&gt;&lt;b&gt;připomíná regresní analýzu,&lt;/b&gt; kde v rovnici je místo beta je gama Yxj=mí+Yj1F1+Yj2F2...&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="730" width="320" height="80" as="geometry"/>
+          <mxGeometry x="4" y="700" width="320" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-16" value="&lt;b&gt;cíl FA&lt;/b&gt;: popis proměnných, nahrazení novými" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="820" width="320" height="60" as="geometry"/>
+        <mxCell id="F72YbmFoQMziK-xgi5LF-16" value="&lt;b&gt;cíl FA&lt;/b&gt;: popis proměnných, nahrazení novými, redukce dat, řešení multikolinearity (pomocí nových faktorů a rotace, netřeba hřebenové regrese apod.). škálování/třídění - faktor chudoby zkorelovaný s určitými veličinami" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="402" y="659" width="420" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="F72YbmFoQMziK-xgi5LF-17" value="&lt;b&gt;postup FA&lt;/b&gt;: vycházíme z korel. matice. Princip jako u AHK, ale nahrazuji proměnné faktory s interpretací&lt;br&gt;1) volba množství faktorů (poslouží AHK, víme kolik vysvětlí var.)&lt;br&gt;&lt;br&gt;&lt;b&gt;2 metody &lt;/b&gt;- metoda hlavních faktorů (AHK), maximální věrohodnost (maximalizace v. funkce)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="421" y="1000" width="350" height="90" as="geometry"/>
+        <mxCell id="F72YbmFoQMziK-xgi5LF-17" value="&lt;b&gt;postup FA&lt;/b&gt;: vycházíme z korel. matice. Princip jako u AHK, ale nahrazuji proměnné faktory s interpretací.&amp;nbsp;&lt;b&gt;2 metody&amp;nbsp;&lt;/b&gt;- metoda hlavních faktorů (AHK), maximální věrohodnost (maximalizace v. funkce)&lt;br&gt;&lt;b&gt;1) volba množství faktorů &lt;/b&gt;(poslouží AHK, víme kolik vysvětlí var.)&lt;br&gt;&lt;b&gt;2) rotace faktorů&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;b&gt;3) odhad faktorového skóre&lt;/b&gt; (nejdůležitější, korelace mezi proměnnou a faktorem).Nahradím hodnoty a vynesu faktor. zátěže&amp;nbsp; do grafu, jak spolu souvisí&lt;br&gt;- 1. hlavní komponenta vysvětluje nejvíc rozptylu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="397" y="899" width="430" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-2" value="&lt;b&gt;předpoklady FA - &lt;/b&gt;nezávislé faktory, lineární model, vícerozměrné norm. rozdělení (v optimálním případě)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="920" width="320" height="60" as="geometry"/>
+          <mxGeometry x="4" y="790" width="320" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-3" value="&lt;b&gt;výsledky - Komunalita: &lt;/b&gt;rozdíl rozptylu vysvětleného společnými faktory&lt;br&gt;&lt;b&gt;Variabilitu &lt;/b&gt;rozkládáme na 2 části - vysvětlenou a nevysvětlenou (specif. faktory)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="1000" width="320" height="60" as="geometry"/>
+          <mxGeometry x="4" y="860" width="320" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-4" value="&lt;b&gt;Rotace -&amp;nbsp; 1)ortogonální (&lt;/b&gt;stále osy v pravém úhly). faktory stále nezávislé/nekorelované.&amp;nbsp;metoda &lt;b&gt;Varimax &lt;/b&gt;(maximalizace variability faktorové zátěže)&lt;b&gt;&amp;nbsp;&lt;/b&gt;nejjednodušší. říká že tenhle faktor je kladně/záporně korelovaný s těmito proměnnými. korelační matice nepoškozená. je hodně řešení. hledáme takové kde Factor Loadings je buď nízký nebo vysoký (vysoký pro některé proměnné a nízký pro jiné)&lt;br&gt;&lt;b&gt;2) šikmá rotace (např oblimin)&amp;nbsp;&lt;/b&gt;nezachová nekorelované faktory, porušuje předpoklad o lineární nezávislosti faktorů, neřeší multikolinearitu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1029" width="330" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-8" value="&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3Bp%C5%99edpoklady%20FA%20-%20%26lt%3B%2Fb%26gt%3Bnez%C3%A1visl%C3%A9%20faktory%2C%20line%C3%A1rn%C3%AD%20model%2C%20v%C3%ADcerozm%C4%9Brn%C3%A9%20norm.%20rozd%C4%9Blen%C3%AD%20(v%20optim%C3%A1ln%C3%ADm%20p%C5%99%C3%ADpad%C4%9B)%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22920%22%20width%3D%22320%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="1054" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-9" value="&lt;b&gt;Kriteria FA - AIR -&lt;/b&gt; čím menší, tím lepší. &lt;br&gt;počet faktorů &amp;lt; počet proměnných / 2&lt;br&gt;vysvětlovat alespoň 90% komunality (variability kov. matice) &lt;br&gt;vysvětlovat aspoň 70% celkového rozptylu&lt;br&gt;rezidua korel. matice bz měla projít testem normality" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4" y="930" width="334" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-10" value="&lt;b&gt;Odhad FA skóre &lt;/b&gt;- jde použít jako náhrada do modelů (regrese)&lt;br&gt;ale je počet hodnot nepoz. faktorů + specif. faktorů víc než pozorování&lt;br&gt;pro určení jsou dvě metody 1) Bartletova, 2) Thomsonova regrese" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="444" y="839" width="380" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-11" value="&lt;b&gt;příklad FA -&amp;nbsp; &lt;/b&gt;call -&amp;gt;factalnal (x=car_data_kv, factors=3, rotation=&quot;varimax) #ortogon&lt;br&gt;-&amp;gt;loadings #faktorove zateze, cena silne korelovana s fak1 (0.9) fak2 negati se spotř.&lt;br&gt;-&amp;gt; cummulative (suma proportion var)&lt;br&gt;-&amp;gt; test hypo jestli 3 faktory sufficient -&amp;gt; zamitl bych (=0), ale je to subj. věc, chceme 90%&lt;br&gt;#( +scores=&quot;Bartlett&quot;) #nebo regression=thomson&lt;br&gt;$scores #ziskam nove hodnoty pro faktory, ktere muzu pouzit v regr. analyze&amp;nbsp;&lt;br&gt;$loadings #interpretace faktorů, zamylset se, rotace, pak formulace (úspornost, luxus..)&lt;br&gt;$rotmat #rotovaná matice faktorů&lt;br&gt;load &amp;lt;- fanal$loadings[,1;2]; plot(load) #graf, 2 faktory zobrazitelné" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="347" y="1029" width="480" height="140" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
