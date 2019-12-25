@@ -1,9 +1,12 @@
-<mxfile host="www.draw.io" modified="2019-12-25T23:16:29.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="wg0pnw2HD9k1cawWpb7Z" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-25T23:45:17.445Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="kmGKpIEifGCWl3YxAqkM" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="920" y="921" width="770" height="440" as="geometry"/>
+        </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-1" value="varianty -&amp;nbsp;&lt;br&gt;na kovariační matici - bezrozměrnost&lt;br&gt;založeno na korelační matici - výhodnější. od -1 až 1&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="160" width="360" height="60" as="geometry"/>
         </mxCell>
@@ -113,7 +116,7 @@
           <mxGeometry x="1290" y="390" width="340" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-29" value="centroidy,&amp;nbsp;&lt;br&gt;maha vzdálenosti&lt;br&gt;apriorní info&lt;br&gt;ztráty při misklasifikaci" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1490" y="490" width="130" height="60" as="geometry"/>
+          <mxGeometry x="1720" y="490" width="130" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-30" value="Fisherovo diskriminační kriterium - založeno na... , lze interpretovat jako v regresi. dílčí koeficienty regr. funkcekteré nám udávají míru vlivu Xp na D.F.&amp;nbsp;&amp;nbsp;&lt;b&gt;maximalizujeme F.D.K pomocí vlastních čísel&lt;/b&gt;. &lt;br&gt;1. Diskriminant (první kanonická proměnná)&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="250" width="380" height="90" as="geometry"/>
@@ -131,13 +134,19 @@
           <mxGeometry x="840" y="540" width="300" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-35" value="&lt;b&gt;apriorní informace - &lt;/b&gt;víme, že nejsou jednotky rozděleny proporcionáalně. můžeme informaci využít a získat lepší výsledky.&lt;br&gt;&lt;b&gt;ztrátová funkce &lt;/b&gt;- jaké ztráty se dopustíme když mylně zařadíme jednotku do sk2? může to být nestejný problém jako mylné zařazení do sk1.&amp;nbsp;&lt;br&gt;&lt;b&gt;AI a ZF lze zapojit do vzorce &lt;/b&gt;. v R to není, muselo by se doprogramovat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1195" y="540" width="405" height="70" as="geometry"/>
+          <mxGeometry x="1267.5" y="490" width="405" height="70" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-36" value="&lt;b&gt;kvalita modelu DA -&lt;/b&gt;&amp;nbsp;1) lze skoumat diskriminační skóre a zátěže. Ne u všech příslušností to vzjde, můžeme testovat v R (vrací pravděpodobnosti) &lt;br&gt;v regresi máme index determinance hodnotící podíl námi vysvětlené variability.&amp;nbsp;&lt;br&gt;2) lze zkoumat vliv zařazení proměnné na změnu&lt;br&gt;3) MAHA vzdálenosti - časté kritérium = Wilkovo lambda&lt;br&gt;4) Hit poměr a konfuzní matice (použijeme v UCL). podíl správně a špatně zatříděných. náhodně 75% na tvorbu modelu a 25% na test -&amp;gt;konfuzní matice.&lt;br&gt;dobré rozdělit data na trénovací a testovací&lt;br&gt;odlehlá pozorování mimořádně vadí (neprojdou testy normality)&lt;br&gt;MANOVA - analýza rozptylu - pro kategorie chudý, středně, bohatý (z nespojitých čísel). pro auta usa/eu. na uu kitu je skript" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="640" width="470" height="161" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-37" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Rattle vína . kategorie 1,2,3 - vysvětlovaná kategoriální podle chemického rozboru.&amp;nbsp;&lt;br&gt;1) EAD zamyslet se nad odlehl. pozorováním. &lt;br&gt;2) scatter plot matrix - rychlá sada grafů, rozdělení veličin. na mimodiagonálních jsou závislosti mezi proměnnými. alkohol-magnezium...&lt;br&gt;3) test shody kovar. matic . BoxM - napříč skupinami (manova by se na vína nehodila)&lt;br&gt;4) call lda - zavolám diskr. funkci lin disrk.&amp;nbsp;&lt;br&gt;- apriorní pravděpodobnosti - odhadnuté z výběru prior probabilities&lt;br&gt;-group means - podmíněné průmery pro sk1,2,3 pro každou proměnou&lt;br&gt;-máme 2 diskriminační funkce LD1 a LD2 pro 3 skupiny&lt;br&gt;-coeficients of linear discriminants - dílčí koef. - závislost mezi proměnnou a LD1, LD2&lt;br&gt;- proportion of trace sum 1 - odhadnutý podíl vysvětlovaného rozptylu&lt;br&gt;4) lidahist - rozložení ve skup 1, hodnoty diskr. funkce a rozložení diskr. skore. ideal pro supinu 1,2,3 mít každý kopec jinde v rámci sloupců&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="640" width="570" height="192" as="geometry"/>
+          <mxGeometry x="1310" y="567" width="570" height="192" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-38" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Cars&amp;nbsp;&lt;br&gt;1) EAD Závislosti (scatter plot), vyloučit lineárně závislé proměnné 2) test normality mshapiro test 3) Mtest (cilivý na normalitu, pvalue 0-&amp;gt; matice neshodné), ale jednotlivé výpočty nevypadají moc odlišně (řádově)&lt;br&gt;ale protože je test citlivý na normalitu, můžeme ignorovat,&amp;nbsp;&lt;br&gt;4) eigen values (vlastní čísla) /&amp;nbsp;&lt;br&gt;5)odstraníme korelované proměnné. 0.7 je silná korelace, ale možná nechceme přijít o data&lt;br&gt;6) call qda (cars_red$puvod ~ cena_prodej+HP+Mesto_MPG+vaha+delka, data=CarsRed[7:15]&lt;br&gt;-&amp;gt; prior propab = apriorní pp asia=37, eu 28, usa 34,&amp;nbsp;&lt;br&gt;-&amp;gt; group means - vysledky podmin. prumeru. nejdrazsi evropska.." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="760" width="530" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1350" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
