@@ -1,9 +1,12 @@
-<mxfile host="www.draw.io" modified="2019-12-25T23:46:05.087Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="-gNP76P8x2R8IRyeShuE" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-26T08:15:33.215Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="0ifYDjIJsN_tbD-z3zCc" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
-    <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="853" dy="472" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-54" value="model logistické regrese&lt;br&gt;dobře proložená data&amp;nbsp; nedobře proložená" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="338" y="1450" width="232" height="80" as="geometry"/>
+        </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-41" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry y="640" width="830" height="570" as="geometry"/>
         </mxCell>
@@ -148,8 +151,79 @@
         <mxCell id="akfnTeuAMZxxue4OsH-c-38" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Cars&amp;nbsp;&lt;br&gt;1) EAD Závislosti (scatter plot), vyloučit lineárně závislé proměnné 2) test normality mshapiro test 3) Mtest (cilivý na normalitu, pvalue 0-&amp;gt; matice neshodné), ale jednotlivé výpočty nevypadají moc odlišně (řádově)&lt;br&gt;ale protože je test citlivý na normalitu, můžeme ignorovat,&amp;nbsp;&lt;br&gt;4) eigen values (vlastní čísla) /&amp;nbsp;&lt;br&gt;5)odstraníme korelované proměnné. 0.7 je silná korelace, ale možná nechceme přijít o data&lt;br&gt;6) call qda (cars_red$puvod ~ cena_prodej+HP+Mesto_MPG+vaha+delka, data=CarsRed[7:15]&lt;br&gt;-&amp;gt; prior propab = apriorní pp asia=37, eu 28, usa 34,&amp;nbsp;&lt;br&gt;-&amp;gt; group means - vysledky podmin. prumeru. nejdrazsi evropska.." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1320" y="760" width="530" height="150" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="990" y="1350" width="120" height="60" as="geometry"/>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-42" value="9 28/11&amp;nbsp;&lt;br&gt;Logistická regrese" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="477" y="1550" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-43" value="&lt;b&gt;k čemu to je?&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;využití - pacient po léku umře nebo ne? banky, pojišťovny&lt;br&gt;pro spojité i diskrétní náhodné veličiny" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="641" y="1543.33" width="380" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-44" value="&lt;b&gt;co to je? jméno z křivky logaritmu (S)&lt;br&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1430" width="380" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-45" value="&lt;b&gt;EAD -&lt;/b&gt; citlivost na odlehlá pozorování (lepší vyloučit)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="1630" width="190" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-46" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;příklad&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; muž&amp;nbsp; &amp;nbsp; &amp;nbsp;žena&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;svobodní a=65&amp;nbsp; &amp;nbsp;b=20&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;sezdaní&amp;nbsp; &amp;nbsp;c=18&amp;nbsp; &amp;nbsp;d=10&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;šance že náhodně vybraný muž bude svobodný 65:18 tj. 3.6 ku 1&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;šance že náhodně vybraná žena bude vdaná 10:20 tj. 1:2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1770" width="210" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-47" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="357" y="1519.17" as="sourcePoint"/>
+            <mxPoint x="423" y="1469.17" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="377" y="1519.17"/>
+              <mxPoint x="403" y="1469.17"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-48" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1920" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-49" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="357" y="1519.17" as="sourcePoint"/>
+            <mxPoint x="377" y="1519.17" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-50" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="407" y="1469.17" as="sourcePoint"/>
+            <mxPoint x="427" y="1469.17" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-51" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="434" y="1519.17" as="sourcePoint"/>
+            <mxPoint x="500" y="1469.17" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="454" y="1519.17"/>
+              <mxPoint x="480" y="1469.17"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-52" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="434" y="1519.17" as="sourcePoint"/>
+            <mxPoint x="480" y="1519" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-53" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="1469" as="sourcePoint"/>
+            <mxPoint x="504" y="1469.17" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-58" value="&lt;b&gt;logaritmus šancí - &lt;/b&gt;lineání funkce vysvětlujících proměných (pokud ne porušili bychom předpoklad L.R).&lt;br&gt;&lt;b&gt;intervaly nesymetrické &lt;/b&gt;šance je od 0 do 1, pravděpodobnost je od 0 do nekonečna. 0-0.5 ... 0.5 a 0.5-1 ...do nekonečna. intervaly nesymetrické, ale když logaritmujeme stane se &lt;font style=&quot;font-size: 12px&quot;&gt;symetrický od -&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(68 , 68 , 68) ; font-family: &amp;#34;ubuntu&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif&quot;&gt;∞ do +∞&lt;/span&gt;&lt;/font&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="386" y="1680" width="394" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-59" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/typicons-2/24/infinity-128.png" vertex="1" parent="1">
+          <mxGeometry x="300" y="1910" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-60" value="&lt;b&gt;postup: 1) odhad parametrů, &lt;/b&gt;počet tříd (např 0,1). analýza datové matice&lt;br&gt;&lt;b&gt;Iterační metody&lt;/b&gt; - v R říkají, kolik iterací bylo potřeba k nalezení" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1650" width="230" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="akfnTeuAMZxxue4OsH-c-61" value="&lt;b&gt;postup: 2) testy &lt;/b&gt;&lt;br&gt;Walduv test že dílčí koeficienty=0 (nahrazuje studentovy testy)&lt;br&gt;parciální korelační koef. - můžeme hodnotit zahrnutí proměnné&lt;br&gt;Jacknife - test po zahrnutí a vyloučení proměnné - testuje změnu&lt;br&gt;stepwise metoda - přidávání proměnné do modelu a hodnotí zahrnutí a vyloučení proměnné na model - stat chí kvadrát" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1740" width="350" height="90" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
