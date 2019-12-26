@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-26T08:43:52.252Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="1dCYueCDibuRd5-UERk2" version="12.4.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-26T08:50:44.137Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="5fvqRlmKSA1MXsVe7UAu" version="12.4.3" type="github" pages="1">
   <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
     <mxGraphModel dx="853" dy="472" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -160,7 +160,7 @@
         <mxCell id="akfnTeuAMZxxue4OsH-c-43" value="&lt;b&gt;k čemu to je?&amp;nbsp; ke klasifikaci / zařazení do skupin&amp;nbsp;&lt;br&gt;1) binomické rozdělení&amp;nbsp;&lt;/b&gt;- že veličina nabyde hodnoty 0,1 (alternativní), &lt;br&gt;&lt;b&gt;2) multinomické&amp;nbsp;rozdělení &lt;/b&gt;- pro více hodnot - jako cardata, vína&lt;br&gt;&lt;b&gt;využití &lt;/b&gt;- pacient po léku umře nebo ne? banky, pojišťovny&lt;br&gt;pro spojité i diskrétní náhodné veličiny" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="641" y="1543.33" width="389" height="76.67" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-44" value="&lt;b&gt;co to je? jméno z křivky logaritmu (S)&lt;br&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-44" value="&lt;b&gt;co to je? jméno z křivky logaritmu (S)&lt;br&gt;alternativa k DA&lt;/b&gt; (diskriminační analýze)&lt;br&gt;DA dává lepší výsledky, klasifikace v případě vícerozm. norm. rozdělení. jinak je LR lepší.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="610" y="1430" width="380" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="akfnTeuAMZxxue4OsH-c-45" value="&lt;b&gt;EAD -&lt;/b&gt; citlivost na odlehlá pozorování (lepší vyloučit)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
