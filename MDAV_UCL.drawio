@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-28T21:44:20.491Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="-WMqPMxHRBD8P09C8lwo" version="12.4.7" type="github">
+<mxfile host="www.draw.io" modified="2019-12-28T21:44:59.653Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="OhMeq8FpiPEp4AH3ehsj" version="12.4.7" type="github">
   <diagram id="MKw7X9UcAvg8FJCNinnX" name="Page-1">
     <mxGraphModel dx="1851" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -249,6 +249,9 @@
         </mxCell>
         <mxCell id="dGhhYwrYM2k6FMBEav-u-78" value="&lt;b&gt;Funkce&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;rotation=-90;" vertex="1" parent="1">
           <mxGeometry x="-254.45" y="2346.65" width="568.92" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="dGhhYwrYM2k6FMBEav-u-79" value="&lt;b&gt;Lineární programování&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-251.25" y="2998.4" width="568.92" height="40" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
