@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-29T00:04:03.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="xIB_XVff-9yt4pGrErHR" version="12.4.7" type="github">
+<mxfile host="www.draw.io" modified="2019-12-29T00:05:22.202Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="4A6Ss7iIQQBhU12yAdck" version="12.4.7" type="github" pages="2">
   <diagram id="MKw7X9UcAvg8FJCNinnX" name="Page-1">
     <mxGraphModel dx="3944" dy="3147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -378,6 +378,17 @@
         </mxCell>
         <mxCell id="vYdTByXRzs-xkyAPbKHQ-19" value="MDAV_WE1_Weekend1.R A PAK DALSI PODLE ABECEDY" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-1310" y="-710" width="290" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="w4Buoq3Q1D1oMaI2CIbW" name="Page-2">
+    <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="5I1A7pN4bpxkfCAPcvcR-0"/>
+        <mxCell id="5I1A7pN4bpxkfCAPcvcR-1" parent="5I1A7pN4bpxkfCAPcvcR-0"/>
+        <mxCell id="5I1A7pN4bpxkfCAPcvcR-2" value="&lt;div&gt;ls() #po startu ukaze vsechno z minula&lt;/div&gt;&lt;div&gt;rm(list=ls())&amp;nbsp; #odstrani vsehny viditelne objekty&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
+          <mxGeometry x="220" y="80" width="280" height="40" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
