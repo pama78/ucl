@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-29T00:05:22.202Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="4A6Ss7iIQQBhU12yAdck" version="12.4.7" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2019-12-29T00:08:13.407Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="9B6bTRbSbP56dhqIspat" version="12.4.7" type="github" pages="2">
   <diagram id="MKw7X9UcAvg8FJCNinnX" name="Page-1">
     <mxGraphModel dx="3944" dy="3147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -382,13 +382,22 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="w4Buoq3Q1D1oMaI2CIbW" name="Page-2">
+  <diagram id="w4Buoq3Q1D1oMaI2CIbW" name="helpers">
     <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-0"/>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-1" parent="5I1A7pN4bpxkfCAPcvcR-0"/>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-2" value="&lt;div&gt;ls() #po startu ukaze vsechno z minula&lt;/div&gt;&lt;div&gt;rm(list=ls())&amp;nbsp; #odstrani vsehny viditelne objekty&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
           <mxGeometry x="220" y="80" width="280" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="5I1A7pN4bpxkfCAPcvcR-3" value="&lt;div&gt;&lt;span&gt;math:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;1+1&lt;/div&gt;&lt;div&gt;sum(1,NA, na.rm=TRUE)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
+          <mxGeometry x="220" y="130" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="5I1A7pN4bpxkfCAPcvcR-4" value="&lt;div&gt;imperative:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px ; white-space: nowrap&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%26gt%3B%26lt%3Bspan%26gt%3Bmath%3A%26amp%3Bnbsp%3B%26lt%3B%2Fspan%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B1%2B1%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3Bsum(1%2CNA%2C%20na.rm%3DTRUE)%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22220%22%20y%3D%22130%22%20width%3D%22150%22%20height%3D%2250%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span&gt;for (i&amp;nbsp; in 1:100000) print (i)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot; face=&quot;monospace&quot;&gt;&lt;span style=&quot;font-size: 0px ; white-space: nowrap&quot;&gt;for (i&amp;nbsp; in 1:100000) print (i)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px ; white-space: nowrap&quot;&gt;&lt;div&gt;for (i&amp;nbsp; in 1:100000) print (i)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
+          <mxGeometry x="221" y="190" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="5I1A7pN4bpxkfCAPcvcR-5" value="&lt;div&gt;help:&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px ; white-space: nowrap&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%26gt%3B%26lt%3Bspan%26gt%3Bmath%3A%26amp%3Bnbsp%3B%26lt%3B%2Fspan%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B1%2B1%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3Bsum(1%2CNA%2C%20na.rm%3DTRUE)%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22220%22%20y%3D%22130%22%20width%3D%22150%22%20height%3D%2250%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;rgba(0, 0, 0, 0)&quot; face=&quot;monospace&quot;&gt;&lt;span style=&quot;font-size: 0px ; white-space: nowrap&quot;&gt;&lt;span&gt;example(&quot;lm&quot;)&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;div&gt;example(&quot;lm&quot;)&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
+          <mxGeometry x="430" y="190" width="150" height="50" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
