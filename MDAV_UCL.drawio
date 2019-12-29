@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-29T21:35:21.713Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="ZdzT3zlMDS5VROExMZnc" version="12.4.7" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2019-12-29T21:40:54.295Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="3wJ4fTM7ymr-SFf9E-1G" version="12.4.7" type="github" pages="2">
   <diagram id="MKw7X9UcAvg8FJCNinnX" name="Page-1">
     <mxGraphModel dx="3505" dy="2904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -390,6 +390,9 @@
         </mxCell>
         <mxCell id="nhTbtAEfhq4yOQjghHbC-4" value="&lt;div&gt;x&amp;lt;-TRUE&lt;/div&gt;&lt;div&gt;y&amp;lt;-FALSE # muzu provadet operace.&amp;nbsp;&lt;/div&gt;&lt;div&gt;#kdyz mam operaci, ktera jde delat jenom ne jednom typu objektu, snazime se&amp;nbsp;&lt;/div&gt;&lt;div&gt;#nasobeni je typicky pro cisla&lt;/div&gt;&lt;div&gt;x*y&amp;nbsp; #pro true=1, false = 0 .. pro logickou hodnotu neni mozne provest a pretypuje na numericke.&lt;/div&gt;&lt;div&gt;u&amp;lt;-x*y&lt;/div&gt;&lt;div&gt;class(u)&amp;nbsp; #je to integer, muzu to ale interpretovat jako nejakou jinou promennou&lt;/div&gt;&lt;div&gt;as.logical(u) #vrati false.&amp;nbsp; 0 je false a ostatni je true.&amp;nbsp;&lt;/div&gt;&lt;div&gt;u2&amp;lt;-as.logical(u)&lt;/div&gt;&lt;div&gt;u2&amp;nbsp; #false&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="818.86" y="-2310" width="681.14" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="CLDOMHHLA24TG7U18rK6-1" value="&lt;div&gt;&lt;div&gt;#objekty typu raw 0 zvlastni , 16b zapis&lt;/div&gt;&lt;div&gt;?raw #drzi bity, 16b zapis, muze zapsat v jedne hodnote cely zapis&lt;/div&gt;&lt;div&gt;as.raw(&quot;karel&quot;) #nejde&lt;/div&gt;&lt;div&gt;as.raw(12)&amp;nbsp; #v praxi se nepouziva, ale prakticky pro hashovani hodnot. tam je casto 16b zapis, napr pri instalaci balicku&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-1360" width="340" height="90" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
