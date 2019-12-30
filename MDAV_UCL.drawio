@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-30T11:11:58.247Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="uv7i2AYKQjN0vzh4yTRa" version="12.4.7" type="github" pages="7">
+<mxfile host="www.draw.io" modified="2019-12-30T11:20:22.843Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="1kpOdCRmNXPfTBf-Ecil" version="12.4.7" type="github" pages="7">
   <diagram id="d7gLbOuCAUrPR4XCGlIv" name="Datove typy">
     <mxGraphModel dx="1422" dy="5426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -447,6 +447,12 @@
         </mxCell>
         <mxCell id="01QiWAheZqPJBco5ArX1-7" value="&lt;div&gt;&lt;b&gt;#3C - IF podminka - vetveni kodu, pri splneni&amp;nbsp; co se ma stat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; if(1&amp;lt;10) print(1)&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(i in 1:10){ if(i%%2==0) print(i)&amp;nbsp; } #kdyz sudy&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(i in 1:10){ if(!i%%2) print(i) } #cislo =1 je true, cislo 0 false. vypise suda cisla&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(i in 1:10){ if(i%%2==0) { } else { print(&quot;liche&quot;)}} #kdyz lichy pres else&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(i in 1:10){ if(i==1) {print (&quot;jedna&quot;)}&amp;nbsp; else if(i==2) {print (&quot;dve&quot;)}} #vice podminek, kdyz je splnenych pak v testovani nepokracuje. i kdyz jsou splnene jine, tak je ignoruje.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="4330" y="1990" width="490" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="01QiWAheZqPJBco5ArX1-8" value="&lt;div&gt;&lt;b&gt;&amp;nbsp; #alternativn podminka - uplne stejny jako when v xls #mame test a co se stane kdyz se splni a kdyz ne&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; i&amp;lt;-1;&amp;nbsp; &amp;nbsp;ifelse(i&amp;lt;10, print(&quot;jo&quot;),print(&quot;ne&quot;)) ##2x vypis, je to v cyklu a pak navraceni&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;ifelse(i&amp;lt;10, mean(mtcars$mpg), 5) #rovnou je to navratova&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; u&amp;lt;-ifelse(i&amp;lt;10, mean(mtcars$mpg), 5); str(u) #rovnou je to navratova&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4330" y="2100" width="600" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="01QiWAheZqPJBco5ArX1-9" value="&lt;div&gt;#3D - BREAK / NEXT / REPEAT&lt;/div&gt;&lt;div&gt;&amp;nbsp; #kdyz next v cyklu&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(i in 1:10) {if(i==6) {next} ; print(i) } #nextem zacina dalsi kolo cykly&lt;/div&gt;&lt;div&gt;&amp;nbsp; #dva cykly v sobe, next zastavi az ten duhy&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(j in 1:10) { for(i in 1:10) { if(i==6) {next} ; print(paste(j,i)) }} #kdyz i=6 zacina dalsi kolo cykly&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(i in 1:10) { if (i&amp;gt;8) break ; print(i) } #tohle by zastavilo cyklus, i ty cykly nad.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4840" y="1990" width="490" height="110" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
