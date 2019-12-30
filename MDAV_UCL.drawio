@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-30T22:30:35.137Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="9ODxD_SIWiQN2Ed3AFTJ" version="12.4.7" type="github" pages="7">
+<mxfile host="www.draw.io" modified="2019-12-30T22:35:39.501Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="gZDqPlR4-WUlDoCaT5Dj" version="12.4.7" type="github" pages="8">
   <diagram id="d7gLbOuCAUrPR4XCGlIv" name="Datove typy">
     <mxGraphModel dx="1225" dy="5247" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -586,6 +586,17 @@
         </mxCell>
         <mxCell id="_z1DoneRj0X_ldDFDRdZ-6" value="&lt;div&gt;&lt;b&gt;NELINEARNI FUNCE U GRAF – tady se meni sklon s hodnotou funkce. Kdyz se vydam dolu, pak krivka zase uhne&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Kdyz si spoctu zmenu a vydam se tim smerem, tak , vezme bod, spocte sklon, pak se vrati zpatky, pak znosuv spocita sklon,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#metoda zlateho rezu -&amp;nbsp; 1.618..&lt;/div&gt;&lt;div&gt;Funguje na princippu, ze prostor ve kterem hledam reseni je omezeny – funkce musi byt nejak omezena zezhora/zespoda&lt;/div&gt;&lt;div&gt;Hledani funguje tak, ze si prostro rozdelime z pohledu zlateho rezu – rozdelim na 2 usecky. Spoctu – v&amp;nbsp;&lt;/div&gt;&lt;div&gt;Vede to k reseni v par iteracich, ale funguje jenom na jedne promenne.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#metoda zlateho rezu – optimize v R&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Nelinearni nemusime znat na test, je tam ale hodne prikladu.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Nloptr – je kdyztak knihovna na nelinearni&amp;nbsp;&lt;/div&gt;&lt;div&gt;Jenom jsme si problem ilustrovali&lt;/div&gt;&lt;div&gt;Prace v teto oblasti jsou vitane. Spis ulohy pouzit, nebo implementace uloh. Kdo ma vztah k tematu.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="gN98UU__wPbNGy8eSIsY-1">
           <mxGeometry x="160" y="750" width="611.25" height="260" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PzdV3D3M3_bDkkGMKTtL" name="regexp">
+    <mxGraphModel dx="1225" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="fp3Gqpv2mcVKTH_JHolq-0"/>
+        <mxCell id="fp3Gqpv2mcVKTH_JHolq-1" parent="fp3Gqpv2mcVKTH_JHolq-0"/>
+        <mxCell id="qDxO9feWueJv7ee5I_c9-0" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;regularni vyrazy&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;Umoznuji zpracovat jazyk, jako vlastni programovaci jazyk&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;Umoznuje zpracovat text, najit vzory v textu&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;Kdyz nebudou stacit funkce, ktere tam jsou, tak existuje knihovna&amp;nbsp; - stringr&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;R ma problem s negaci regulernich vyrazu – proto je tam parametr invert, ktery umozni znegovat – s logickyma operacema nad textem&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;Syntaxe&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="fp3Gqpv2mcVKTH_JHolq-1">
+          <mxGeometry x="50" y="460" width="560" height="180" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
