@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-12-31T16:56:18.275Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="IVH7QObcV7caaUFCzhW4" version="12.4.7" type="github" pages="9">
+<mxfile host="www.draw.io" modified="2019-12-31T17:10:01.101Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="pBWCJ9JatZf6vQLqdveL" version="12.4.7" type="github" pages="9">
   <diagram id="d7gLbOuCAUrPR4XCGlIv" name="Datove typy">
-    <mxGraphModel dx="5120" dy="7511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="2926" dy="6298" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="hp7irowK7RFhpLUfNp25-0"/>
         <mxCell id="hp7irowK7RFhpLUfNp25-1" parent="hp7irowK7RFhpLUfNp25-0"/>
@@ -86,13 +86,13 @@
           <mxGeometry x="1690" y="-2399.26" width="250" height="221" as="geometry"/>
         </mxCell>
         <mxCell id="QqTq9-wLv31XXk6QXTyi-14" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;/p&gt;&lt;font face=&quot;calibri light, sans-serif&quot;&gt;&lt;span lang=&quot;CS&quot; style=&quot;background-color: rgb(255 , 255 , 0)&quot;&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;b&gt;#vyber&amp;nbsp; x[R,S]&lt;br&gt;&lt;/b&gt;&amp;nbsp; x[2:3,2:3]&amp;nbsp; #vyberu , vektor nema dimenze, ma jenom names argument, proto neni mozne podedidt pojmenovani, ale submatice ma moznost podedit pojmenovani radku a sloupcu&lt;br&gt;#vyber : radek 1 a 3 a vsechny sloupce,&lt;br&gt;&amp;nbsp; x[1,1:3]&amp;nbsp; #vyber vetsi nez 1d objekt, vybere to i jmena, jmena z attributes priradilo pekne&lt;br&gt;&amp;nbsp; attributes(x[1,1:3])&lt;br&gt;&amp;nbsp; x[1-3,1:3] #vylouci prvni radek, protoze &quot;-2&quot; odstrani druhy&lt;br&gt;&amp;nbsp; x[-2,]&amp;nbsp; &amp;nbsp;#vypise 1 a 3 radek, vsechny sloupce s vynechanim druheho&lt;br&gt;&amp;nbsp; c(1:5)[-3]&amp;nbsp; #vynecha trojku&lt;br&gt;&amp;nbsp; x[1,1:3]&lt;br&gt;&amp;nbsp; x[-c(1,3),] # odstrani prvky 1 a 3&lt;br&gt;&amp;nbsp; x[c(2,3,1,1,1,1),]&amp;nbsp; #prohazu prvky. muzu nektere vybrat vickrat&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="hp7irowK7RFhpLUfNp25-1" vertex="1">
-          <mxGeometry x="1690" y="-1730" width="480" height="190" as="geometry"/>
+          <mxGeometry x="1690" y="-1730" width="480" height="240" as="geometry"/>
         </mxCell>
         <mxCell id="QqTq9-wLv31XXk6QXTyi-15" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;/p&gt;&lt;font face=&quot;calibri light, sans-serif&quot;&gt;&lt;span lang=&quot;CS&quot; style=&quot;background-color: rgb(255 , 255 , 0)&quot;&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;b&gt;#logicke operace &amp;gt;5&lt;br&gt;&lt;/b&gt;&amp;nbsp; x&amp;gt;5 #vysledek je matice logckych hodnot. nejedna se o jednotne pole, je to prerusovane. nejde z toho vyriznout ctvercovou matici.&amp;nbsp;&lt;br&gt;&amp;nbsp; x[x&amp;gt;5] #vybral jsem prvky, ale vysledkem uz neni matice, neni to jednone pole a nemuzu to drzet jako matici&lt;br&gt;&amp;nbsp; x[x&amp;gt;3] #i degraduju matici na vektor. [1] 4 5 6 7 8 9. neselektuju pres radky/sloupce, proto dochazi k redukci dat na vektor&lt;br&gt;&amp;nbsp; #jednodusi by bylo kdybych mel dva vektory, a do kazde dali nejakou podminku&lt;/p&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="hp7irowK7RFhpLUfNp25-1" vertex="1">
-          <mxGeometry x="2176.67" y="-1610" width="640" height="70" as="geometry"/>
+          <mxGeometry x="2176.67" y="-1610" width="640" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="QqTq9-wLv31XXk6QXTyi-17" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;/p&gt;&lt;font face=&quot;calibri light, sans-serif&quot;&gt;&lt;span lang=&quot;CS&quot; style=&quot;background-color: rgb(255 , 255 , 0)&quot;&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;b&gt;#vlastni atributy v matici - muzeme mit v matici y mit vlastni atributy&lt;br&gt;&lt;/b&gt;&amp;nbsp; y&amp;nbsp; #nekdy je potreba udelat maticova inverze, vypozita se jen jednou. mam obrovsky dataset, delam na nem regresi. mam nejaky set, ve kterym delam regresy 20x. kdyz si to buduc chtit zrychlit,&amp;nbsp; &amp;nbsp;muzu mit vlastni funkci na regresi a do pameti se ulozi inverzni matice. pak svoje funkce.&amp;nbsp; overuje se atribut inverze k atributu, kdyz - kdyz se nemuze zasahnout do ddata( &lt;br&gt;kdyz existuje inverze, pouzije, jinak vytvori. inverze je jedna s nejnarocnejsich operaci.&amp;nbsp; ... da se i invertovat singularni matice.. muzu si definovat jaky chci atributy. muze mit i jiny dimenze.&lt;br&gt;&amp;nbsp; attr(y, &quot;inverze&quot;)=solve(y)&lt;br&gt;&amp;nbsp; attributes(y)&lt;br&gt;&amp;nbsp; attr(y,&quot;muz/zena&quot;)=&quot;ano&quot;&lt;br&gt;&amp;nbsp; print(y)&amp;nbsp; #vypisou se atributy, ktere mam, ale mat operace jdou jen na tech hodnotach. atributy jsou nezaseazeny&lt;/p&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="hp7irowK7RFhpLUfNp25-1" vertex="1">
-          <mxGeometry x="901.8299999999999" y="-1710" width="670" height="151" as="geometry"/>
+          <mxGeometry x="901.83" y="-1710" width="670" height="190" as="geometry"/>
         </mxCell>
         <mxCell id="QqTq9-wLv31XXk6QXTyi-18" value="&lt;div&gt;&lt;b&gt;#list&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp;my_list&amp;lt;-list(Subjekt=c(1,2,3), Matice_subjektu=matrix(1:6,2), logicky_vektor=c(TRUE,FALSE));&amp;nbsp; my_list #tvorba listu&lt;/div&gt;&lt;div&gt;&amp;nbsp;class(my_list[[1]]) #pristup primo k hodnote&lt;/div&gt;&lt;div&gt;&amp;nbsp;class(my_list[1])&amp;nbsp; #pristup k listu ($Subjekt)&lt;/div&gt;&lt;div&gt;&amp;nbsp;my_list$Subjekt&amp;nbsp; &amp;nbsp; #pristup k $Subjekt&lt;/div&gt;&lt;div&gt;&amp;nbsp;my_list$Matice_subjektu[1:2,1:2]&amp;nbsp; #pristup primo k hodnotam v matici subjektu&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="hp7irowK7RFhpLUfNp25-1" vertex="1">
           <mxGeometry x="170" y="-970" width="710" height="95" as="geometry"/>
@@ -131,7 +131,7 @@
           <mxGeometry x="2660" y="-1230" width="590" height="610" as="geometry"/>
         </mxCell>
         <mxCell id="QqTq9-wLv31XXk6QXTyi-30" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;/p&gt;&lt;font face=&quot;calibri light, sans-serif&quot;&gt;&lt;span lang=&quot;CS&quot; style=&quot;background-color: rgb(255 , 255 , 0)&quot;&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;#specialni hodnoty&lt;br&gt;#NULL - neni hodnota, odstranujeme&lt;br&gt;#NA = neni dostupne&lt;br&gt;#NaN - vsechny&lt;br&gt;#Inf - nekonecno&lt;/p&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="hp7irowK7RFhpLUfNp25-1" vertex="1">
-          <mxGeometry x="2830" y="-1621.85" width="190" height="81.85" as="geometry"/>
+          <mxGeometry x="2830" y="-1610" width="200" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="QqTq9-wLv31XXk6QXTyi-31" value="&lt;div&gt;&amp;nbsp;###################################################3&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;#listy - objekty kter emuxou drzet jakykoliv jiny objekty s jinou delkou&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;#list neni mnohorozmenry objekt. muze drzet matici vetkor. list je vekotr, ktery na pozicich elementu vektoru&lt;/div&gt;&lt;div&gt;# drzi jine objekty&lt;/div&gt;&lt;div&gt;#list je jako excel a elementy jsou sheety&lt;/div&gt;&lt;div&gt;&amp;nbsp;#napr list bude obsahovat tri objekty. hodnota 1=1, 2=matice 1:9, 3=TRUE&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;naslist&amp;lt;-list(x1=1,x2=matrix(1:9,3), x3=TRUE)&lt;/div&gt;&lt;div&gt;&amp;nbsp;str(naslist)&amp;nbsp;&lt;/div&gt;&lt;div&gt;# List of 3&lt;/div&gt;&lt;div&gt;# $ x1: num 1&lt;/div&gt;&lt;div&gt;# $ x2: int [1:3, 1:3] 1 2 3 4 5 6 7 8 9&lt;/div&gt;&lt;div&gt;# $ x3: logi TRUE&lt;/div&gt;&lt;div&gt;&amp;nbsp;jsou podlisty na listu, x1..x3 a na sheetech je pak matice, hodnota, sheet sam o sobe je oucast listu&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;naslist$x3 #primo pristoupim k objektu, dostanu TRUE&lt;/div&gt;&lt;div&gt;&amp;nbsp;class(naslist$x3)&lt;/div&gt;&lt;div&gt;naslist[3]&amp;nbsp; #vrati se trochu jinak $x3&amp;nbsp; \n [1] TRUE&lt;/div&gt;&lt;div&gt;porad jsem v listu, musel bych dat 2 hranate zavorky , abych se vnoril do obsahu&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;naslist[[3]]&amp;nbsp; #&amp;gt; naslist[[3]] \n [1] TRUE&lt;/div&gt;&lt;div&gt;naslist[[2]][2,] #druhy radek&lt;/div&gt;&lt;div&gt;naslist$x2[2,]&amp;nbsp; #[1] 2 5 8&lt;/div&gt;&lt;div&gt;casto byva list tabulek. neco jako databaze&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#list v listu&lt;/div&gt;&lt;div&gt;x&amp;lt;-list(A=list(A=1,B=2),B=2)&lt;/div&gt;&lt;div&gt;x$A$B&amp;nbsp; #[1] 2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;names(x) #vypise seznam&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#vysledky - napr lm objekt je jako list, a pak muzu zpracovavat data jako kdybych pracoval s listem&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#pridani do listu&lt;/div&gt;&lt;div&gt;muzu vlozit list do listu, nebo muzu unlistnout - `&lt;/div&gt;&lt;div&gt;unlist(u) #obsah se odlistuje&lt;/div&gt;&lt;div&gt;append #ta funguje na rozsireni listu taky&lt;/div&gt;&lt;div&gt;append() #jde nastavit poradi, po kterem chci nadat&lt;/div&gt;&lt;div&gt;u&amp;lt;-append(u, 4, after=0)&lt;/div&gt;&lt;div&gt;u&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;append muze vlkadat jenom jeden objekt,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="hp7irowK7RFhpLUfNp25-1" vertex="1">
           <mxGeometry x="1699.04" y="-700" width="851.35" height="612.5" as="geometry"/>
@@ -188,7 +188,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gd55b9sZSl1bvyu6w3i2" name="Zakladni operace">
-    <mxGraphModel dx="3413" dy="6568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1707" dy="5543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="6VmEh9Er99iKxjQCqkkp-0"/>
         <mxCell id="6VmEh9Er99iKxjQCqkkp-1" parent="6VmEh9Er99iKxjQCqkkp-0"/>
@@ -299,7 +299,7 @@
           <mxGeometry x="925" y="-3580" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="aH5iJAX94k_lepVnRu5r-0" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;/p&gt;&lt;font&gt;&lt;span lang=&quot;CS&quot;&gt;&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;b&gt;Ovladani R&lt;br&gt;&lt;/b&gt;&lt;span&gt;#tab, enter, doplni zbytek&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="6VmEh9Er99iKxjQCqkkp-1" vertex="1">
-          <mxGeometry x="2710" y="-250" width="140" height="30" as="geometry"/>
+          <mxGeometry x="1570" y="-2390" width="140" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="N3zX0kXTeQsnnC1q8uFj-0" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;b&gt;Typy soubou&lt;/b&gt; – flat soubory – textove, da se to&amp;nbsp;precist bez umeni druhu zapisu, readible. Strukturovana data&lt;br&gt;&lt;span&gt;Excel, save as csv-mac – otevru&amp;nbsp;&lt;/span&gt;&lt;span&gt;Ruzne staty ruzne normy tecky/carky, oddelovace cisel. Ne&amp;nbsp;&lt;/span&gt;&lt;span&gt;vsechny programy dodrzuji uplne format flat souboru&amp;nbsp;&lt;/span&gt;&lt;span&gt;Posledni radka by mela byt prazdna=standard (kdyz chybi&amp;nbsp;&lt;/span&gt;&lt;span&gt;radka – chybova hlaska missing final line)&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="6VmEh9Er99iKxjQCqkkp-1" vertex="1">
           <mxGeometry x="105" y="-1580" width="790" height="50" as="geometry"/>
@@ -329,7 +329,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MKw7X9UcAvg8FJCNinnX" name="Funkce-cykly">
-    <mxGraphModel dx="1820" dy="2830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1820" dy="2585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -443,7 +443,7 @@
           <mxGeometry x="5260" y="90" width="600" height="130" as="geometry"/>
         </mxCell>
         <mxCell id="01QiWAheZqPJBco5ArX1-5" value="&lt;div&gt;#2. funkce rbind - na spojeni dat&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;for(i in dir(&quot;./cyklus&quot;))&amp;nbsp; {&amp;nbsp; data=rbind(data,read_excel(paste0(&quot;./cyklus/&quot;, i ))) };&amp;nbsp; data #secte data ze vsech xls souboru&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; #for cyklus - iterace pres dataframy #nejde iterovat pres matice - tak se vrati cela matice&lt;/div&gt;&lt;div&gt;&amp;nbsp; for(s in mtcars) print (s) #dataframe ma jednotlive promenne, muzu i pres jednotlive sloupce iterovat. nabere sloupce&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="5870" y="1780" width="630" height="90" as="geometry"/>
+          <mxGeometry x="5480" y="1620" width="630" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="01QiWAheZqPJBco5ArX1-6" value="&lt;div&gt;&lt;b&gt;#3B - WHILE - dokud je podminka splnena, tak iteruju -- while (podminka T/F) {kod}&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;i&amp;lt;-1;&amp;nbsp; while(i&amp;lt;11) { print(i); i=i+1}&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; #chceme neco hledat s while cyklem. kde je soucet predchozich radek &amp;gt; 10. #mtcars - a v kazdem kole si vypiseme cylindry.#zacinam na 1 radku&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; i=1; while(sum(mtcars$mpg[1:i]) &amp;lt; 100 )&amp;nbsp; { print(mtcars$cyl[i]); i&amp;lt;-i+1 }&amp;nbsp; #na patem radku uz to neni splneno.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; i;&amp;nbsp; &amp;nbsp;sum(mtcars$mpg[1:i])&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;b&gt;&amp;nbsp; #cyklus. mocncni pi a kdyz&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; i=1; while(pi^i &amp;lt; 10000) {print(i);print(pi^i); i&amp;lt;-i+1}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="4110" y="230" width="860" height="100" as="geometry"/>
@@ -512,7 +512,7 @@
           <mxGeometry x="4630" y="660" width="580" height="160" as="geometry"/>
         </mxCell>
         <mxCell id="gxdRHZDVdbJMkrSO-k6W-1" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;span style=&quot;font-size: 7.0pt&quot;&gt;&lt;b&gt;Prirazeni hodnoty vys&lt;/b&gt; –&lt;br/&gt;predeklarovani pres &amp;lt;&amp;lt; (dvoji prirazeni)&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="6170" y="510" width="280" height="40" as="geometry"/>
+          <mxGeometry x="5750" y="510" width="280" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="8ubwKcqh_ECC7VZ8j72H-1" value="&lt;p class=&quot;MsoNoSpacing&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;#navracenivicero objektu -&lt;/b&gt; ? jedina moznost - list. list se deklaruje na urovni funkce return&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;mojefce&amp;lt;-function(x){&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;&amp;nbsp; #vrati statistiku&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;&amp;nbsp; return(list(&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;&amp;nbsp; &amp;nbsp; mean=mean(x),&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;&amp;nbsp; &amp;nbsp; sd=sd(x),&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;&amp;nbsp; &amp;nbsp; var=var(x)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;&amp;nbsp; )) #return vraci jeden objekt. ted teda list&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;}&lt;br&gt;&lt;/span&gt;&lt;span&gt;mojefce(1:10) #vrati list techto hodnot&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3629.46" y="940" width="355" height="155" as="geometry"/>
@@ -554,7 +554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="w4Buoq3Q1D1oMaI2CIbW" name="helpers">
-    <mxGraphModel dx="2560" dy="1415" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="2560" dy="1293" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-0"/>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-1" parent="5I1A7pN4bpxkfCAPcvcR-0"/>
@@ -571,7 +571,7 @@
           <mxGeometry x="430" y="190" width="210" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="h4R16i-xJpyz74jxr1PW-0" value="&lt;div&gt;&lt;b&gt;Statistiky NA&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;summary(mojeData) #stat na Dataframe,prumery, kolik na&#39;s&amp;nbsp;&lt;/span&gt;&lt;span&gt;#summary&amp;nbsp;NA&#39;s :1&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;čištění NA&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;mojeData[2,3] &amp;lt;- NA ;mojeData #nema vliv na tridu vahy&lt;/div&gt;&lt;div&gt;is.na(mojeData$vaha) #funkce, kde se zjisti jestli je na&lt;/div&gt;&lt;div&gt;mojeData[is.na(mojeData$vaha),]&amp;nbsp; #ukaze vadny radek&lt;/div&gt;&lt;div&gt;mojeData[!is.na(mojeData$vaha),]&amp;nbsp; #ukaze vadny radek vycisteny dataset&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span&gt;?inf&lt;/span&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;is.finite(544) #true, je to konecne&lt;/div&gt;&lt;div&gt;is.infinite(Inf) #true&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;is.na(mojeData) &lt;b&gt;#zpracuje cely dataset &lt;/b&gt;- nekdy se jak vyselektovat radky, ktereneobsahuji na hodnotu v zadnem sloupci&lt;/div&gt;&lt;div&gt;mojeData[!is.na(mojeData)] #zredukuje , je to spatne&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="5I1A7pN4bpxkfCAPcvcR-1" vertex="1">
-          <mxGeometry x="70" y="550" width="430" height="210" as="geometry"/>
+          <mxGeometry x="70" y="530" width="430" height="210" as="geometry"/>
         </mxCell>
         <mxCell id="rUS3wv0OBIpcpTsvG6rC-0" value="&lt;b&gt;Filtr &amp;gt; 30 na dataframe&lt;br&gt;&lt;/b&gt;&lt;div&gt;mojeData&amp;lt;-data.frame( jmeno=c(&quot;karel&quot;,&quot;pavel&quot;,&quot;jana&quot;,&quot;jozef&quot;),&amp;nbsp; id=1:4,&amp;nbsp; vaha=seq(10,50,length.out=4)); mojeData&lt;/div&gt;&lt;div&gt;mojeData[mojeData$vaha&amp;gt;30,]#logicka operace, vezmu jen promenou jmena, vaha pavla&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="5I1A7pN4bpxkfCAPcvcR-1" vertex="1">
           <mxGeometry x="10" y="250" width="280" height="110" as="geometry"/>
@@ -586,7 +586,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3esmoTJhZ5O7nvRhlXrQ" name="Linearní programovani">
-    <mxGraphModel dx="5120" dy="2830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="5120" dy="2585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="gN98UU__wPbNGy8eSIsY-0"/>
         <mxCell id="gN98UU__wPbNGy8eSIsY-1" parent="gN98UU__wPbNGy8eSIsY-0"/>
@@ -678,7 +678,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PzdV3D3M3_bDkkGMKTtL" name="regexp">
-    <mxGraphModel dx="5120" dy="2830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="5120" dy="2585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="fp3Gqpv2mcVKTH_JHolq-0"/>
         <mxCell id="fp3Gqpv2mcVKTH_JHolq-1" parent="fp3Gqpv2mcVKTH_JHolq-0"/>
@@ -752,7 +752,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="80hqbB3Xu7Shav92raKJ" name="Grafy">
-    <mxGraphModel dx="12800" dy="7075" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="12800" dy="6463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="GDkVq7SAGpcZtHpfiC4U-0"/>
         <mxCell id="GDkVq7SAGpcZtHpfiC4U-1" parent="GDkVq7SAGpcZtHpfiC4U-0"/>
@@ -851,7 +851,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="i_EyQqK8od1p76iLrVy2" name="Komplexni priklady">
-    <mxGraphModel dx="6827" dy="3773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="6827" dy="3447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="U0VZtH_oMvkCcGFmrgYH-0"/>
         <mxCell id="U0VZtH_oMvkCcGFmrgYH-1" parent="U0VZtH_oMvkCcGFmrgYH-0"/>
@@ -895,7 +895,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="J-EximlUjlizBHciR4Fw" name="Denaci komplex">
-    <mxGraphModel dx="2926" dy="1617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="4096" dy="2068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="U9Q7TZf0egHG0UXOPuYy-0"/>
         <mxCell id="U9Q7TZf0egHG0UXOPuYy-1" parent="U9Q7TZf0egHG0UXOPuYy-0"/>
