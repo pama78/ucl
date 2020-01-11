@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-01-11T16:09:15.983Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="LovsYaNpDxwS6nG2-Y5e" version="12.5.1" type="github" pages="10">
+<mxfile host="www.draw.io" modified="2020-01-11T16:30:48.560Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="6KJ3UKI6_B1cC-45i6w2" version="12.5.1" type="github" pages="10">
   <diagram id="d7gLbOuCAUrPR4XCGlIv" name="Datove typy">
     <mxGraphModel dx="1024" dy="5247" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -1288,7 +1288,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5Y4kDzir_hG14kigv2aU" name="Webscrap">
-    <mxGraphModel dx="3413" dy="6565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+    <mxGraphModel dx="2048" dy="5712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="HaRzlUNS4jXWgn1J5wCA-0"/>
         <mxCell id="HaRzlUNS4jXWgn1J5wCA-1" parent="HaRzlUNS4jXWgn1J5wCA-0"/>
