@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-01-11T16:52:40.413Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="FDkxOWSQ3lcOJUzgh0Oi" version="12.5.1" type="github" pages="10">
+<mxfile host="www.draw.io" modified="2020-01-11T16:57:34.683Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="ocCmVWaAXifrtD4QWwv4" version="12.5.1" type="github" pages="10">
   <diagram id="d7gLbOuCAUrPR4XCGlIv" name="Datove typy">
     <mxGraphModel dx="1024" dy="5198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -557,7 +557,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="w4Buoq3Q1D1oMaI2CIbW" name="helpers">
-    <mxGraphModel dx="2926" dy="1477" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1205" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-0"/>
         <mxCell id="5I1A7pN4bpxkfCAPcvcR-1" parent="5I1A7pN4bpxkfCAPcvcR-0"/>
@@ -590,6 +590,12 @@
         </mxCell>
         <mxCell id="n_qVSezoP_lkG2UzvK4V-0" value="&lt;b&gt;Retezeni&amp;nbsp;&lt;/b&gt;&lt;span&gt;#odskok - c(1,2,3) %&amp;gt;% MEAN&amp;nbsp; -- nacpe do mean.&amp;nbsp;&lt;/span&gt;&lt;div&gt;#RETEZENI vytvorme string 1:10&lt;/div&gt;&lt;div&gt;s&amp;lt;-c(1:10) ; mean(s); s %&amp;gt;% mean&amp;nbsp; #dva zapisy.&amp;nbsp;&lt;/div&gt;&lt;div&gt;mtcars %&amp;gt;% colMeans %&amp;gt;% sqrt %&amp;gt;% +1 %&amp;gt;% mean #odmocneny prumer&amp;nbsp; a ke kazdemu prictu 2 a pak znovu mean vseho. dobre pro WS&lt;/div&gt;&lt;div&gt;#20 zavorek by bylo hur citelny, tohle je hned viditelny co jde za cim. casto se udrzuje standard 3 urovni. aby to bylo citelny. nema se retezit do &amp;gt;3 urovni&lt;/div&gt;&lt;div&gt;mtcars %&amp;gt;% colMeans %&amp;gt;% sqrt %&amp;gt;% +1 %&amp;gt;% mean(na.rm=TRUE) #vnuceni parametru&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
           <mxGeometry x="800" y="210" width="500" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="6dnX0sIH_ZYTX2jXqi7A-0" value="&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; #zkusime nejake ulohy - pouzitelne v praxi&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; #fukce na nalezeni Na a nahradi. z vektoru hodnot nahradi na prumerem&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; x&amp;lt;-c(1:10,NA,11:20); x&lt;/div&gt;&lt;div&gt;&amp;nbsp; #vsechny na nahradi prumerem, prebira vektor&lt;/div&gt;&lt;div&gt;&amp;nbsp; meantona&amp;lt;-function(x) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; #if(any(is.na(x))) #pokud je tam nejaka any, vrati true pak neco udelej&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if(any(is.na(x))) x[is.na(x)]&amp;lt;-mean(x,na.rm=TRUE) #vyberu vsechny co maji true, a pak je rovnou prepisu&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return(x)&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; #jdou i vyexportovat pozice, snazi se vyhybat smyckam co to jde.&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; meantona(x)&lt;/div&gt;&lt;div&gt;&amp;nbsp; any(c(FALSE,FALSE))&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
+          <mxGeometry x="860" y="400" width="540" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="6dnX0sIH_ZYTX2jXqi7A-1" value="&lt;div&gt;&lt;b&gt;#zkusime funkci wrapper - ma jediny cil, obaluje jinou funkci a automatizuje&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; #mame treba meanto na, ktera funguje pro dataframy.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; mujdataframe&amp;lt;-data.frame(x1=c(1,NA,3),x2=c(4,6,NA)); mujdataframe #v dataframu se&amp;nbsp; &amp;nbsp;pouziva rovnitko!!&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; meantonadata&amp;lt;-function(x) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; #sem pujde dataframe&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; apply(x,2,meantona)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; meantona(mujdataframe) #object is not numeric or logical...&lt;/div&gt;&lt;div&gt;&amp;nbsp; meantonadata(mujdataframe)&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="5I1A7pN4bpxkfCAPcvcR-1">
+          <mxGeometry x="860" y="620" width="530" height="200" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
@@ -770,7 +776,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="80hqbB3Xu7Shav92raKJ" name="Grafy">
-    <mxGraphModel dx="1024" dy="517" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="2048" dy="1034" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="GDkVq7SAGpcZtHpfiC4U-0"/>
         <mxCell id="GDkVq7SAGpcZtHpfiC4U-1" parent="GDkVq7SAGpcZtHpfiC4U-0"/>
@@ -864,6 +870,12 @@
         </mxCell>
         <mxCell id="LkFjkOBFff7q1auhkr2b-4" value="&lt;div&gt;&lt;b&gt;#kolacovy graf&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;X;&amp;nbsp;&lt;span&gt;&amp;nbsp;pie(X)&amp;nbsp; #vezme vsechny data z matice a rozseka.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;#zvlastni argumenty.&amp;nbsp;&lt;span&gt;&amp;nbsp;args(pie)&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp;pie(X,edges=4) #pocet zlomu, kolo je rozsekane na male primky, kdyz malo bodu, ukaze jako diamant&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;pie(X,edges=400) #, ukaze jako diamant, skorko presna kruznice&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GDkVq7SAGpcZtHpfiC4U-1" vertex="1">
           <mxGeometry x="162" y="1235" width="548" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="uAEbl1L05TnxuCetlDMN-0" value="&lt;div&gt;##############################################################################&lt;/div&gt;&lt;div&gt;&lt;b&gt;#priklad 4 - graf ggplot&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;#vytvorte graf pomoci knihovny ggplot (bodovy) dat vztahu mezi vahou auta(wt) a poctem mil na galon benzinu mpg&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; library(ggplot2)&lt;/div&gt;&lt;div&gt;&amp;nbsp; mtcars$wt&lt;/div&gt;&lt;div&gt;&amp;nbsp; mtcars$mpg&lt;/div&gt;&lt;div&gt;&amp;nbsp; plot(mtcars$wt,mtcars$mpg )&lt;/div&gt;&lt;div&gt;&amp;nbsp; ggplot(mtcars, aes(wt, mpg)) +&amp;nbsp; &amp;nbsp;geom_point()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="GDkVq7SAGpcZtHpfiC4U-1">
+          <mxGeometry x="170" y="1370" width="570" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="uAEbl1L05TnxuCetlDMN-1" value="&lt;div&gt;##############################################################################&lt;/div&gt;&lt;div&gt;#priklad 5 - graf ggplot&amp;nbsp;&lt;/div&gt;&lt;div&gt;#vytvorte funkci ktera bude wrapperem funkce pro vypocet variacniho koeficientu&lt;/div&gt;&lt;div&gt;# musite vytvorit 2 funkce, wrapper funkce pro data frame (matici) a dale funkci&amp;nbsp;&lt;/div&gt;&lt;div&gt;# na vypocet variacniho koeficientu. otestujte na mtcars&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# Variační koeficient se používá v případě, kdy chceme posoudit relativní velikost rozptýlenosti dat&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; #vzhledem k průměru a někdy se uvádí v procentech[1]. Slouží k porovnání variability souborů, které&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; #mají nestejné průměry[3]. VK=S / X prumer&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; #jeho reseni # funkce pro jakykoliv vektor dat min, max, med - my stats&lt;/div&gt;&lt;div&gt;&amp;nbsp; mystatsd&amp;lt;-function(x){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; mystats&amp;lt;-function(x){c(mean(x), median(x), sd(x)/mean(x), min(x),max(x))}&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; returnvalue=round(apply(x,2,mystats),2)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; rownames(returnvalue)&amp;lt;-c(&quot;prumer&quot;,&quot;median&quot;,&quot;vx&quot;,&quot;min&quot;,&quot;max&quot;)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return(as.data.frame(returnvalue))&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; mystatsd(mtcars)&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; mystatsd&amp;lt;-function(x){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; mystats&amp;lt;-function(x){c(mean(x), sd(x)/mean(x))}&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; returnvalue=round(apply(x,2,mystats),2)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;returnValue&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rownames(returnvalue)&amp;lt;-c(&quot;mean&quot;,&quot;vx&quot;)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return(as.data.frame(returnvalue))&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; mystatsd(mtcars)&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="GDkVq7SAGpcZtHpfiC4U-1">
+          <mxGeometry x="770" y="1370" width="640" height="400" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1002,6 +1014,12 @@
         </mxCell>
         <mxCell id="7TwmybCpB--hnjsFEEvR-0" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="HaRzlUNS4jXWgn1J5wCA-1">
           <mxGeometry x="792" y="-3911" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="zNEgDmYUM5Z3AnwlG1P2-0" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="HaRzlUNS4jXWgn1J5wCA-1">
+          <mxGeometry x="663" y="-2783" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="zNEgDmYUM5Z3AnwlG1P2-1" value="&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#PRIKLAD3&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;##############################################################################################&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#vytvorte funkci ktera provede statisticke shrnuti jakehokoliv webu&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#cilem je vytvorit funkci ktera bude navracet data frame kde budou cetnosti&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#odkazu (tag a) paragrafu (tag p), nadpisu prvni urovne(h1), druhe (h2), treti (h3)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#navratova tabulka bude vypadat napr&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#Tag&amp;nbsp; cetnost&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#a&amp;nbsp; &amp;nbsp; &amp;nbsp;10&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#p&amp;nbsp; &amp;nbsp; &amp;nbsp;23&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff0a0a&quot;&gt;#h1&amp;nbsp; &amp;nbsp; 11&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="HaRzlUNS4jXWgn1J5wCA-1">
+          <mxGeometry y="-2970" width="710" height="290" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
