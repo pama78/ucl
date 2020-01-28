@@ -1,13 +1,21 @@
-<mxfile host="www.draw.io" modified="2019-12-26T14:03:42.480Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36" etag="6k72kw8pGaK6ELPBNZme" version="12.4.3" type="github" pages="1">
-  <diagram id="y8Ra8WDpV--MmbTcDogs" name="Page-1">
-    <mxGraphModel dx="1533" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="www.draw.io" modified="2020-01-28T07:54:09.303Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="Hmcfjm93vMubMbkFrln8" version="12.5.8" type="github" pages="2">
+  <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
+    <mxGraphModel dx="1016" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="dPriRE3YrdGKLI615bE0-0"/>
+        <mxCell id="dPriRE3YrdGKLI615bE0-1" parent="dPriRE3YrdGKLI615bE0-0"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="y8Ra8WDpV--MmbTcDogs" name="test2">
+    <mxGraphModel dx="1843" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-41" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-41" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry y="640" width="830" height="570" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="920" y="921" width="770" height="440" as="geometry"/>
         </mxCell>
         <mxCell id="F72YbmFoQMziK-xgi5LF-1" value="varianty -&amp;nbsp;&lt;br&gt;na kovariační matici - bezrozměrnost&lt;br&gt;založeno na korelační matici - výhodnější. od -1 až 1&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -52,208 +60,208 @@
         <mxCell id="F72YbmFoQMziK-xgi5LF-17" value="&lt;b&gt;postup FA&lt;/b&gt;: vycházíme z korel. matice. Princip jako u AHK, ale nahrazuji proměnné faktory s interpretací.&amp;nbsp;&lt;b&gt;2 metody&amp;nbsp;&lt;/b&gt;- metoda hlavních faktorů (AHK), maximální věrohodnost (maximalizace v. funkce)&lt;br&gt;&lt;b&gt;1) volba množství faktorů &lt;/b&gt;(poslouží AHK, víme kolik vysvětlí var.)&lt;br&gt;&lt;b&gt;2) rotace faktorů&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;b&gt;3) odhad faktorového skóre&lt;/b&gt; (nejdůležitější, korelace mezi proměnnou a faktorem).Nahradím hodnoty a vynesu faktor. zátěže&amp;nbsp; do grafu, jak spolu souvisí&lt;br&gt;- 1. hlavní komponenta vysvětluje nejvíc rozptylu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="397" y="899" width="430" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-2" value="&lt;b&gt;předpoklady FA - &lt;/b&gt;nezávislé faktory, lineární model, vícerozměrné norm. rozdělení (v optimálním případě)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-2" value="&lt;b&gt;předpoklady FA - &lt;/b&gt;nezávislé faktory, lineární model, vícerozměrné norm. rozdělení (v optimálním případě)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="4" y="790" width="320" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-3" value="&lt;b&gt;výsledky - Komunalita: &lt;/b&gt;rozdíl rozptylu vysvětleného společnými faktory&lt;br&gt;&lt;b&gt;Variabilitu &lt;/b&gt;rozkládáme na 2 části - vysvětlenou a nevysvětlenou (specif. faktory)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-3" value="&lt;b&gt;výsledky - Komunalita: &lt;/b&gt;rozdíl rozptylu vysvětleného společnými faktory&lt;br&gt;&lt;b&gt;Variabilitu &lt;/b&gt;rozkládáme na 2 části - vysvětlenou a nevysvětlenou (specif. faktory)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="4" y="860" width="320" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-4" value="&lt;b&gt;Rotace -&amp;nbsp; 1)ortogonální (&lt;/b&gt;stále osy v pravém úhly). faktory stále nezávislé/nekorelované.&amp;nbsp;metoda &lt;b&gt;Varimax &lt;/b&gt;(maximalizace variability faktorové zátěže)&lt;b&gt;&amp;nbsp;&lt;/b&gt;nejjednodušší. říká že tenhle faktor je kladně/záporně korelovaný s těmito proměnnými. korelační matice nepoškozená. je hodně řešení. hledáme takové kde Factor Loadings je buď nízký nebo vysoký (vysoký pro některé proměnné a nízký pro jiné)&lt;br&gt;&lt;b&gt;2) šikmá rotace (např oblimin)&amp;nbsp;&lt;/b&gt;nezachová nekorelované faktory, porušuje předpoklad o lineární nezávislosti faktorů, neřeší multikolinearitu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-4" value="&lt;b&gt;Rotace -&amp;nbsp; 1)ortogonální (&lt;/b&gt;stále osy v pravém úhly). faktory stále nezávislé/nekorelované.&amp;nbsp;metoda &lt;b&gt;Varimax &lt;/b&gt;(maximalizace variability faktorové zátěže)&lt;b&gt;&amp;nbsp;&lt;/b&gt;nejjednodušší. říká že tenhle faktor je kladně/záporně korelovaný s těmito proměnnými. korelační matice nepoškozená. je hodně řešení. hledáme takové kde Factor Loadings je buď nízký nebo vysoký (vysoký pro některé proměnné a nízký pro jiné)&lt;br&gt;&lt;b&gt;2) šikmá rotace (např oblimin)&amp;nbsp;&lt;/b&gt;nezachová nekorelované faktory, porušuje předpoklad o lineární nezávislosti faktorů, neřeší multikolinearitu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="1029" width="330" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-8" value="&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3Bp%C5%99edpoklady%20FA%20-%20%26lt%3B%2Fb%26gt%3Bnez%C3%A1visl%C3%A9%20faktory%2C%20line%C3%A1rn%C3%AD%20model%2C%20v%C3%ADcerozm%C4%9Brn%C3%A9%20norm.%20rozd%C4%9Blen%C3%AD%20(v%20optim%C3%A1ln%C3%ADm%20p%C5%99%C3%ADpad%C4%9B)%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22920%22%20width%3D%22320%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-8" value="&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3Bp%C5%99edpoklady%20FA%20-%20%26lt%3B%2Fb%26gt%3Bnez%C3%A1visl%C3%A9%20faktory%2C%20line%C3%A1rn%C3%AD%20model%2C%20v%C3%ADcerozm%C4%9Brn%C3%A9%20norm.%20rozd%C4%9Blen%C3%AD%20(v%20optim%C3%A1ln%C3%ADm%20p%C5%99%C3%ADpad%C4%9B)%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22920%22%20width%3D%22320%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="1" vertex="1">
           <mxGeometry x="254" y="1054" width="20" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-9" value="&lt;b&gt;Kriteria FA - AIR -&lt;/b&gt; čím menší, tím lepší. &lt;br&gt;počet faktorů &amp;lt; počet proměnných / 2&lt;br&gt;vysvětlovat alespoň 90% komunality (variability kov. matice) &lt;br&gt;vysvětlovat aspoň 70% celkového rozptylu&lt;br&gt;rezidua korel. matice bz měla projít testem normality" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-9" value="&lt;b&gt;Kriteria FA - AIR -&lt;/b&gt; čím menší, tím lepší. &lt;br&gt;počet faktorů &amp;lt; počet proměnných / 2&lt;br&gt;vysvětlovat alespoň 90% komunality (variability kov. matice) &lt;br&gt;vysvětlovat aspoň 70% celkového rozptylu&lt;br&gt;rezidua korel. matice bz měla projít testem normality" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="4" y="930" width="334" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-10" value="&lt;b&gt;Odhad FA skóre &lt;/b&gt;- jde použít jako náhrada do modelů (regrese)&lt;br&gt;ale je počet hodnot nepoz. faktorů + specif. faktorů víc než pozorování&lt;br&gt;pro určení jsou dvě metody 1) Bartletova, 2) Thomsonova regrese" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-10" value="&lt;b&gt;Odhad FA skóre &lt;/b&gt;- jde použít jako náhrada do modelů (regrese)&lt;br&gt;ale je počet hodnot nepoz. faktorů + specif. faktorů víc než pozorování&lt;br&gt;pro určení jsou dvě metody 1) Bartletova, 2) Thomsonova regrese" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="444" y="839" width="380" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-11" value="&lt;b&gt;příklad FA -&amp;nbsp; &lt;/b&gt;call -&amp;gt;factalnal (x=car_data_kv, factors=3, rotation=&quot;varimax) #ortogon&lt;br&gt;-&amp;gt;loadings #faktorove zateze, cena silne korelovana s fak1 (0.9) fak2 negati se spotř.&lt;br&gt;-&amp;gt; cummulative (suma proportion var)&lt;br&gt;-&amp;gt; test hypo jestli 3 faktory sufficient -&amp;gt; zamitl bych (=0), ale je to subj. věc, chceme 90%&lt;br&gt;#( +scores=&quot;Bartlett&quot;) #nebo regression=thomson&lt;br&gt;$scores #ziskam nove hodnoty pro faktory, ktere muzu pouzit v regr. analyze&amp;nbsp;&lt;br&gt;$loadings #interpretace faktorů, zamylset se, rotace, pak formulace (úspornost, luxus..)&lt;br&gt;$rotmat #rotovaná matice faktorů&lt;br&gt;load &amp;lt;- fanal$loadings[,1;2]; plot(load) #graf, 2 faktory zobrazitelné" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-11" value="&lt;b&gt;příklad FA -&amp;nbsp; &lt;/b&gt;call -&amp;gt;factalnal (x=car_data_kv, factors=3, rotation=&quot;varimax) #ortogon&lt;br&gt;-&amp;gt;loadings #faktorove zateze, cena silne korelovana s fak1 (0.9) fak2 negati se spotř.&lt;br&gt;-&amp;gt; cummulative (suma proportion var)&lt;br&gt;-&amp;gt; test hypo jestli 3 faktory sufficient -&amp;gt; zamitl bych (=0), ale je to subj. věc, chceme 90%&lt;br&gt;#( +scores=&quot;Bartlett&quot;) #nebo regression=thomson&lt;br&gt;$scores #ziskam nove hodnoty pro faktory, ktere muzu pouzit v regr. analyze&amp;nbsp;&lt;br&gt;$loadings #interpretace faktorů, zamylset se, rotace, pak formulace (úspornost, luxus..)&lt;br&gt;$rotmat #rotovaná matice faktorů&lt;br&gt;load &amp;lt;- fanal$loadings[,1;2]; plot(load) #graf, 2 faktory zobrazitelné" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="347" y="1029" width="480" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-13" value="9 28/11&amp;nbsp;&lt;br&gt;Shluková analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-13" value="9 28/11&amp;nbsp;&lt;br&gt;Shluková analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="1130" y="965" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-15" value="&lt;b&gt;&amp;nbsp;cíl SA: &lt;/b&gt;klasifikace objektů, vztahy, zjednodušení (maximalizace rozdílů mezi shluky)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-15" value="&lt;b&gt;&amp;nbsp;cíl SA: &lt;/b&gt;klasifikace objektů, vztahy, zjednodušení (maximalizace rozdílů mezi shluky)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1280" y="946" width="320" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-16" value="&lt;b&gt;důležité otázky: &lt;/b&gt;kolik shluků chceme, hiearch/nehiearchické?&lt;br&gt;a jaké testy použijeme?&amp;nbsp;&lt;br&gt;siluety, gap statistiky, elbow (loketní) graf, 30 indexů" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-16" value="&lt;b&gt;důležité otázky: &lt;/b&gt;kolik shluků chceme, hiearch/nehiearchické?&lt;br&gt;a jaké testy použijeme?&amp;nbsp;&lt;br&gt;siluety, gap statistiky, elbow (loketní) graf, 30 indexů" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1290" y="996" width="340" height="61" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-17" value="&lt;b&gt;předpoklady: &lt;/b&gt;není předpoklad o statistickém rozdělení, o nekorelovanosti (ale korelovanost může data ovlivnit a výsledky mohou vycházet jinak)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-17" value="&lt;b&gt;předpoklady: &lt;/b&gt;není předpoklad o statistickém rozdělení, o nekorelovanosti (ale korelovanost může data ovlivnit a výsledky mohou vycházet jinak)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1280" y="1065" width="320" height="51" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-18" value="&lt;b&gt;EAD - &lt;/b&gt;matice maha vzdáleností, odstranění odlehlých pozorování.&amp;nbsp;&lt;br&gt;reprezentativnost výběru" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-18" value="&lt;b&gt;EAD - &lt;/b&gt;matice maha vzdáleností, odstranění odlehlých pozorování.&amp;nbsp;&lt;br&gt;reprezentativnost výběru" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="940" y="1049.5" width="320" height="51" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-19" value="&lt;b&gt;normalizace dat - &lt;/b&gt;dobrá pro stejný rozměr dat (kg,cm), důležitá pro fuzzy nutná, ale přijdeme o interpretaci proměnných" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-19" value="&lt;b&gt;normalizace dat - &lt;/b&gt;dobrá pro stejný rozměr dat (kg,cm), důležitá pro fuzzy nutná, ale přijdeme o interpretaci proměnných" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="940" y="1105" width="320" height="51" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-20" value="&lt;b&gt;multikolinearita - &lt;/b&gt;není vyžadována nekorelovanost, ale ovlivní výsledky (korelovaná data se zdají významnější).&amp;nbsp;&lt;br&gt;jde řešit s AHK, pak ale másíme počítat komponentní skóre)&amp;nbsp;&lt;br&gt;nebo vyloučíme některé proměnné a prohlásíme že jsme vynechali takové a takové" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-20" value="&lt;b&gt;multikolinearita - &lt;/b&gt;není vyžadována nekorelovanost, ale ovlivní výsledky (korelovaná data se zdají významnější).&amp;nbsp;&lt;br&gt;jde řešit s AHK, pak ale másíme počítat komponentní skóre)&amp;nbsp;&lt;br&gt;nebo vyloučíme některé proměnné a prohlásíme že jsme vynechali takové a takové" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="940" y="1166" width="320" height="86" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-21" value="&lt;b&gt;asociační koeficienty?&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-21" value="&lt;b&gt;asociační koeficienty?&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1280" y="1126" width="320" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-22" value="7 (1. po testu) Diskriminační analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-22" value="7 (1. po testu) Diskriminační analýza" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="930" y="50" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-23" value="&lt;b&gt;k čemu slouží:&lt;/b&gt;&amp;nbsp;klasifikační nástroj. metody pro klasifikaci/roztřídění do 2 nebo více skupin (pomáhá s predikcí a zaklasifikováním). Závislost kategoriálního typu na kvantitativních proměnných (nebo faktory)&lt;br&gt;obvykle vysvětlovaná prom. Y je kategoriální typ (kvalitativní udává třídu 0/1, ano/ne).&amp;nbsp;&lt;br&gt;aplikačně snadné, využívané v lékařství(dopady léků na pacienty)&lt;br&gt;ideálně - sestavíme úlohu do podoby diskriminačního pravidla. když dosadíme hodnoty, tak jsme schopni rozhodnout třídu/skupinu&lt;br&gt;&lt;b&gt;V regresi by se předpokládala kvalitativní spojitá&amp;nbsp;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-23" value="&lt;b&gt;k čemu slouží:&lt;/b&gt;&amp;nbsp;klasifikační nástroj. metody pro klasifikaci/roztřídění do 2 nebo více skupin (pomáhá s predikcí a zaklasifikováním). Závislost kategoriálního typu na kvantitativních proměnných (nebo faktory)&lt;br&gt;obvykle vysvětlovaná prom. Y je kategoriální typ (kvalitativní udává třídu 0/1, ano/ne).&amp;nbsp;&lt;br&gt;aplikačně snadné, využívané v lékařství(dopady léků na pacienty)&lt;br&gt;ideálně - sestavíme úlohu do podoby diskriminačního pravidla. když dosadíme hodnoty, tak jsme schopni rozhodnout třídu/skupinu&lt;br&gt;&lt;b&gt;V regresi by se předpokládala kvalitativní spojitá&amp;nbsp;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1070" width="570" height="110" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-24" value="&lt;b&gt;principy - &lt;/b&gt;vnitroskupinová variabilita co nejmenší a meziskupinová co největší&lt;br&gt;zjišťujeme které proměnné mají vliv na zatřídění do skupin přes lin. diskr. funkci&lt;br&gt;&lt;b&gt;Diskriminanty -&amp;nbsp;&lt;/b&gt;snažíme se najít takové kriterium, které dovede skupiny rozdělit &lt;b&gt;hledáme nejlepší celkovou variabilitu&lt;/b&gt; (=jako rozptyl ve vícerozměrné analýze) na matici vnitro a meziskupinové variability. optimum má minimální vntro a maximální meziskupinovou variabilitu (homogenní skupiny)&lt;br&gt;&lt;b&gt;&amp;nbsp;výhoda &lt;/b&gt;- jednoznačnost" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-24" value="&lt;b&gt;principy - &lt;/b&gt;vnitroskupinová variabilita co nejmenší a meziskupinová co největší&lt;br&gt;zjišťujeme které proměnné mají vliv na zatřídění do skupin přes lin. diskr. funkci&lt;br&gt;&lt;b&gt;Diskriminanty -&amp;nbsp;&lt;/b&gt;snažíme se najít takové kriterium, které dovede skupiny rozdělit &lt;b&gt;hledáme nejlepší celkovou variabilitu&lt;/b&gt; (=jako rozptyl ve vícerozměrné analýze) na matici vnitro a meziskupinové variability. optimum má minimální vntro a maximální meziskupinovou variabilitu (homogenní skupiny)&lt;br&gt;&lt;b&gt;&amp;nbsp;výhoda &lt;/b&gt;- jednoznačnost" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="127.5" width="460" height="102.5" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-25" value="&lt;b&gt;lineární DA/kvadratická DA - LDA jednodušší (na UCL),&lt;/b&gt; 1 vysvětlovaná a P vysvětlujících (diskriminátorů). 1 objekt do 1 třídy (fuzzy varianta je pak pravděpodobnostní zařazení do tříd&lt;br&gt;&lt;b&gt;kvadratická DA - &lt;/b&gt;pokud nejsou shodné kovarianční matice ve skupinách. test shodny na boxové statistice M (ale tam je cilivost na normalitu), nebo bartletův a Levenemův test" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-25" value="&lt;b&gt;lineární DA/kvadratická DA - LDA jednodušší (na UCL),&lt;/b&gt; 1 vysvětlovaná a P vysvětlujících (diskriminátorů). 1 objekt do 1 třídy (fuzzy varianta je pak pravděpodobnostní zařazení do tříd&lt;br&gt;&lt;b&gt;kvadratická DA - &lt;/b&gt;pokud nejsou shodné kovarianční matice ve skupinách. test shodny na boxové statistice M (ale tam je cilivost na normalitu), nebo bartletův a Levenemův test" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1330" y="120" width="310" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-26" value="&lt;b&gt;striktní předpoklady - &lt;/b&gt;1) vícerozměrná normalita dat (málokdy splněno), s úspěchem používáno i bez. prof. Hebák OK pro skoro normáln í rozdělení, alespoň jednotlivých proměnných&lt;br&gt;2) lineární DA v případě shodných kovariančních matic ve skupinách, jinak kvadratická" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-26" value="&lt;b&gt;striktní předpoklady - &lt;/b&gt;1) vícerozměrná normalita dat (málokdy splněno), s úspěchem používáno i bez. prof. Hebák OK pro skoro normáln í rozdělení, alespoň jednotlivých proměnných&lt;br&gt;2) lineární DA v případě shodných kovariančních matic ve skupinách, jinak kvadratická" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1260" y="250" width="340" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-27" value="&lt;b&gt;když není normalita dat,&lt;/b&gt; pak logistická regrese, můžeme použít i obě metody a porovnat výsledky. L.R má také nevýhody, např nejednoznačnost (zatímco v DA je buď patří nebo nepatří)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-27" value="&lt;b&gt;když není normalita dat,&lt;/b&gt; pak logistická regrese, můžeme použít i obě metody a porovnat výsledky. L.R má také nevýhody, např nejednoznačnost (zatímco v DA je buď patří nebo nepatří)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1290" y="330" width="360" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-28" value="příklad: lze roztřídit auta podle původu asijska-usa-evropská?&lt;br&gt;víno podle měřených proměnných (vysvětlujících)?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-28" value="příklad: lze roztřídit auta podle původu asijska-usa-evropská?&lt;br&gt;víno podle měřených proměnných (vysvětlujících)?" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1290" y="390" width="340" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-29" value="centroidy,&amp;nbsp;&lt;br&gt;maha vzdálenosti&lt;br&gt;apriorní info&lt;br&gt;ztráty při misklasifikaci" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-29" value="centroidy,&amp;nbsp;&lt;br&gt;maha vzdálenosti&lt;br&gt;apriorní info&lt;br&gt;ztráty při misklasifikaci" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1720" y="490" width="130" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-30" value="Fisherovo diskriminační kriterium - založeno na... , lze interpretovat jako v regresi. dílčí koeficienty regr. funkcekteré nám udávají míru vlivu Xp na D.F.&amp;nbsp;&amp;nbsp;&lt;b&gt;maximalizujeme F.D.K pomocí vlastních čísel&lt;/b&gt;. &lt;br&gt;1. Diskriminant (první kanonická proměnná)&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-30" value="Fisherovo diskriminační kriterium - založeno na... , lze interpretovat jako v regresi. dílčí koeficienty regr. funkcekteré nám udávají míru vlivu Xp na D.F.&amp;nbsp;&amp;nbsp;&lt;b&gt;maximalizujeme F.D.K pomocí vlastních čísel&lt;/b&gt;. &lt;br&gt;1. Diskriminant (první kanonická proměnná)&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="250" width="380" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-31" value="&lt;b&gt;počet diskriminantů.&lt;/b&gt; jestli jsou dvě skupiny, stačí 1 diskriminant, jestli víc skupin, musíme určit kolik diskriminantů třeba (min(počet proměnných, skupin -1)). např v car data jsou 3 skupiny -&amp;gt; 2 funkce&lt;br&gt;1. a 2. funkce vysvětluje dohromady 100% variability" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-31" value="&lt;b&gt;počet diskriminantů.&lt;/b&gt; jestli jsou dvě skupiny, stačí 1 diskriminant, jestli víc skupin, musíme určit kolik diskriminantů třeba (min(počet proměnných, skupin -1)). např v car data jsou 3 skupiny -&amp;gt; 2 funkce&lt;br&gt;1. a 2. funkce vysvětluje dohromady 100% variability" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="350" width="380" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-32" value="&lt;b&gt;diskriminační skóre&lt;/b&gt; - když dosadíme hodnoty do diskriminační rovnice -&amp;gt; skóre (připomíná regresní analýzu)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-32" value="&lt;b&gt;diskriminační skóre&lt;/b&gt; - když dosadíme hodnoty do diskriminační rovnice -&amp;gt; skóre (připomíná regresní analýzu)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1290" y="440" width="350" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-33" value="&lt;b&gt;postup / &lt;/b&gt;máme matici,&amp;nbsp;&lt;br&gt;určíme vnitro a meziskup. variabilitu&lt;br&gt;určím 1 diskriminant pomocí vlastních čísel&lt;br&gt;zjistím kolik vysvětluje variability a určím další diskriminant" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-33" value="&lt;b&gt;postup / &lt;/b&gt;máme matici,&amp;nbsp;&lt;br&gt;určíme vnitro a meziskup. variabilitu&lt;br&gt;určím 1 diskriminant pomocí vlastních čísel&lt;br&gt;zjistím kolik vysvětluje variability a určím další diskriminant" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="460" width="280" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-34" value="&lt;b&gt;postup jak zaklasifikovat -&lt;/b&gt; jen do 1 třídy.&amp;nbsp;&lt;br&gt;1. predikční model, máme diskriminační skóre, máme diskriminantz, počítáme vzdáleností bodů od centroidů (střed sk. 1 a sk. 2). pomocí Maha/Euklidovské). Pro každou jednotku určím kam má nejblíž a tam zařadíme" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-34" value="&lt;b&gt;postup jak zaklasifikovat -&lt;/b&gt; jen do 1 třídy.&amp;nbsp;&lt;br&gt;1. predikční model, máme diskriminační skóre, máme diskriminantz, počítáme vzdáleností bodů od centroidů (střed sk. 1 a sk. 2). pomocí Maha/Euklidovské). Pro každou jednotku určím kam má nejblíž a tam zařadíme" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="540" width="300" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-35" value="&lt;b&gt;apriorní informace - &lt;/b&gt;víme, že nejsou jednotky rozděleny proporcionáalně. můžeme informaci využít a získat lepší výsledky.&lt;br&gt;&lt;b&gt;ztrátová funkce &lt;/b&gt;- jaké ztráty se dopustíme když mylně zařadíme jednotku do sk2? může to být nestejný problém jako mylné zařazení do sk1.&amp;nbsp;&lt;br&gt;&lt;b&gt;AI a ZF lze zapojit do vzorce &lt;/b&gt;. v R to není, muselo by se doprogramovat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-35" value="&lt;b&gt;apriorní informace - &lt;/b&gt;víme, že nejsou jednotky rozděleny proporcionáalně. můžeme informaci využít a získat lepší výsledky.&lt;br&gt;&lt;b&gt;ztrátová funkce &lt;/b&gt;- jaké ztráty se dopustíme když mylně zařadíme jednotku do sk2? může to být nestejný problém jako mylné zařazení do sk1.&amp;nbsp;&lt;br&gt;&lt;b&gt;AI a ZF lze zapojit do vzorce &lt;/b&gt;. v R to není, muselo by se doprogramovat" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1267.5" y="490" width="405" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-36" value="&lt;b&gt;kvalita modelu DA -&lt;/b&gt;&amp;nbsp;1) lze skoumat diskriminační skóre a zátěže. Ne u všech příslušností to vzjde, můžeme testovat v R (vrací pravděpodobnosti) &lt;br&gt;v regresi máme index determinance hodnotící podíl námi vysvětlené variability.&amp;nbsp;&lt;br&gt;2) lze zkoumat vliv zařazení proměnné na změnu&lt;br&gt;3) MAHA vzdálenosti - časté kritérium = Wilkovo lambda&lt;br&gt;4) Hit poměr a konfuzní matice (použijeme v UCL). podíl správně a špatně zatříděných. náhodně 75% na tvorbu modelu a 25% na test -&amp;gt;konfuzní matice.&lt;br&gt;dobré rozdělit data na trénovací a testovací&lt;br&gt;odlehlá pozorování mimořádně vadí (neprojdou testy normality)&lt;br&gt;MANOVA - analýza rozptylu - pro kategorie chudý, středně, bohatý (z nespojitých čísel). pro auta usa/eu. na uu kitu je skript" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-36" value="&lt;b&gt;kvalita modelu DA -&lt;/b&gt;&amp;nbsp;1) lze skoumat diskriminační skóre a zátěže. Ne u všech příslušností to vzjde, můžeme testovat v R (vrací pravděpodobnosti) &lt;br&gt;v regresi máme index determinance hodnotící podíl námi vysvětlené variability.&amp;nbsp;&lt;br&gt;2) lze zkoumat vliv zařazení proměnné na změnu&lt;br&gt;3) MAHA vzdálenosti - časté kritérium = Wilkovo lambda&lt;br&gt;4) Hit poměr a konfuzní matice (použijeme v UCL). podíl správně a špatně zatříděných. náhodně 75% na tvorbu modelu a 25% na test -&amp;gt;konfuzní matice.&lt;br&gt;dobré rozdělit data na trénovací a testovací&lt;br&gt;odlehlá pozorování mimořádně vadí (neprojdou testy normality)&lt;br&gt;MANOVA - analýza rozptylu - pro kategorie chudý, středně, bohatý (z nespojitých čísel). pro auta usa/eu. na uu kitu je skript" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="640" width="470" height="161" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-37" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Rattle vína . kategorie 1,2,3 - vysvětlovaná kategoriální podle chemického rozboru.&amp;nbsp;&lt;br&gt;1) EAD zamyslet se nad odlehl. pozorováním. &lt;br&gt;2) scatter plot matrix - rychlá sada grafů, rozdělení veličin. na mimodiagonálních jsou závislosti mezi proměnnými. alkohol-magnezium...&lt;br&gt;3) test shody kovar. matic . BoxM - napříč skupinami (manova by se na vína nehodila)&lt;br&gt;4) call lda - zavolám diskr. funkci lin disrk.&amp;nbsp;&lt;br&gt;- apriorní pravděpodobnosti - odhadnuté z výběru prior probabilities&lt;br&gt;-group means - podmíněné průmery pro sk1,2,3 pro každou proměnou&lt;br&gt;-máme 2 diskriminační funkce LD1 a LD2 pro 3 skupiny&lt;br&gt;-coeficients of linear discriminants - dílčí koef. - závislost mezi proměnnou a LD1, LD2&lt;br&gt;- proportion of trace sum 1 - odhadnutý podíl vysvětlovaného rozptylu&lt;br&gt;4) lidahist - rozložení ve skup 1, hodnoty diskr. funkce a rozložení diskr. skore. ideal pro supinu 1,2,3 mít každý kopec jinde v rámci sloupců&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-37" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Rattle vína . kategorie 1,2,3 - vysvětlovaná kategoriální podle chemického rozboru.&amp;nbsp;&lt;br&gt;1) EAD zamyslet se nad odlehl. pozorováním. &lt;br&gt;2) scatter plot matrix - rychlá sada grafů, rozdělení veličin. na mimodiagonálních jsou závislosti mezi proměnnými. alkohol-magnezium...&lt;br&gt;3) test shody kovar. matic . BoxM - napříč skupinami (manova by se na vína nehodila)&lt;br&gt;4) call lda - zavolám diskr. funkci lin disrk.&amp;nbsp;&lt;br&gt;- apriorní pravděpodobnosti - odhadnuté z výběru prior probabilities&lt;br&gt;-group means - podmíněné průmery pro sk1,2,3 pro každou proměnou&lt;br&gt;-máme 2 diskriminační funkce LD1 a LD2 pro 3 skupiny&lt;br&gt;-coeficients of linear discriminants - dílčí koef. - závislost mezi proměnnou a LD1, LD2&lt;br&gt;- proportion of trace sum 1 - odhadnutý podíl vysvětlovaného rozptylu&lt;br&gt;4) lidahist - rozložení ve skup 1, hodnoty diskr. funkce a rozložení diskr. skore. ideal pro supinu 1,2,3 mít každý kopec jinde v rámci sloupců&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1310" y="567" width="570" height="192" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-38" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Cars&amp;nbsp;&lt;br&gt;1) EAD Závislosti (scatter plot), vyloučit lineárně závislé proměnné 2) test normality mshapiro test 3) Mtest (cilivý na normalitu, pvalue 0-&amp;gt; matice neshodné), ale jednotlivé výpočty nevypadají moc odlišně (řádově)&lt;br&gt;ale protože je test citlivý na normalitu, můžeme ignorovat,&amp;nbsp;&lt;br&gt;4) eigen values (vlastní čísla) /&amp;nbsp;&lt;br&gt;5)odstraníme korelované proměnné. 0.7 je silná korelace, ale možná nechceme přijít o data&lt;br&gt;6) call qda (cars_red$puvod ~ cena_prodej+HP+Mesto_MPG+vaha+delka, data=CarsRed[7:15]&lt;br&gt;-&amp;gt; prior propab = apriorní pp asia=37, eu 28, usa 34,&amp;nbsp;&lt;br&gt;-&amp;gt; group means - vysledky podmin. prumeru. nejdrazsi evropska.." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-38" value="&lt;b&gt;příklad: &lt;/b&gt;H8 Cars&amp;nbsp;&lt;br&gt;1) EAD Závislosti (scatter plot), vyloučit lineárně závislé proměnné 2) test normality mshapiro test 3) Mtest (cilivý na normalitu, pvalue 0-&amp;gt; matice neshodné), ale jednotlivé výpočty nevypadají moc odlišně (řádově)&lt;br&gt;ale protože je test citlivý na normalitu, můžeme ignorovat,&amp;nbsp;&lt;br&gt;4) eigen values (vlastní čísla) /&amp;nbsp;&lt;br&gt;5)odstraníme korelované proměnné. 0.7 je silná korelace, ale možná nechceme přijít o data&lt;br&gt;6) call qda (cars_red$puvod ~ cena_prodej+HP+Mesto_MPG+vaha+delka, data=CarsRed[7:15]&lt;br&gt;-&amp;gt; prior propab = apriorní pp asia=37, eu 28, usa 34,&amp;nbsp;&lt;br&gt;-&amp;gt; group means - vysledky podmin. prumeru. nejdrazsi evropska.." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1320" y="760" width="530" height="150" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-42" value="9 28/11&amp;nbsp;&lt;br&gt;Logistická regrese" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-42" value="9 28/11&amp;nbsp;&lt;br&gt;Logistická regrese" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="460" y="1530" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-43" value="&lt;b&gt;k čemu to je?&amp;nbsp; ke klasifikaci / zařazení do skupin&amp;nbsp;&lt;br&gt;1) binomické rozdělení&amp;nbsp;&lt;/b&gt;- že veličina nabyde hodnoty 0,1 (alternativní), &lt;br&gt;&lt;b&gt;2) multinomické&amp;nbsp;rozdělení &lt;/b&gt;- pro více hodnot - jako cardata, vína&lt;br&gt;&lt;b&gt;využití &lt;/b&gt;- pacient po léku umře nebo ne? banky, pojišťovny&lt;br&gt;pro spojité i diskrétní náhodné veličiny" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-43" value="&lt;b&gt;k čemu to je?&amp;nbsp; ke klasifikaci / zařazení do skupin&amp;nbsp;&lt;br&gt;1) binomické rozdělení&amp;nbsp;&lt;/b&gt;- že veličina nabyde hodnoty 0,1 (alternativní), &lt;br&gt;&lt;b&gt;2) multinomické&amp;nbsp;rozdělení &lt;/b&gt;- pro více hodnot - jako cardata, vína&lt;br&gt;&lt;b&gt;využití &lt;/b&gt;- pacient po léku umře nebo ne? banky, pojišťovny&lt;br&gt;pro spojité i diskrétní náhodné veličiny" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="641" y="1543.33" width="389" height="76.67" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-44" value="&lt;b&gt;co to je? jméno z křivky logaritmu (S)&lt;br&gt;alternativa k DA&lt;/b&gt; (diskriminační analýze)&lt;br&gt;DA dává lepší výsledky, klasifikace v případě vícerozm. norm. rozdělení. jinak je LR lepší.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-44" value="&lt;b&gt;co to je? jméno z křivky logaritmu (S)&lt;br&gt;alternativa k DA&lt;/b&gt; (diskriminační analýze)&lt;br&gt;DA dává lepší výsledky, klasifikace v případě vícerozm. norm. rozdělení. jinak je LR lepší.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="610" y="1430" width="380" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-45" value="&lt;b&gt;EAD -&lt;/b&gt; citlivost na odlehlá pozorování (lepší vyloučit)&lt;br&gt;tipy - podívat na data a vlastnosti. nemá smysl vyloučit 1/3 dat. pak se rozhodne které metody použít a pak porovnat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-45" value="&lt;b&gt;EAD -&lt;/b&gt; citlivost na odlehlá pozorování (lepší vyloučit)&lt;br&gt;tipy - podívat na data a vlastnosti. nemá smysl vyloučit 1/3 dat. pak se rozhodne které metody použít a pak porovnat" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="1610" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-46" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;příklad&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; muž&amp;nbsp; &amp;nbsp; &amp;nbsp;žena&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;svobodní a=65&amp;nbsp; &amp;nbsp;b=20&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;sezdaní&amp;nbsp; &amp;nbsp;c=18&amp;nbsp; &amp;nbsp;d=10&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;šance že náhodně vybraný muž bude svobodný 65:18 tj. 3.6 ku 1&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;šance že náhodně vybraná žena bude vdaná 10:20 tj. 1:2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-46" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;příklad&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; muž&amp;nbsp; &amp;nbsp; &amp;nbsp;žena&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;svobodní a=65&amp;nbsp; &amp;nbsp;b=20&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp;sezdaní&amp;nbsp; &amp;nbsp;c=18&amp;nbsp; &amp;nbsp;d=10&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;šance že náhodně vybraný muž bude svobodný 65:18 tj. 3.6 ku 1&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;šance že náhodně vybraná žena bude vdaná 10:20 tj. 1:2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="850" y="1770" width="210" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-48" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-48" value="" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="300" y="1920" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-58" value="&lt;b&gt;logaritmus šancí - &lt;/b&gt;lineání funkce vysvětlujících proměných (pokud ne porušili bychom předpoklad L.R).&lt;br&gt;&lt;b&gt;intervaly nesymetrické &lt;/b&gt;šance je od 0 do 1, pravděpodobnost je od 0 do nekonečna. 0-0.5 ... 0.5 a 0.5-1 ...do nekonečna. intervaly nesymetrické, ale když logaritmujeme stane se &lt;font style=&quot;font-size: 12px&quot;&gt;symetrický od -&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(68 , 68 , 68) ; font-family: &amp;#34;ubuntu&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif&quot;&gt;∞ do +∞&lt;/span&gt;&lt;/font&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-58" value="&lt;b&gt;logaritmus šancí - &lt;/b&gt;lineání funkce vysvětlujících proměných (pokud ne porušili bychom předpoklad L.R).&lt;br&gt;&lt;b&gt;intervaly nesymetrické &lt;/b&gt;šance je od 0 do 1, pravděpodobnost je od 0 do nekonečna. 0-0.5 ... 0.5 a 0.5-1 ...do nekonečna. intervaly nesymetrické, ale když logaritmujeme stane se &lt;font style=&quot;font-size: 12px&quot;&gt;symetrický od -&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(68 , 68 , 68) ; font-family: &amp;#34;ubuntu&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif&quot;&gt;∞ do +∞&lt;/span&gt;&lt;/font&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="402" y="1680" width="394" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-60" value="&lt;b&gt;postup: 1) odhad parametrů, &lt;/b&gt;počet tříd (např 0,1). analýza datové matice&lt;br&gt;&lt;b&gt;Iterační metody&lt;/b&gt; - v R říkají, kolik iterací bylo potřeba k nalezení" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-60" value="&lt;b&gt;postup: 1) odhad parametrů, &lt;/b&gt;počet tříd (např 0,1). analýza datové matice&lt;br&gt;&lt;b&gt;Iterační metody&lt;/b&gt; - v R říkají, kolik iterací bylo potřeba k nalezení" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="24" y="1560" width="230" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-61" value="&lt;b&gt;postup: 2) testy &lt;/b&gt;&lt;br&gt;Walduv test že dílčí koeficienty=0 (nahrazuje studentovy testy)&lt;br&gt;parciální korelační koef. - můžeme hodnotit zahrnutí proměnné&lt;br&gt;Jacknife - test po zahrnutí a vyloučení proměnné - testuje změnu&lt;br&gt;stepwise metoda - přidávání proměnné do modelu a hodnotí zahrnutí a vyloučení proměnné na model - stat chí kvadrát" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-61" value="&lt;b&gt;postup: 2) testy &lt;/b&gt;&lt;br&gt;Walduv test že dílčí koeficienty=0 (nahrazuje studentovy testy)&lt;br&gt;parciální korelační koef. - můžeme hodnotit zahrnutí proměnné&lt;br&gt;Jacknife - test po zahrnutí a vyloučení proměnné - testuje změnu&lt;br&gt;stepwise metoda - přidávání proměnné do modelu a hodnotí zahrnutí a vyloučení proměnné na model - stat chí kvadrát" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="1650" width="350" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-62" value="&lt;b&gt;postup: 3) hodnocení míry kvality (podobné indexu determinance)&lt;br&gt;&lt;/b&gt;1) odchylka deiance. pro D=0 dokonalé proložení&lt;br&gt;2) hodnota statistiky G - když proměnná je/není zahrnutá. cílem je co nejméně měnit statisitku G -&amp;gt; test pseudo R^2 (chí ^2)&lt;br&gt;3) ROC křivka - oblíbená, operační prahová charakteristika. osa Y je % špatně zařazených a osa X je % dobře zařazených. &lt;br&gt;Y někdy značená sensitivita = 1-pp nesprávně řazených obj.&amp;nbsp;&lt;br&gt;=slouží k porovnání několika logistických modelů mezi sebou. SW maximalizuje plochu pod křivkou.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-62" value="&lt;b&gt;postup: 3) hodnocení míry kvality (podobné indexu determinance)&lt;br&gt;&lt;/b&gt;1) odchylka deiance. pro D=0 dokonalé proložení&lt;br&gt;2) hodnota statistiky G - když proměnná je/není zahrnutá. cílem je co nejméně měnit statisitku G -&amp;gt; test pseudo R^2 (chí ^2)&lt;br&gt;3) ROC křivka - oblíbená, operační prahová charakteristika. osa Y je % špatně zařazených a osa X je % dobře zařazených. &lt;br&gt;Y někdy značená sensitivita = 1-pp nesprávně řazených obj.&amp;nbsp;&lt;br&gt;=slouží k porovnání několika logistických modelů mezi sebou. SW maximalizuje plochu pod křivkou.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-16.5" y="1760" width="430" height="130" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-83" value="&lt;b&gt;výhody - &lt;/b&gt;oblíbená, používaná. jasná klasifikace&lt;br&gt;neklade předpoklady na vysvětlující proměnné.&lt;br&gt;použitelné na kvantitativní proměnné (jde i na kategoriální)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-83" value="&lt;b&gt;výhody - &lt;/b&gt;oblíbená, používaná. jasná klasifikace&lt;br&gt;neklade předpoklady na vysvětlující proměnné.&lt;br&gt;použitelné na kvantitativní proměnné (jde i na kategoriální)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="785.5" y="1630" width="389" height="76.67" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-84" value="&lt;ol&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;poměr šancí&lt;/b&gt; - vysvětlujeme logaritmus šancí (&lt;span style=&quot;color: rgb(34 , 34 , 34) ; font-family: sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;π/(1-&lt;/span&gt;&lt;span style=&quot;color: rgb(34 , 34 , 34) ; font-family: sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;π) )&amp;nbsp; pomocí regresní nadroviny. připomíná lineární regresi...&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;logit =&lt;/span&gt;&lt;b&gt;distribuční funkce logaritmického rozdělení&amp;nbsp;&lt;/b&gt;&lt;span&gt;-&amp;nbsp;&lt;/span&gt;0-1&lt;/li&gt;&lt;li&gt;probit - alternativní metoda založená na norm. rozdělení. distribuční funkce normovaného norm. rozdělení. můžeme říct do jaké míry jev nastal 0.9, nebo např 0.1. hranice bývá 0.5&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.ekf.vsb.cz/export/sites/ekf/rmfr/.content/galerie-dokumentu/2014/plne-zneni-prispevku/Gurny.Petr_2.pdf&quot;&gt;https://www.ekf.vsb.cz/export/sites/ekf/rmfr/.content/galerie-dokumentu/2014/plne-zneni-prispevku/Gurny.Petr_2.pdf&lt;/a&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-84" value="&lt;ol&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;poměr šancí&lt;/b&gt; - vysvětlujeme logaritmus šancí (&lt;span style=&quot;color: rgb(34 , 34 , 34) ; font-family: sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;π/(1-&lt;/span&gt;&lt;span style=&quot;color: rgb(34 , 34 , 34) ; font-family: sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;π) )&amp;nbsp; pomocí regresní nadroviny. připomíná lineární regresi...&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;logit =&lt;/span&gt;&lt;b&gt;distribuční funkce logaritmického rozdělení&amp;nbsp;&lt;/b&gt;&lt;span&gt;-&amp;nbsp;&lt;/span&gt;0-1&lt;/li&gt;&lt;li&gt;probit - alternativní metoda založená na norm. rozdělení. distribuční funkce normovaného norm. rozdělení. můžeme říct do jaké míry jev nastal 0.9, nebo např 0.1. hranice bývá 0.5&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.ekf.vsb.cz/export/sites/ekf/rmfr/.content/galerie-dokumentu/2014/plne-zneni-prispevku/Gurny.Petr_2.pdf&quot;&gt;https://www.ekf.vsb.cz/export/sites/ekf/rmfr/.content/galerie-dokumentu/2014/plne-zneni-prispevku/Gurny.Petr_2.pdf&lt;/a&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="425" y="1770" width="380" height="125" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-85" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-85" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="1" vertex="1">
           <mxGeometry x="214" y="1609" width="40" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-87" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-87" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="560" y="1920" width="243" height="155" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-86" value="" style="group" vertex="1" connectable="0" parent="akfnTeuAMZxxue4OsH-c-87">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-86" value="" style="group" parent="akfnTeuAMZxxue4OsH-c-87" vertex="1" connectable="0">
           <mxGeometry width="233" height="155" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-81" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-81" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="20" width="213" height="155" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-63" value="" style="endArrow=none;html=1;strokeWidth=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-63" value="" style="endArrow=none;html=1;strokeWidth=1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="42" y="105" as="sourcePoint"/>
             <mxPoint x="93" y="105" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-64" value="" style="endArrow=none;html=1;strokeWidth=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-64" value="" style="endArrow=none;html=1;strokeWidth=1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="43" y="105" as="sourcePoint"/>
             <mxPoint x="43" y="45" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-65" value="" style="endArrow=none;html=1;strokeWidth=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-65" value="" style="endArrow=none;html=1;strokeWidth=1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="42" y="105" as="sourcePoint"/>
             <mxPoint x="92" y="55" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-66" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-66" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="27" y="35" width="20" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-67" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-67" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="83" y="105" width="20" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-68" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-68" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="33" y="105" width="20" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-69" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;dashPattern=1 1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-69" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;dashPattern=1 1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="42" y="105" as="sourcePoint"/>
             <mxPoint x="92" y="55" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-71" value="" style="endArrow=none;html=1;strokeWidth=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-71" value="" style="endArrow=none;html=1;strokeWidth=1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="123" y="105" as="sourcePoint"/>
             <mxPoint x="174" y="105" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-72" value="" style="endArrow=none;html=1;strokeWidth=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-72" value="" style="endArrow=none;html=1;strokeWidth=1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="124" y="105" as="sourcePoint"/>
             <mxPoint x="124" y="45" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-73" value="" style="endArrow=none;html=1;strokeWidth=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-73" value="" style="endArrow=none;html=1;strokeWidth=1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="123" y="105" as="sourcePoint"/>
             <mxPoint x="173" y="55" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-74" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-74" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="164" y="105" width="20" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-75" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-75" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="114" y="105" width="20" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-76" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;dashPattern=1 1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-76" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;dashPattern=1 1;" parent="akfnTeuAMZxxue4OsH-c-86" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="123" y="105" as="sourcePoint"/>
             <mxPoint x="173" y="55" as="targetPoint"/>
@@ -263,34 +271,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-78" value="lepší model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-78" value="lepší model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="122" y="34" width="80" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-79" value="nejhorší &lt;br&gt;model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-79" value="nejhorší &lt;br&gt;model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="43" y="30" width="60" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-80" value="ROC křivky" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-80" value="ROC křivky" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry x="70" y="12" width="80" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-82" value="sensitivity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;rotation=-90;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-86">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-82" value="sensitivity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;rotation=-90;" parent="akfnTeuAMZxxue4OsH-c-86" vertex="1">
           <mxGeometry y="67.5" width="70" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-77" value="cokoliv nad křivkou (0,0;1.1) je lepší. &lt;br&gt;rozdíl ploch&amp;nbsp;&amp;nbsp;je přínos ke kvalitě modelu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-87">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-77" value="cokoliv nad křivkou (0,0;1.1) je lepší. &lt;br&gt;rozdíl ploch&amp;nbsp;&amp;nbsp;je přínos ke kvalitě modelu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];;autosize=1;" parent="akfnTeuAMZxxue4OsH-c-87" vertex="1">
           <mxGeometry x="13" y="119" width="230" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-88" value="&lt;b&gt;problémy - multikolinearita &lt;/b&gt;- kdyby byla, pomůže metoda hlavních komponent/faktorový model&lt;br&gt;&lt;b&gt;odhady regresních parametrů jsou nestálé &lt;/b&gt;- přidání/odebrání proměnných způsobí zásadně jiný model. &lt;b&gt;nemusí být možné nalézt řešení&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-88" value="&lt;b&gt;problémy - multikolinearita &lt;/b&gt;- kdyby byla, pomůže metoda hlavních komponent/faktorový model&lt;br&gt;&lt;b&gt;odhady regresních parametrů jsou nestálé &lt;/b&gt;- přidání/odebrání proměnných způsobí zásadně jiný model. &lt;b&gt;nemusí být možné nalézt řešení&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="1480" width="280" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-89" value="&lt;b&gt;H9 - aplikace #1 - binomicky -&amp;nbsp;&lt;/b&gt;&lt;br&gt;třídění vína do 2 skupin 0 a 1&lt;br&gt;&lt;br&gt;&lt;b&gt;H9 LR krocani -&amp;nbsp;&lt;/b&gt;zahrnout pouze nekorelované proměnné&lt;br&gt;glm ... family=binomial --- náhodná veličina Y, binomické rozdělení&lt;br&gt;2) výsledky glm je potřeba odlogaritmovat e^koef&lt;br&gt;koeficienty pro logaritmický model (v R: exp(logreg$coefficients) )&lt;br&gt;intervaly spolehlivosti exp(confint(logreg))&lt;br&gt;logreg$fitted.values - ukáže pro každou proměnnou její zatřídění v % (0.99=1)&lt;br&gt;3) plot $fitted.values - pravděpodobnost mezi 0 a 1. grafů je více.&amp;nbsp;&lt;br&gt;4) logreg$residuals -- 63. vybočuje v příkladu, vyloučít!&lt;br&gt;5) stačí Waldův test a dílčí t testy pro posouzení oprávněnsti zahrnutí dílčího koeficientu&lt;br&gt;5) ROC ... 41. minuta video 9" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-89" value="&lt;b&gt;H9 - aplikace #1 - binomicky -&amp;nbsp;&lt;/b&gt;&lt;br&gt;třídění vína do 2 skupin 0 a 1&lt;br&gt;&lt;br&gt;&lt;b&gt;H9 LR krocani -&amp;nbsp;&lt;/b&gt;zahrnout pouze nekorelované proměnné&lt;br&gt;glm ... family=binomial --- náhodná veličina Y, binomické rozdělení&lt;br&gt;2) výsledky glm je potřeba odlogaritmovat e^koef&lt;br&gt;koeficienty pro logaritmický model (v R: exp(logreg$coefficients) )&lt;br&gt;intervaly spolehlivosti exp(confint(logreg))&lt;br&gt;logreg$fitted.values - ukáže pro každou proměnnou její zatřídění v % (0.99=1)&lt;br&gt;3) plot $fitted.values - pravděpodobnost mezi 0 a 1. grafů je více.&amp;nbsp;&lt;br&gt;4) logreg$residuals -- 63. vybočuje v příkladu, vyloučít!&lt;br&gt;5) stačí Waldův test a dílčí t testy pro posouzení oprávněnsti zahrnutí dílčího koeficientu&lt;br&gt;5) ROC ... 41. minuta video 9" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-5" y="1920" width="475" height="190" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-91" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-91" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="340" y="1440" width="232" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-54" value="model logistické regrese&lt;br&gt;&lt;br&gt;dobře proložená data&amp;nbsp; nedobře proložená" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-54" value="model logistické regrese&lt;br&gt;&lt;br&gt;dobře proložená data&amp;nbsp; nedobře proložená" style="rounded=0;whiteSpace=wrap;html=1;" parent="akfnTeuAMZxxue4OsH-c-91" vertex="1">
           <mxGeometry width="232" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-47" value="" style="endArrow=none;html=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-47" value="" style="endArrow=none;html=1;" parent="akfnTeuAMZxxue4OsH-c-91" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="19" y="69.17000000000007" as="sourcePoint"/>
             <mxPoint x="85" y="19.170000000000073" as="targetPoint"/>
@@ -300,19 +308,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-49" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-49" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" parent="akfnTeuAMZxxue4OsH-c-91" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="19" y="69.17000000000007" as="sourcePoint"/>
             <mxPoint x="39" y="69.17000000000007" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-50" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-50" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" parent="akfnTeuAMZxxue4OsH-c-91" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="69" y="19.170000000000073" as="sourcePoint"/>
             <mxPoint x="89" y="19.170000000000073" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-51" value="" style="endArrow=none;html=1;" edge="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-51" value="" style="endArrow=none;html=1;" parent="akfnTeuAMZxxue4OsH-c-91" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="96" y="69.17000000000007" as="sourcePoint"/>
             <mxPoint x="162" y="19.170000000000073" as="targetPoint"/>
@@ -322,13 +330,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-52" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-52" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" parent="akfnTeuAMZxxue4OsH-c-91" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="96" y="69.17000000000007" as="sourcePoint"/>
             <mxPoint x="142" y="69" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="akfnTeuAMZxxue4OsH-c-53" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" edge="1" parent="akfnTeuAMZxxue4OsH-c-91">
+        <mxCell id="akfnTeuAMZxxue4OsH-c-53" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 1;strokeWidth=5;" parent="akfnTeuAMZxxue4OsH-c-91" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="122" y="19" as="sourcePoint"/>
             <mxPoint x="166" y="19.170000000000073" as="targetPoint"/>
