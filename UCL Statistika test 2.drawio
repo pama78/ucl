@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-05T17:21:04.921Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="Ou8fsuaIHLbL4RojCSYV" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T17:21:24.199Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="fFfZSboyExNrglL2ZP1W" version="12.6.5" type="github" pages="2">
   <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
     <mxGraphModel dx="1024" dy="3866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -201,6 +201,9 @@
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-22" value="&lt;b&gt;Faktorové zátěže&lt;/b&gt; 0 nebo 1 (rozložení)??&lt;br&gt;&lt;b&gt;druhy rotace&lt;/b&gt;: 1) ortogonální:osy v pravém úhlu, nepoškodí vysvětlení variability,nekorelovanost faktorů 2)&amp;nbsp;rotace šikmá - porušuje předpoklady o nekorelovanosti&lt;br&gt;&lt;i&gt;&lt;b&gt;R: &lt;/b&gt;factanal (x, factors 3, rotation=varimax)&lt;br&gt;&lt;/i&gt;&lt;b&gt;postup: &lt;/b&gt;rotace tak, aby zátěže daleko od sebe, buď u 0, nebo u 1. tj. faktor přiřazení ke shluku&lt;br&gt;varianty:&amp;nbsp;&lt;br&gt;quartimax - maximalizace funkce 4tých mocnin fakt. zátěží.&amp;nbsp;&lt;br&gt;varimax - doporučované, maximalizace variability max. součtu 2. mocnin fakt. zátěží-&amp;gt; k 0 nebo k 1&lt;br&gt;orthomax - vážený průměr obou předchozích&lt;br&gt;oblimin - šikmá, výsledné faktory korelované&lt;br&gt;odhad FA. skóre - v AHK je spočten FA odhad (méně hodnot&amp;nbsp;&lt;br&gt;&amp;nbsp;nová hodnota odhadnutá (použitelná v reg. analýze.&lt;br&gt;odhad: Bartletova metoda&amp;nbsp; vážená metoda nejmenších čtverců (váha=rozptyly)&lt;br&gt;thompsonova &amp;gt; maximalizuje korelaci FA skore. zkreslené a má korelaci" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="528" y="-162.5" width="540" height="212.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-23" value="9" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="16" y="-165" width="40" height="40" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
