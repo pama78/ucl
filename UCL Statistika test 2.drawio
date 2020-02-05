@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-05T21:12:39.036Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="WPfBDgwksRyhpZqBpU0v" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T21:55:32.057Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="-1cEGjVYezzlI99K02hJ" version="12.6.5" type="github" pages="2">
   <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
     <mxGraphModel dx="1024" dy="3866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -46,7 +46,7 @@
         <mxCell id="f2Wz4_0rHu49IXbxf35g-9" value="předpoklady žádné" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="1090" y="275" width="120" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="f2Wz4_0rHu49IXbxf35g-10" value="" style="endArrow=none;dashed=1;html=1;" parent="dPriRE3YrdGKLI615bE0-1" edge="1">
+        <mxCell id="f2Wz4_0rHu49IXbxf35g-10" value="" style="endArrow=none;dashed=1;html=1;" parent="dPriRE3YrdGKLI615bE0-1" edge="1" source="4-UVroGFzfkKjZS6zO3X-37">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1280" y="1670" as="sourcePoint"/>
             <mxPoint x="1300" y="-1450" as="targetPoint"/>
@@ -191,7 +191,7 @@
           <mxGeometry x="16" y="-630" width="40" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-19" value="&lt;b&gt;komponentní skóre - &lt;/b&gt;nová hodnota&lt;br&gt;komponentová zátěž - kor. koeficient nové hodnoty??&lt;br&gt;kov. matice - diagonála je rozptyl, mimo diag - kovariance&lt;br&gt;kor. matice - kdyz různé rozměry, jednotky&lt;br&gt;komunalita (max =1) část variabilitz x vysvětlená FA ??&lt;br&gt;kovariance - závislost mezi náhodnými proměnnými&lt;br&gt;kovariance vektorů - závislost vekt. x a y ??&lt;br&gt;korelace = kovariance / směrodatné odchylky&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="1310" y="-722.5" width="610" height="170" as="geometry"/>
+          <mxGeometry x="1310" y="-722.5" width="610" height="122.5" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-20" value="&lt;b&gt;Rotace faktorů (je nekonečno řešení)&lt;br&gt;&lt;/b&gt;Cíl:&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="36" y="-340" width="234" height="155" as="geometry"/>
@@ -218,7 +218,7 @@
           <mxGeometry x="520" y="-910" width="540" height="170" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-29" value="&lt;b&gt;perfektní multikolinearita -&lt;/b&gt; lineární kombinace sloupců. nemožnost spočítat determinant" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="1310" y="-910" width="610" height="170" as="geometry"/>
+          <mxGeometry x="1310" y="-800" width="610" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-30" value="&lt;b&gt;Predikce v regresních modelech&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="30" y="-1180" width="230" height="120" as="geometry"/>
@@ -234,6 +234,18 @@
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-35" value="12" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="16" y="-1185" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-36" value="&lt;b&gt;požadavky KLRM - &lt;/b&gt;klasický lineární model, pro který lze použít metodu nejmenš. čtverců (má předpoklady)&lt;br&gt;předpoklady - normalita chyb náh. složky modelu, nekorelovanost vysv. proměnné X,homoskedasticita náh. složky&lt;br&gt;&lt;b&gt;dopady porušení&lt;/b&gt;- problémy v modelu (nevýznamnost x), nerobustnost modelu&lt;br&gt;&lt;b&gt;1) multikolinearita&lt;/b&gt; -&amp;gt; odhady rozptylu +, nevýynamnost intercept, významnost ostatních, nerobustnost, interpretace nedává smysl, plná multikolinearita -&amp;gt; singulární matice -&amp;gt; problém,&amp;nbsp;&lt;br&gt;jak - průzkum korelační matice, výpočet VIF faktoru (variance inflation factor &amp;gt;5), ABS člen bezvýynamný&lt;br&gt;determinant matice se blíží 0, farrar glauber test&lt;br&gt;&lt;b&gt;2) autokorelace&lt;/b&gt; - porušení předpokladu nekorelovanosti náh. složek Y má být založeno na kombinaci X. R^2 je nadhodnoceno, t-testy slabé (jeví se tak, ale nejsou slabé),&amp;nbsp;&lt;br&gt;jak? autokorelační funkce ACF, R DWTEST, BREUSCH-GODFREY test,&amp;nbsp;&lt;br&gt;řešení? odstranění proměnných, metoda zobecněných nejm. čtverců se zkresleným odhadem.&lt;br&gt;&lt;b&gt;3) heteroskedasticita&lt;/b&gt; - porušení předpokladu o konst. rozptylu náhodné složky. změnou proměnných&amp;nbsp; x se mění rozptyl vysvětlované proměnné Y (variabilita +, rozměr + )&lt;br&gt;řešení? zobecněné vážené metody nejmenších čtverců. (odhady rozptylu&amp;nbsp; do modelu)&lt;br&gt;testy- založené na reziduích, průzkum grafu reziduí (jestli se mění variabilita)&lt;br&gt;H0- variabilita je konstantní - Bartlett test, Breusch pagan, score test, ftest&lt;br&gt;&lt;b&gt;4) normalita náhodné složky&lt;/b&gt;-klíčový pro indukci. nenormalita-&amp;gt;špatný model (nevhodnáregr. fn, problém v datech)&lt;br&gt;řešení: transformační funkce, nelineární regrese. při velkém výběru dat platí centrální limitní věta - o normalitě&lt;br&gt;&lt;b&gt;jak:&lt;/b&gt; shapiro test o normalitě: R: shapiro(residuals)&lt;br&gt;&lt;b&gt;&lt;u&gt;KLRM pravidla: &lt;/u&gt;&lt;/b&gt;KLRM neklade žádné požadavky na vektor beta (odhad beta=náhodnáveličina),&amp;nbsp;&lt;br&gt;model je lineární z pohledu parametrů (není a^x)&lt;br&gt;máme nenáhodnou matici x, s lineárně nezávislými sloupci (optimálně pod kontrolou)&lt;br&gt;požadavky na náh. složku, stř. hodnota=0, rozptyly konstantní *homosked), normální rozdělení.&amp;nbsp;&lt;br&gt;BLUE - metoda nejmenších čtverců, poskytuje metodu nejm. čtverců, poskytuje nejlepší nezkr.&amp;nbsp; odhad&lt;br&gt;při porušení KLRM - nelze použít MNČ (ale zobecněnou váženou MNČ) - úprava funkce o popis chování náhodné složky" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="1310" y="-1170" width="670" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-37" value="12" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="1277.8" y="-1185" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-38" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="dPriRE3YrdGKLI615bE0-1" target="4-UVroGFzfkKjZS6zO3X-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1280" y="1670" as="sourcePoint"/>
+            <mxPoint x="1300" y="-1450" as="targetPoint"/>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
