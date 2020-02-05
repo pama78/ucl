@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-05T15:21:17.929Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="YAnZvKhkqfIPRWwBBMkA" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T15:25:30.374Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="qkRFDmljReyaWWXmYFGj" version="12.6.5" type="github" pages="2">
   <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
-    <mxGraphModel dx="1024" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1024" dy="3866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="dPriRE3YrdGKLI615bE0-0"/>
         <mxCell id="dPriRE3YrdGKLI615bE0-1" parent="dPriRE3YrdGKLI615bE0-0"/>
@@ -19,7 +19,7 @@
         <mxCell id="f2Wz4_0rHu49IXbxf35g-2" value="" style="endArrow=none;dashed=1;html=1;" parent="dPriRE3YrdGKLI615bE0-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="280" y="1712.857142857143" as="sourcePoint"/>
-            <mxPoint x="280" y="20" as="targetPoint"/>
+            <mxPoint x="280" y="-440" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
         <mxCell id="f2Wz4_0rHu49IXbxf35g-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="dPriRE3YrdGKLI615bE0-1" source="f2Wz4_0rHu49IXbxf35g-3" target="f2Wz4_0rHu49IXbxf35g-5" edge="1">
@@ -31,7 +31,7 @@
         <mxCell id="f2Wz4_0rHu49IXbxf35g-4" value="" style="endArrow=none;dashed=1;html=1;" parent="dPriRE3YrdGKLI615bE0-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="520" y="1710" as="sourcePoint"/>
-            <mxPoint x="520" y="30" as="targetPoint"/>
+            <mxPoint x="520" y="-440" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
         <mxCell id="f2Wz4_0rHu49IXbxf35g-5" value="dopředu určíme počet shluků a na základě centroidu a vzdálenosti -&amp;gt; shluky&lt;br&gt;netvoří se jeden shluk za druhým&lt;br&gt;&lt;b&gt;Metody:&lt;br&gt;&amp;nbsp; K-means&lt;/b&gt; - vzdálenosti bodů od centroidu. nejdřív se objekty zatřídí a pak přesuny&lt;br&gt;&lt;b&gt;&amp;nbsp; K-medoids &lt;/b&gt;- vzdálenosti k prvkům s nejmenší vzdáleností od centroidu&lt;b&gt;&lt;br&gt;&amp;nbsp; Metoda zárodečných bodů (seeded) - &lt;/b&gt;uživatel určí zárodky shluků&lt;br&gt;&lt;b&gt;&amp;nbsp; Fuzzy&lt;/b&gt; - objekty možno třídit do více shluků na základě pravděpodobností&amp;nbsp;&lt;br&gt;&lt;b&gt;Problém&lt;/b&gt; nalézt vhodný počet shluků&lt;br&gt;&lt;b&gt;určení počtu shluků &lt;/b&gt;- záleží na teorii daného oboru a pak statistické funkce&lt;br&gt;&lt;b&gt;Míra kvality&lt;/b&gt; - silueta (špatné/dobré zařazení). Průměrná silueta pro všechny, dendogramy, clusplot" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
@@ -138,6 +138,12 @@
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-1" value="citlivost na estrémní pozorování - shlukování pak není robustní" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="1090" y="60" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-2" value="&lt;b&gt;Regresní analýza&lt;/b&gt;&lt;br&gt;H: Sir Galton, závislost výšky otců a synů, návrat k průměru 1911" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="30" y="-140" width="230" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-3" value="&lt;b&gt;co:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px ; white-space: nowrap&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3Bco%3A%20%26lt%3B%2Fb%26gt%3Bshlukov%C3%A1n%C3%AD%20podobn%C3%BDch%20objekt%C5%AF%26lt%3Bbr%26gt%3B%2B%C5%A1irok%C3%A1%20skupina%20metod%20na%20zkoum%C3%A1n%C3%AD%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3Bkvantitativn%C3%AD%20i%20kategori%C3%A1ln%C3%AD%20obj.%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3Bjak%3A%20%26lt%3B%2Fb%26gt%3Bmatematick%C3%A9%20v%C3%BDpo%C4%8Dty%20podobnosti%2C%20oshlukov%C3%A1n%C3%AD%20popdobn%C3%BDch.%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BK%3A%20%26lt%3B%2Fb%26gt%3Bzjednodu%C5%A1en%C3%AD%20dat%2C%20klasifikace%20obj%20(za%C4%8Dlen%C4%9Bn%C3%AD%20do%20shluku)%2C%20vztahy.%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3B%2Bmachine%20learning%2C%20grafika%2C%20%2Bbioinformatika%20medicina%2C%20kredit%20risk%26lt%3Bbr%26gt%3B%2Bmodely%20neurovon%C3%A9%2C%20density...%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3Bv%C3%BDhoda%20hiearchick%C3%A9-%26lt%3B%2Fb%26gt%3Bnet%C5%99eba%20zn%C3%A1t%20dop%C5%99edu%20po%C4%8Det%20shluk%C5%AF%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22290%22%20y%3D%22100%22%20width%3D%22220%22%20height%3D%22170%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3Estatisf&lt;/span&gt;&lt;b&gt;&lt;br&gt;k: &lt;/b&gt;určení vztahů mezi vysvětlovanou Y a vysvětlující X proměnnou" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="290" y="-140" width="220" height="170" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
