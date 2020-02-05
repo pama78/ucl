@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-05T16:38:08.026Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="3PhDSAmWvxpm0iuvlWCB" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T16:47:16.169Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="onFnOpw8MdbEyLmvX2wp" version="12.6.5" type="github" pages="2">
   <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
     <mxGraphModel dx="1024" dy="3866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -181,8 +181,17 @@
         <mxCell id="4-UVroGFzfkKjZS6zO3X-15" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;k: &lt;/b&gt;EAD, nástroj F.A&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;vysvětluje variabilitu (..95%)&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;poznání dat, vysvětlit rozptyl&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;hledání souvislostí v datech&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="285" y="-400" width="220" height="75" as="geometry"/>
         </mxCell>
-        <mxCell id="4-UVroGFzfkKjZS6zO3X-16" value="&lt;b&gt;jak: počet komponent (% vysv2tlen0 variability)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-16" value="&lt;b&gt;jak: &lt;/b&gt;počet komponent (% vysvětlené variability). nahrazení dat latentními proměnnými&lt;br&gt;identif. hlavních komponent kov. matice (PxP)&lt;br&gt;vlastní čísla (eigen, klesající) = význam komponent&lt;br&gt;&lt;b&gt;Testy:&lt;/b&gt;&lt;br&gt;andersonův test: test přínosu k vysvětlení celkové variability&lt;br&gt;scree plot - graf přínosu PC&amp;nbsp;&lt;br&gt;Bi plot-graf směrů závislostí zátěží podle 2 hlavních komponent.úhel=korelace (spotřeba x výkon)&lt;br&gt;význam komponenty = proportion of variance (+cumulative)" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="530" y="-510" width="530" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-17" value="nevyžaduje norm. rozdělení" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="1085" y="-510" width="190" height="165" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-18" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="10" y="-410" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-19" value="&lt;b&gt;komponentní skóre - &lt;/b&gt;nová hodnota&lt;br&gt;komponentová zátěž - kor. koeficient nové hodnoty??&lt;br&gt;kov. matice - diagonála je rozptyl, mimo diag - kovariance&lt;br&gt;kor. matice - kdyz různé rozměry, jednotky&lt;br&gt;komunalita (max =1) část variabilitz x vysvětlená FA ??&lt;br&gt;kovariance - závislost mezi náhodnými proměnnými&lt;br&gt;kovariance vektorů - závislost vekt. x a y ??&lt;br&gt;korelace = kovariance / směrodatné odchylky&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="1290" y="-510" width="610" height="170" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
