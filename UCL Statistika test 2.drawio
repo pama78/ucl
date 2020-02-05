@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-05T21:55:32.057Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="-1cEGjVYezzlI99K02hJ" version="12.6.5" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-05T22:07:51.119Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="Hp0p427Cw9-9fzoIAciZ" version="12.6.5" type="github" pages="2">
   <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
-    <mxGraphModel dx="1024" dy="3866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1463" dy="4109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="dPriRE3YrdGKLI615bE0-0"/>
         <mxCell id="dPriRE3YrdGKLI615bE0-1" parent="dPriRE3YrdGKLI615bE0-0"/>
@@ -246,6 +246,9 @@
             <mxPoint x="1280" y="1670" as="sourcePoint"/>
             <mxPoint x="1300" y="-1450" as="targetPoint"/>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="4-UVroGFzfkKjZS6zO3X-39" value="&lt;b&gt;Heterodkedasticita:&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;b&gt;CO:&lt;/b&gt; porušení předpokladu o konstantním rozptylu náhodné složky (homoskedasticita). říká že se změnou X se mění rozptyl vysvětlující Y, variabilita roste s rozměrem-heteroskedasticita&lt;br&gt;&lt;b&gt;testy:&lt;/b&gt; bartlet, bresuch-paganův test (nízké p-value)&lt;br&gt;ftest&lt;br&gt;score test, H0: rozptzl je konstantní&lt;br&gt;&lt;b&gt;modely:&lt;/b&gt;variability - aditivní a multiplikativní (nárůst s rozměrem)&lt;br&gt;&lt;b&gt;důvody:&lt;/b&gt; agregovaná chyba, nárůst s rozměrem&lt;br&gt;problém - statistické testování rozptylu, založeno na reziduích&lt;br&gt;špatný odhad směrodatných chyb a špatná vypovýdající schopnost diag. testů.&amp;nbsp;&lt;br&gt;!! parametry regresní funkce se neovlivní&lt;br&gt;&lt;b&gt;řešení&lt;/b&gt;: zobecněné / vážené metody nejm. čtverců, odhady rozptylu a úprava parametrů regr. fn... přidá se nekonstantní rozptyl (odhad matice rozptylů)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="1990" y="-1170" width="348.43" height="360" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
