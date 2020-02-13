@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-13T14:10:45.388Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36" etag="xyhIe7qDNHFgFW4Mt_PX" version="12.7.0" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-02-13T14:13:46.473Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36" etag="cN7c9trpC8tp-B17i2IK" version="12.7.0" type="github" pages="2">
   <diagram id="P_Tvva-NH4V_MEftuOHY" name="zkouska">
-    <mxGraphModel dx="1422" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="813" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="dPriRE3YrdGKLI615bE0-0"/>
         <mxCell id="dPriRE3YrdGKLI615bE0-1" parent="dPriRE3YrdGKLI615bE0-0"/>
@@ -62,10 +62,10 @@
           <mxGeometry x="284" y="2510" width="210" height="110" as="geometry"/>
         </mxCell>
         <mxCell id="f2Wz4_0rHu49IXbxf35g-14" value="17" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="24" y="2510" width="40" height="40" as="geometry"/>
+          <mxGeometry x="64" y="2510" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="f2Wz4_0rHu49IXbxf35g-15" value="16" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="14" y="2315" width="40" height="40" as="geometry"/>
+          <mxGeometry x="49" y="2310" width="25" height="25" as="geometry"/>
         </mxCell>
         <mxCell id="f2Wz4_0rHu49IXbxf35g-16" value="statistický model využívající logistickou funkci pro modelování vysvětlované prom. Y&lt;br&gt;&lt;b&gt;název:&lt;/b&gt; z log ods (logaritmus šancí) 0..1&lt;br&gt;&lt;b&gt;výsledek:&lt;/b&gt; do jaké míry jev 0 nebo 1 nastal (100%, 90%..). pak je hranice 0.5 pro určení jestli to bude 1 nebo 0&lt;br&gt;&lt;b&gt;Založeno na metodě:&lt;/b&gt; maximální věrohodnosti (práce s PP). maximalizace PP a &lt;br&gt;výběr nejvyššího&lt;br&gt;&lt;b&gt;Složitost &lt;/b&gt;- PP poměr (L1/L0) je od 0 do 1, a hodnoty PP jsou od 0 do nekonečno, po zlogaritmování je to symetrické od mínus nekonečno do nekonečno&lt;br&gt;&lt;b&gt;&lt;u&gt;testy:&lt;/u&gt;&lt;/b&gt; &lt;b&gt;dílčí t-testy&lt;/b&gt; (studentův), sleduje se významnost parametru (vliv proměnné)&lt;br&gt;&lt;b&gt;jacknife technika - &lt;/b&gt;dobré provést testy s vyloučenou proměnnou a sledovad dopad na predikce&amp;nbsp;&lt;br&gt;&lt;b&gt;t-test=Waldův test&lt;/b&gt; (test hypotézy, že dílčí koeficient = 0)&lt;br&gt;&lt;b&gt;test míry odchylky proložení&amp;nbsp; log. modelu&lt;/b&gt; (odchylka=deviace D. kdyz D=0 -&amp;gt; dokonalé proložení)&lt;br&gt;&lt;b&gt;test Pseudo R square (R logit 2) - pokus o priblizeni k &quot;vysvětlení rozptylu zavisle proměnné&quot;&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;i&gt;&amp;nbsp; (http://metodykv.wz.cz/prezentace/AKD3/AKD3_LogReg.pptx)&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;ROC křivka&lt;/b&gt; prahové operační charakteristiky. maximalizujeme plochu pod křivkou. diagnostický nástroj pro zjištění % správně zařazených&lt;br&gt;&lt;a href=&quot;https://meloun.upce.cz/docs/license/repetitorium/4.8%20lr.pdf&quot;&gt;https://meloun.upce.cz/docs/license/repetitorium/4.8%20lr.pdf&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="524" y="2510" width="540" height="250" as="geometry"/>
@@ -113,16 +113,16 @@
           <mxGeometry x="2084" y="3115.23" width="240" height="100.88" as="geometry"/>
         </mxCell>
         <mxCell id="f2Wz4_0rHu49IXbxf35g-34" value="19" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="24" y="2960" width="40" height="40" as="geometry"/>
+          <mxGeometry x="64" y="3070" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="kYm2ZdR3y5LzF3ykeRGw-0" value="18" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="24" y="3002.84" width="40" height="40" as="geometry"/>
+          <mxGeometry x="64" y="2950" width="27.16" height="27.16" as="geometry"/>
         </mxCell>
         <mxCell id="kYm2ZdR3y5LzF3ykeRGw-1" value="&lt;b&gt;co: &lt;/b&gt;shlukování podobných objektů&lt;br&gt;+široká skupina metod na zkoumání&amp;nbsp;&lt;br&gt;kvantitativní i kategoriální obj.&lt;br&gt;&lt;b&gt;jak: &lt;/b&gt;matematické výpočty podobnosti, oshlukování popdobných.&lt;br&gt;&lt;b&gt;K: &lt;/b&gt;zjednodušení dat, klasifikace obj (začlenění do shluku), vztahy.&amp;nbsp;&lt;br&gt;+machine learning, grafika, +bioinformatika medicina, kredit risk&lt;br&gt;+modely neurovoné, density...&lt;br&gt;&lt;b&gt;výhoda hiearchické-&lt;/b&gt;netřeba znát dopředu počet shluků" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="284" y="2130" width="220" height="170" as="geometry"/>
         </mxCell>
         <mxCell id="kYm2ZdR3y5LzF3ykeRGw-2" value="15" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="14" y="2128.5699999999997" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10.07" y="2155" width="31.43" height="31.43" as="geometry"/>
         </mxCell>
         <mxCell id="kYm2ZdR3y5LzF3ykeRGw-4" value="&lt;b&gt;dělení&lt;/b&gt;&amp;nbsp;1)hierachické (ukazuje souvislosti shlků, dále aklomerativní / divizní dělení)&lt;br&gt;2) nehierarchické (dopředu určený počet shluků)&lt;br&gt;&lt;b&gt;zvláštnost:&lt;/b&gt; nemáme vysvětlovanou proměnnou, snažíme se oshlukovat aby skupiny byly vnitřně blízko a navenek skupiny co nejdál od sebe&lt;br&gt;&lt;b&gt;problémy:&lt;/b&gt; často v metrice dat, lepší pak použít normalizovaná data&lt;br&gt;&lt;b&gt;&lt;u&gt;postup:&lt;/u&gt;&lt;/b&gt; &lt;b&gt;1) rozhodnutí&lt;/b&gt; - sledování míry podobnosti (zal. na korelaci), na mírách vzdálenosti nebo na mírách asociace (kvalitativní data)&lt;br&gt;&lt;b&gt;2) EAD, &lt;/b&gt;odstranit extrémní pozorování&lt;br&gt;&lt;b&gt;3) normování,&lt;/b&gt; kvůli metrice (převede nestejnoměrné jednotky, cm, kg...)&lt;br&gt;&lt;b&gt;4) volba počtu shluků &lt;/b&gt;(maximalizace rozdílů mezi shluky)&lt;br&gt;&lt;b&gt;5) volba hierarch/nehie/kumulativní&lt;br&gt;&lt;u&gt;Kontrola kvality&lt;/u&gt;&lt;/b&gt; - dendogram s pomocí vrstev. je vztah mezi dendogramem a strukturou dat&lt;br&gt;Silueta = statisticka informace o dobrem/špatném zařazení do shluku &amp;lt;-1;1&amp;gt; (špatně;dobře)&lt;br&gt;průměrná silueta je silueta přes všechny objekty. Pro ověření lze použít i diskrim. analýza" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="524" y="2090" width="530" height="210" as="geometry"/>
@@ -149,7 +149,7 @@
           <mxGeometry x="516.5" y="680" width="530" height="165" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-7" value="10" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="10" y="660" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="675" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-8" value="&lt;b&gt;Faktorová analýza FA&lt;/b&gt;&lt;br&gt;H: psychologie, Spearman - 100 let&lt;br&gt;hypot. společný faktor intelektu&lt;br&gt;chemické složení, vitamíny, chuť&lt;br&gt;+subjektivita použití faktorů&lt;br&gt;+jednoznačnost, rozhodnost&lt;br&gt;(jak chceme, rotace)&lt;br&gt;+více možností vyjádření kov. matice&lt;br&gt;+odhad společných faktorů náhodných složek&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="30" y="1510" width="230" height="150" as="geometry"/>
@@ -167,7 +167,7 @@
           <mxGeometry x="1090" y="1495" width="190" height="165" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-13" value="8" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="10" y="1505" width="40" height="40" as="geometry"/>
+          <mxGeometry x="16.5" y="1510" width="25" height="25" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-14" value="&lt;b&gt;AHK&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="30" y="1410" width="230" height="85" as="geometry"/>
@@ -182,7 +182,7 @@
           <mxGeometry x="1085" y="1300" width="190" height="165" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-18" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="10" y="1400" width="40" height="40" as="geometry"/>
+          <mxGeometry x="14" y="1410" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-19" value="&lt;b&gt;komponentní skóre - &lt;/b&gt;nová hodnota&lt;br&gt;komponentová zátěž - kor. koeficient nové hodnoty??&lt;br&gt;kov. matice - diagonála je rozptyl, mimo diag - kovariance&lt;br&gt;kor. matice - kdyz různé rozměry, jednotky&lt;br&gt;komunalita (max =1) část variabilitz x vysvětlená FA ??&lt;br&gt;kovariance - závislost mezi náhodnými proměnnými&lt;br&gt;kovariance vektorů - závislost vekt. x a y ??&lt;br&gt;korelace = kovariance / směrodatné odchylky&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="1300" y="1358.75" width="410" height="122.5" as="geometry"/>
@@ -197,7 +197,7 @@
           <mxGeometry x="522" y="1692.5" width="540" height="212.5" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-23" value="9" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="10" y="1690" width="40" height="40" as="geometry"/>
+          <mxGeometry x="14" y="1690" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-24" value="&lt;b&gt;co: &lt;/b&gt;závislost v matici mezi vysvětlujícími proměnnými&lt;br&gt;&lt;i&gt;v R: omcdiag - vrátí víc výsledků (farrar, eigen)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="284" y="1120" width="220" height="170" as="geometry"/>
@@ -206,7 +206,7 @@
           <mxGeometry x="19" y="1115" width="234" height="155" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-26" value="10" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="14" y="1100" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="1115" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-27" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;co způsobuje: &lt;/b&gt;&lt;span&gt;porušuje předpoklad náhodné matice X&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;neovlivní predikci moc, ale odhady rozptylů, a nadhodnotí R^2 (index determinance)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;dopad na F-Testy a T-Testy, nadhodnocení regr. součtu čtverců, některé proměnné vypadají důležité&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;nadhodnotí index determinance + ciltlivost modelu na změny - nerobustnost&lt;/span&gt;&lt;/div&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;jak zjistit: &lt;/b&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;nevýznamnost Absolutního členu!!! (bez hvězdiček, devalvuje model)&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;rozpor f-testu a t-testů,&amp;nbsp;&lt;/span&gt;&lt;span&gt;párové korelace mezi proměnnými x (např 0.9&amp;nbsp; je skoro perfektní)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;determinant kor. matice je nízký - Farrar test,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;index podmíněnosti matice R(x) (odm) max vl.č/min vl.č &amp;gt;30 ---silná multikolinearita&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;vícenásobné kor. koeficienty, dílčí regresní modely, každé x s každým x&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;VIF faktor vysoké (&amp;gt;5) variance inflation factor&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;co s tím&lt;/b&gt;-vypustit proměnné, které vysvětlují méně variability, hřebenová regrese, faktorová analýza&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="514" y="1120" width="540" height="170" as="geometry"/>
@@ -227,7 +227,7 @@
           <mxGeometry x="1085" y="850" width="180" height="140" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-35" value="12" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="10" y="845" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="850" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="4-UVroGFzfkKjZS6zO3X-36" value="&lt;b&gt;požadavky KLRM - &lt;/b&gt;klasický lineární model, pro který lze použít metodu nejmenš. čtverců (má předpoklady)&lt;br&gt;předpoklady - normalita chyb náh. složky modelu, nekorelovanost vysv. proměnné X,homoskedasticita náh. složky&lt;br&gt;&lt;b&gt;dopady porušení&lt;/b&gt;- problémy v modelu (nevýznamnost x), nerobustnost modelu&lt;br&gt;&lt;b&gt;1) multikolinearita&lt;/b&gt; -&amp;gt; odhady rozptylu +, nevýynamnost intercept, významnost ostatních, nerobustnost, interpretace nedává smysl, plná multikolinearita -&amp;gt; singulární matice -&amp;gt; problém,&amp;nbsp;&lt;br&gt;jak - průzkum korelační matice, výpočet VIF faktoru (variance inflation factor &amp;gt;5), ABS člen bezvýynamný&lt;br&gt;determinant matice se blíží 0, farrar glauber test&lt;br&gt;&lt;b&gt;2) autokorelace&lt;/b&gt; - porušení předpokladu nekorelovanosti náh. složek Y má být založeno na kombinaci X. R^2 je nadhodnoceno, t-testy slabé (jeví se tak, ale nejsou slabé),&amp;nbsp;&lt;br&gt;jak? autokorelační funkce ACF, R DWTEST, BREUSCH-GODFREY test,&amp;nbsp;&lt;br&gt;řešení? odstranění proměnných, metoda zobecněných nejm. čtverců se zkresleným odhadem.&lt;br&gt;&lt;b&gt;3) heteroskedasticita&lt;/b&gt; - porušení předpokladu o konst. rozptylu náhodné složky. změnou proměnných&amp;nbsp; x se mění rozptyl vysvětlované proměnné Y (variabilita +, rozměr + )&lt;br&gt;řešení? zobecněné vážené metody nejmenších čtverců. (odhady rozptylu&amp;nbsp; do modelu)&lt;br&gt;testy- založené na reziduích, průzkum grafu reziduí (jestli se mění variabilita)&lt;br&gt;H0- variabilita je konstantní - Bartlett test, Breusch pagan, score test, ftest&lt;br&gt;&lt;b&gt;4) normalita náhodné složky&lt;/b&gt;-klíčový pro indukci. nenormalita-&amp;gt;špatný model (nevhodnáregr. fn, problém v datech)&lt;br&gt;řešení: transformační funkce, nelineární regrese. při velkém výběru dat platí centrální limitní věta - o normalitě&lt;br&gt;&lt;b&gt;jak:&lt;/b&gt; shapiro test o normalitě: R: shapiro(residuals)&lt;br&gt;&lt;b&gt;&lt;u&gt;KLRM pravidla: &lt;/u&gt;&lt;/b&gt;KLRM neklade žádné požadavky na vektor beta (odhad beta=náhodnáveličina),&amp;nbsp;&lt;br&gt;model je lineární z pohledu parametrů (není a^x)&lt;br&gt;máme nenáhodnou matici x, s lineárně nezávislými sloupci (optimálně pod kontrolou)&lt;br&gt;požadavky na náh. složku, stř. hodnota=0, rozptyly konstantní *homosked), normální rozdělení.&amp;nbsp;&lt;br&gt;BLUE - metoda nejmenších čtverců, poskytuje metodu nejm. čtverců, poskytuje nejlepší nezkr.&amp;nbsp; odhad&lt;br&gt;při porušení KLRM - nelze použít MNČ (ale zobecněnou váženou MNČ) - úprava funkce o popis chování náhodné složky" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="1304" y="860" width="610" height="390" as="geometry"/>
@@ -276,7 +276,7 @@
           <mxGeometry x="279" y="510" width="331" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="yd7VZ47-H8TTY2otPJhw-9" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry y="500" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="500" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="yd7VZ47-H8TTY2otPJhw-10" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;&lt;b&gt;Transformace dat - normalizace&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="25.5" y="410" width="243" height="80" as="geometry"/>
@@ -288,7 +288,7 @@
           <mxGeometry x="620" y="410" width="1460" height="90" as="geometry"/>
         </mxCell>
         <mxCell id="yd7VZ47-H8TTY2otPJhw-13" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
-          <mxGeometry x="10" y="410" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="410" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="yd7VZ47-H8TTY2otPJhw-14" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;&lt;b&gt;odlehlá a vlivná pozorování - EAD&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="dPriRE3YrdGKLI615bE0-1" vertex="1">
           <mxGeometry x="30" y="320" width="234" height="70" as="geometry"/>
@@ -300,7 +300,7 @@
           <mxGeometry x="624" y="320" width="796" height="75" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-0" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="10" y="310" width="40" height="40" as="geometry"/>
+          <mxGeometry x="14" y="320" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-1" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;&lt;b&gt;vícerozměrné popisy dat. souboru&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="29" y="100" width="234" height="70" as="geometry"/>
@@ -312,7 +312,7 @@
           <mxGeometry x="546" y="105" width="970" height="70" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-4" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="19" y="90" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="100" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-5" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;&lt;b&gt;EAD&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="29" y="180" width="234" height="60" as="geometry"/>
@@ -324,7 +324,7 @@
           <mxGeometry x="546" y="180" width="1153" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-8" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="19" y="180" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="180" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-9" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;&lt;b&gt;základní problémy při zpracování dat&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="31" y="250" width="234" height="60" as="geometry"/>
@@ -333,13 +333,13 @@
           <mxGeometry x="546" y="250" width="1313" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-11" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="10" y="240" width="40" height="40" as="geometry"/>
+          <mxGeometry x="10" y="250" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-12" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;&lt;b&gt;statistické zpracování dat&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="32" y="10" width="234" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="ykhhSeFS6MLBX-glIwl3-13" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
-          <mxGeometry x="14" width="40" height="40" as="geometry"/>
+        <mxCell id="ykhhSeFS6MLBX-glIwl3-13" value="20" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
+          <mxGeometry x="14" y="10" width="30" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="ykhhSeFS6MLBX-glIwl3-14" value="&lt;div class=&quot;_2cuy _3dgx _2vxa&quot; style=&quot;direction: ltr ; text-align: left ; white-space: pre-wrap ; margin: 0px ; padding: 6px 0px 0px ; font-family: inherit&quot;&gt;&lt;font color=&quot;#1d2129&quot;&gt;80%  příprava dat, porozumění, čištění, analýzy, porozumění oboru&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="dPriRE3YrdGKLI615bE0-1">
           <mxGeometry x="298" y="10" width="221" height="70" as="geometry"/>
