@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-06T09:32:45.901Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="Sx7Xb3c4mteg5k0VbDjC" version="14.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-06T09:33:50.434Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="C5Zpn_9-HehZEOSdji9C" version="14.2.9" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1038" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -354,7 +354,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4CfnA9oRZXm0BefGSMJ0-110" value="UU smart building" style="swimlane;html=1;startSize=20;horizontal=0;" vertex="1" parent="1">
-          <mxGeometry x="30" y="1710" width="790" height="460" as="geometry" />
+          <mxGeometry x="30" y="1710" width="790" height="550" as="geometry" />
         </mxCell>
         <mxCell id="4CfnA9oRZXm0BefGSMJ0-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="4CfnA9oRZXm0BefGSMJ0-110" source="4CfnA9oRZXm0BefGSMJ0-115" target="4CfnA9oRZXm0BefGSMJ0-120">
           <mxGeometry relative="1" as="geometry" />
@@ -457,6 +457,12 @@
         </mxCell>
         <mxCell id="4CfnA9oRZXm0BefGSMJ0-155" value="returns actual info about sensor towers (alive/when synced, battery)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="4CfnA9oRZXm0BefGSMJ0-110">
           <mxGeometry x="390" y="380" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4CfnA9oRZXm0BefGSMJ0-159" value="updateNode" style="html=1;shape=mxgraph.infographic.ribbonSimple;notch1=20;notch2=0;align=center;verticalAlign=middle;fontSize=14;fontStyle=0;fillColor=#ffe6cc;flipH=0;spacingRight=0;spacingLeft=14;strokeColor=#d79b00;" vertex="1" parent="4CfnA9oRZXm0BefGSMJ0-110">
+          <mxGeometry x="80" y="460" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4CfnA9oRZXm0BefGSMJ0-160" value="addNode" style="html=1;shape=mxgraph.infographic.ribbonSimple;notch1=20;notch2=0;align=center;verticalAlign=middle;fontSize=14;fontStyle=0;fillColor=#ffe6cc;flipH=0;spacingRight=0;spacingLeft=14;strokeColor=#d79b00;" vertex="1" parent="4CfnA9oRZXm0BefGSMJ0-110">
+          <mxGeometry x="77.5" y="510" width="110" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
